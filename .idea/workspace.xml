@@ -2,116 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5539d989-f18b-4467-b502-5cfebb15b9e7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/mdaecommerce-client.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.storybook/ContextProvider.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.storybook/Layout.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.storybook/config.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.storybook/preview-head.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.storybook/webpack.config.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/database.sqlite" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/AccentProducts/AccentProducts.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/AccentProducts/AccentProducts.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/AccentProducts/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/AddToCard/AddToCard.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/AddToCard/AddToCard.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/AddToCard/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Banner/Banner.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Banner/Banner.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Banner/components/Content/Content.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Banner/components/Content/Content.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Banner/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Button/Button.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Button/Button.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Button/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Card/Card.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Card/Card.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Card/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/CardGrid/CardGrid.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/CardGrid/CardGrid.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/CardGrid/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/CardLabel/CardLabel.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/CardLabel/CardLabel.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/CardLabel/icons/stock.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/CardLabel/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Container/Container.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Container/Container.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Container/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Discount/Discount.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Discount/Discount.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Discount/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Jumbotron/Jumbotron.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Jumbotron/Jumbotron.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Jumbotron/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Logo/Logo.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Logo/Logo.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Logo/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Rating/Rating.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Rating/Rating.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Rating/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/ServiceFeatures/ServiceFeatures.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/ServiceFeatures/ServiceFeatures.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/ServiceFeatures/icons/24h.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/ServiceFeatures/icons/money-return.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/ServiceFeatures/icons/payment.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/ServiceFeatures/icons/plan.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/ServiceFeatures/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/SocialsList/SocialsList.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/SocialsList/SocialsList.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/SocialsList/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Tabs/Tabs.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Tabs/Tabs.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Tabs/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/ToolBar/ToolBar.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/ToolBar/ToolBar.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/ToolBar/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/theme.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/stories/banner.stories.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/stories/button.stories.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/stories/card.stories.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/stories/rating.stories.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/stories/serviceFeatures.stories.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webpack.config.js" />
-      <change beforePath="$PROJECT_DIR$/.babelrc.js" afterPath="$PROJECT_DIR$/.babelrc.js" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/src/components/App.js" afterPath="$PROJECT_DIR$/src/components/App.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.css" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.css" afterPath="$PROJECT_DIR$/src/components/Header/Header.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Html.js" afterPath="$PROJECT_DIR$/src/components/Html.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.css" afterPath="$PROJECT_DIR$/src/components/Layout/Layout.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.js" afterPath="$PROJECT_DIR$/src/components/Layout/Layout.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Link/Link.js" afterPath="$PROJECT_DIR$/src/components/Link/Link.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Navigation.css" afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Navigation.js" afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/variables.css" afterPath="$PROJECT_DIR$/src/components/variables.css" />
-      <change beforePath="$PROJECT_DIR$/src/createFetch.js" afterPath="$PROJECT_DIR$/src/createFetch.js" />
-      <change beforePath="$PROJECT_DIR$/src/data/models/User.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/data/models/UserClaim.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/data/models/UserLogin.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/data/models/UserProfile.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/data/models/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/data/queries/me.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/data/queries/news.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/data/schema.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/data/sequelize.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/data/types/NewsItemType.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/data/types/UserType.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/routes/home/Home.css" afterPath="$PROJECT_DIR$/src/routes/home/Home.css" />
-      <change beforePath="$PROJECT_DIR$/src/routes/home/Home.js" afterPath="$PROJECT_DIR$/src/routes/home/Home.js" />
-      <change beforePath="$PROJECT_DIR$/src/routes/home/index.js" afterPath="$PROJECT_DIR$/src/routes/home/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/server.js" afterPath="$PROJECT_DIR$/src/server.js" />
-      <change beforePath="$PROJECT_DIR$/tools/postcss.config.js" afterPath="$PROJECT_DIR$/tools/postcss.config.js" />
-      <change beforePath="$PROJECT_DIR$/tools/webpack.config.js" afterPath="$PROJECT_DIR$/tools/webpack.config.js" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -158,19 +49,6 @@
             <state relative-caret-position="498">
               <caret line="35" column="1" lean-forward="false" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Link.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Link/Link.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="57" column="9" lean-forward="false" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#265#291#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -617,16 +495,15 @@
       <option name="presentableId" value="Default" />
       <updated>1520949066001</updated>
       <workItem from="1520949067127" duration="9233000" />
-      <workItem from="1521212447232" duration="48720000" />
+      <workItem from="1521212447232" duration="48767000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57953000" />
+    <option name="totallyTimeSpent" value="58000000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="35" width="3840" height="2125" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -637,7 +514,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12447917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12447917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -663,14 +540,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.storybook/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="862">
-          <caret line="33" column="38" lean-forward="false" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/CardLabel/CardLabel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1144">
@@ -1103,6 +972,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
           <caret line="136" column="0" lean-forward="false" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yarn.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
