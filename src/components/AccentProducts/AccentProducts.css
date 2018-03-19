@@ -1,7 +1,7 @@
 @lost flexbox flex;
 
 .root {
-  padding: 20px;
+  padding: 30px;
   display: flex;
   align-items: stretch;
   justify-content: space-between;
@@ -12,7 +12,9 @@
 }
 
 .product {
-  min-height: 708px;
+  overflow: hidden;
+  position: relative;
+  min-height: 718px;
   background-color: rgb(243, 246, 249);
 }
 
@@ -23,7 +25,7 @@
   justify-content: center;
   padding-left: 40px;
   max-height: 344px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   min-height: 344px;
 
   &:last-child {
