@@ -13,27 +13,34 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Navigation.css';
 import Link from '../Link';
 
-class Navigation extends React.Component {
+class Navigation extends React.PureComponent {
   render() {
+    const { theme, classes } = this.props;
     return (
-      <div className={s.root} role="navigation">
-        <Link className={s.link} to="/about">
-          About
-        </Link>
-        <Link className={s.link} to="/contact">
-          Contact
-        </Link>
-        <span className={s.spacer}> | </span>
-        <Link className={s.link} to="/login">
-          Log in
-        </Link>
-        <span className={s.spacer}>or</span>
-        <Link className={cx(s.link, s.highlight)} to="/register">
-          Sign up
-        </Link>
+      <div className={cx([
+        s.root,
+        s[theme],
+        classes.root,
+      ])} role="navigation">
+        {this.props.list.map(item => (
+          <Link className={s.link} to={item.to} activeClassName={s.activeLink}>
+            {item.txt}
+          </Link>
+        ))}
       </div>
     );
   }
+}
+
+Navigation.defaultProps = {
+  theme: '',
+  classes: { root: '' },
+  list: [
+    { txt: 'Home', to: '/' },
+    { txt: 'Shop', to: '/shop' },
+    { txt: 'About', to: '/about' },
+    { txt: 'Blog', to: '/blog' },
+  ]
 }
 
 export default withStyles(s)(Navigation);

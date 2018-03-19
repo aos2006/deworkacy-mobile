@@ -9,41 +9,59 @@
 
 @import '../../components/variables.css';
 
+@lost flexbox flex;
+
 .root {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-bottom: 100px;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 0 0 40px;
-  max-width: var(--max-content-width);
+.header {
+  margin-bottom: 56px;
+  text-align: center;
 }
 
-.newsItem {
-  margin: 0 0 2rem;
+.title {
+  margin: 0;
+  color: rgb(17, 17, 17);
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.28px;
 }
 
-.newsTitle {
-  font-size: 1.5rem;
+.devider {
+  display: inline-block;
+  width: 70px;
+  height: 1px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  background-color: rgb(17, 17, 17);
 }
 
-.newsDesc {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-size: 1.125rem;
-  }
+.descr {
+  color: rgb(85, 85, 85);
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.14px;
+}
 
-  pre {
-    white-space: pre-wrap;
-    font-size: 0.875rem;
-  }
+.tabsHeader {
+  lost-column: 10/12;
+  lost-offset: 1/12;
+}
 
-  img {
-    max-width: 100%;
-  }
+.jumbotron {
+  margin-bottom: 77px;
+}
+
+.accentProducts {
+  margin-bottom: 100px;
+}
+
+.loadMore {
+  margin-top: 77px;
+  text-align: center;
 }

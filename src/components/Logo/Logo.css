@@ -1,0 +1,13 @@
+.root {
+  width: 119px;
+  color: rgb(0, 0, 0);
+  font-family: Niconne, cursive;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.4px;
+}
+
+.white {
+  color: #fff;
+}

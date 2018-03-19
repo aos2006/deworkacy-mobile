@@ -1,0 +1,6 @@
+{
+  "name": "ServiceFeatures",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ServiceFeatures.js"
+}

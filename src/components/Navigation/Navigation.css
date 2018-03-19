@@ -7,40 +7,40 @@
  * LICENSE.txt file in the root directory of this source tree.
  */
 
-.root {
-  float: right;
-  margin: 6px 0 0;
-}
+.root {}
 
 .link {
   display: inline-block;
-  padding: 3px 8px;
   text-decoration: none;
-  font-size: 1.125em; /* ~18px */
+  color: rgb(17, 17, 17);
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0.18px;
+  margin-right: 35px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
-.link,
 .link:active,
-.link:visited {
-  color: rgba(255, 255, 255, 0.6);
-}
-
+.link:visited,
 .link:hover {
-  color: rgba(255, 255, 255, 1);
+  text-decoration: underline;
+  color: rgb(17, 17, 17);
 }
 
-.highlight {
-  margin-right: 8px;
-  margin-left: 8px;
-  border-radius: 3px;
-  background: rgba(0, 0, 0, 0.15);
-  color: #fff;
+.white .link {
+  color: rgb(241, 241, 241);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
 }
 
-.highlight:hover {
-  background: rgba(0, 0, 0, 0.3);
+.activeLink {
+  text-decoration: underline;
 }
 
-.spacer {
-  color: rgba(255, 255, 255, 0.3);
-}
+

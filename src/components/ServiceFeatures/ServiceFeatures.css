@@ -1,0 +1,42 @@
+@lost flexbox flex;
+
+.root {
+  lost-align: center;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  lost-column: 3/12;
+  height: 139px;
+  padding-top: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+.title {
+  color: rgb(51, 51, 51);
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+}
+
+.descr {
+  color: rgb(51, 51, 51);
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+}
+
+.icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}

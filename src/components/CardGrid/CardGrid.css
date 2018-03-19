@@ -1,0 +1,12 @@
+.root {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.item {
+  lost-column: 3/12 4;
+  margin-bottom: 40px;
+}

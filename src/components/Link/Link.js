@@ -10,6 +10,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import history from '../../history';
+import cx from 'classnames';
 
 function isLeftClickEvent(event) {
   return event.button === 0;
@@ -50,11 +51,24 @@ class Link extends React.Component {
   render() {
     const { to, children, ...props } = this.props;
     return (
-      <a href={to} {...props} onClick={this.handleClick}>
+      <a href={to} {...props} onClick={this.handleClick} className={cx([
+        props.className,
+        {
+          // [props.activeClassName]: to === this.context.pathname || to === history.location.pathname,
+        }
+      ])}>
         {children}
       </a>
     );
   }
 }
+
+Link.defaultProps = {
+  activeClassName: '',
+}
+
+Link.contextTypes = {
+  pathname: PropTypes.string,
+};
 
 export default Link;

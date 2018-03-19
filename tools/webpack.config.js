@@ -1,11 +1,3 @@
-/**
- * React Starter Kit (https://www.reactstarterkit.com/)
- *
- * Copyright © 2014-present Kriasoft, LLC. All rights reserved.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE.txt file in the root directory of this source tree.
- */
 
 import path from 'path';
 import webpack from 'webpack';
@@ -139,7 +131,10 @@ const config = {
 
           // Process internal/project styles (from src folder)
           {
-            include: path.resolve(__dirname, '../src'),
+            include: [
+              path.resolve(__dirname, '../src'),
+              /flexboxgrid/
+            ],
             loader: 'css-loader',
             options: {
               // CSS Loader https://github.com/webpack/css-loader
@@ -182,24 +177,32 @@ const config = {
           // },
         ],
       },
-
       // Rules for images
       {
         test: reImage,
         oneOf: [
+          {
+            test: /\.svg$/,
+            use: [
+              'babel-loader',
+              {
+                loader: "react-svg-loader",
+                options: {
+                  svgo: {
+                    plugins: [
+                      {removeTitle: false}
+                    ],
+                    floatPrecision: 2
+                  }
+                }
+              }
+            ]
+          },
           // Inline lightweight images into CSS
           {
             issuer: reStyle,
             oneOf: [
               // Inline lightweight SVGs as UTF-8 encoded DataUrl string
-              {
-                test: /\.svg$/,
-                loader: 'svg-url-loader',
-                options: {
-                  name: staticAssetName,
-                  limit: 4096, // 4kb
-                },
-              },
 
               // Inline lightweight images as Base64 encoded DataUrl string
               {

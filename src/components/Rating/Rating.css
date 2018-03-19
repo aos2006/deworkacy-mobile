@@ -1,0 +1,20 @@
+.root {
+  /*display: flex;*/
+
+  /*align-items: center;*/
+
+  /*justify-content: flex-start;*/
+}
+
+
+
+
+.star {
+  color: rgb(51, 51, 51);
+  font-size: 15px;
+  margin-right: 5px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

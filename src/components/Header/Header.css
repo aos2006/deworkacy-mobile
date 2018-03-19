@@ -9,46 +9,28 @@
 
 @import '../variables.css';
 
-:root {
-  --brand-color: #61dafb;
+
+
+.root, .middle {
+  background: #fff;
 }
 
-.root {
-  background: #373277;
-  color: #fff;
+.top {
+  background-color: #000;
+  height: 50px;
+  display: flex;
+  align-items: center;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 20px 0;
-  max-width: var(--max-content-width);
+.middle {
+  height: 93px;
+  display: flex;
+  align-items: center;
 }
 
-.brand {
-  color: color(var(--brand-color) lightness(+10%));
-  text-decoration: none;
-  font-size: 1.75em; /* ~28px */
+.row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
 }
 
-.brandTxt {
-  margin-left: 10px;
-}
-
-.banner {
-  text-align: center;
-}
-
-.bannerTitle {
-  margin: 0;
-  padding: 10px;
-  font-weight: normal;
-  font-size: 4em;
-  line-height: 1em;
-}
-
-.bannerDesc {
-  padding: 0;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 1.25em;
-  margin: 0;
-}

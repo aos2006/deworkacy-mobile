@@ -9,16 +9,9 @@
 
 /* @flow */
 
-import type { graphql as graphqType, GraphQLSchema } from 'graphql';
 
 type Fetch = (url: string, options: ?any) => Promise<any>;
 
-type Options = {
-  baseUrl: string,
-  cookie?: string,
-  schema?: GraphQLSchema,
-  graphql?: graphqType,
-};
 
 /**
  * Creates a wrapper function around the HTML5 Fetch API that provides
@@ -28,7 +21,8 @@ type Options = {
  */
 function createFetch(
   fetch: Fetch,
-  { baseUrl, cookie, schema, graphql }: Options,
+  baseUrl,
+  cookie,
 ) {
   // NOTE: Tweak the default options to suite your application needs
   const defaults = {
@@ -43,22 +37,7 @@ function createFetch(
   };
 
   return async (url: string, options: any) => {
-    const isGraphQL = url.startsWith('/graphql');
-    if (schema && graphql && isGraphQL) {
-      // We're SSR, so route the graphql internal to avoid latency
-      const query = JSON.parse(options.body);
-      const result = await graphql(
-        schema,
-        query.query,
-        { request: {} }, // fill in request vars needed by graphql
-        null,
-        query.variables,
-      );
-      return Promise.resolve({
-        status: result.errors ? 400 : 200,
-        json: () => Promise.resolve(result),
-      });
-    }
+    const isGraphQL = url.startsWith('/');
 
     return isGraphQL || url.startsWith('/api')
       ? fetch(`${baseUrl}${url}`, {

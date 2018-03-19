@@ -10,6 +10,13 @@
 // Babel configuration
 // https://babeljs.io/docs/usage/api/
 module.exports = {
+  plugins: [
+    "@babel/plugin-transform-runtime",
+    ['import', {
+      libraryName: 'antd',
+      style: 'css',
+    }]
+  ],
   presets: [
     [
       '@babel/preset-env',
@@ -23,5 +30,6 @@ module.exports = {
     '@babel/preset-flow',
     '@babel/preset-react',
   ],
+
   ignore: ['node_modules', 'build'],
 };

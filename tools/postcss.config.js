@@ -30,6 +30,7 @@ module.exports = () => ({
     // W3C CSS Custom Selectors, e.g. @custom-selector :--heading h1, h2, h3, h4, h5, h6;
     // https://github.com/postcss/postcss-custom-selectors
     require('postcss-custom-selectors')(),
+    require('lost')(),
     // W3C calc() function, e.g. div { height: calc(100px - 2em); }
     // https://github.com/postcss/postcss-calc
     require('postcss-calc')(),

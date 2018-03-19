@@ -1,0 +1,27 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.item {
+  margin-right: 20px;
+}
+
+.icon {
+  color: #fff;
+}
+
+.center {
+  justify-content: center;
+}
+
+.circle a {
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+}

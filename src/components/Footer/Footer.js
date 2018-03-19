@@ -9,32 +9,35 @@
 
 import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import ServiceFeatures from 'components/ServiceFeatures';
+import Container from 'components/Container';
+import Logo from 'components/Logo';
+import Navigation from 'components/Navigation';
+import SocialsList from 'components/SocialsList';
 import s from './Footer.css';
-import Link from '../Link';
 
 class Footer extends React.Component {
   render() {
     return (
       <div className={s.root}>
-        <div className={s.container}>
-          <span className={s.text}>© Your Company</span>
-          <span className={s.spacer}>·</span>
-          <Link className={s.link} to="/">
-            Home
-          </Link>
-          <span className={s.spacer}>·</span>
-          <Link className={s.link} to="/admin">
-            Admin
-          </Link>
-          <span className={s.spacer}>·</span>
-          <Link className={s.link} to="/privacy">
-            Privacy
-          </Link>
-          <span className={s.spacer}>·</span>
-          <Link className={s.link} to="/not-found">
-            Not Found
-          </Link>
-        </div>
+        <Container>
+          <ServiceFeatures classes={{ root: s.services }} />
+          <Logo theme="white" classes={{ root: s.logo }} />
+          <p className={s.descr}>
+            A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it
+            there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded
+            frame.
+          </p>
+          <SocialsList
+            type="circle"
+            center
+            classes={{root: s.socials}}
+          />
+          <Navigation theme="white" classes={{ root: s.navigation }} />
+          <p className={s.terms}>
+            © 2017 Shippon.All rights reserved.
+          </p>
+        </Container>
       </div>
     );
   }

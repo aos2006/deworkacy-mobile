@@ -1,0 +1,63 @@
+.root {
+  max-width: 270px;
+  overflow: hidden;
+}
+
+
+.header {
+  position: relative;
+}
+
+.inner {
+  position: relative;
+  height: 382px;
+  background-color: rgb(243, 246, 249);
+}
+
+.footer {
+  padding-top: 20px;
+  background-color: #fff;
+}
+
+
+.footerHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(17, 17, 17);
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+}
+
+.brand {
+  color: rgb(153, 153, 153);
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.14px;
+}
+
+.like {
+  position: absolute;
+  right: 21px;
+  top: 21px;
+  transition: color 0.2s linear;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+
+  &:hover {
+    color: rgb(0, 0, 0);
+  }
+}
+
+.disabled .footerHeader {
+  color: rgba(17, 17, 17, 0.2);
+}
+
+.disabled .brand {
+  color: rgba(153, 153, 153, 0.2);
+}
