@@ -188,6 +188,7 @@ textarea {
 
 
 a {
+  text-decoration: none;
   cursor: pointer;
   &:hover  {
      color: currentColor;

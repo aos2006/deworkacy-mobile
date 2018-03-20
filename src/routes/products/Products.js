@@ -12,32 +12,90 @@ import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import Container from 'components/Container';
 import Breadcrumbs from 'components/Breadcrumbs';
+import SpecialProducts from 'components/SpecialProducts';
+import Filters from 'modules/Filters/components';
+import CardGrid from 'components/CardGrid';
+import Select from 'components/Select';
 import s from './Products.css';
 
-
 class Products extends React.Component {
-  static propTypes = {
-    news: PropTypes.arrayOf(
-      PropTypes.shape({
-        title: PropTypes.string.isRequired,
-        link: PropTypes.string.isRequired,
-        content: PropTypes.string,
-      }),
-    ).isRequired,
-  };
+
 
   render() {
     return (
       <div className={s.root}>
         <Breadcrumbs
-          list={[
-            { txt: 'Home', to: '/' },
-            { txt: 'Shop', to: '/shop' }
-          ]}
+          list={[{ txt: 'Home', to: '/' }, { txt: 'Shop', to: '/shop' }]}
         />
-       <Container>
-         porducts
-       </Container>
+        <SpecialProducts
+          classes={{
+            root: s.specials,
+          }}
+        />
+        <Container className={s.container}>
+          <div className={s.filters}>
+            <Filters />
+          </div>
+          <div className={s.grid}>
+            <div className={s.sortingList}>
+              <Select/>
+            </div>
+            <CardGrid
+              gridCount="item-3"
+              list={[
+                {
+                  name: 'Aiaiai TMA-1 Studio',
+                  brand: 'Headphones,Studio',
+                  price: '$125',
+                  labelTxt: '-20%',
+                  labelType: 'tape',
+                },
+                {
+                  name: 'Aiaiai TMA-1 Studio',
+                  brand: 'Headphones,Studio',
+                  price: '$125',
+                  labelTxt: '-20%',
+                  labelType: 'tape',
+                },
+                {
+                  name: 'Aiaiai TMA-1 Studio',
+                  brand: 'Headphones,Studio',
+                  price: '$125',
+                  labelTxt: '-20%',
+                  labelType: 'tape',
+                },
+                {
+                  name: 'Aiaiai TMA-1 Studio',
+                  brand: 'Headphones,Studio',
+                  price: '$125',
+                  labelTxt: '-20%',
+                  labelType: 'tape',
+                },
+                {
+                  name: 'Aiaiai TMA-1 Studio',
+                  brand: 'Headphones,Studio',
+                  price: '$125',
+                  labelTxt: '-20%',
+                  labelType: 'tape',
+                },
+                {
+                  name: 'Aiaiai TMA-1 Studio',
+                  brand: 'Headphones,Studio',
+                  price: '$125',
+                  labelTxt: 'Out of Stock',
+                  labelType: 'stock',
+                },
+                {
+                  name: 'Aiaiai TMA-1 Studio',
+                  brand: 'Headphones,Studio',
+                  price: '$125',
+                  labelTxt: 'New',
+                  labelType: 'tape',
+                },
+              ]}
+            />
+          </div>
+        </Container>
       </div>
     );
   }

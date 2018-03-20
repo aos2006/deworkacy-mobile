@@ -8,12 +8,14 @@ const Button = ({
   classes,
   onClick,
   children,
+  theme,
 }) => (
   <button
     onClick={onClick}
     className={cx(
       [
         s.root,
+        [s[theme]]: true,
         classes.root,
       ],
     )}>
@@ -22,6 +24,7 @@ const Button = ({
 );
 Button.defaultProps = {
   classes: { root: '' },
+  theme: '',
 };
 
 Button.propTypes = {

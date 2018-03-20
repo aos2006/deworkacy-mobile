@@ -1,6 +1,8 @@
 const fs = require('fs');
 var mkdirp = require('mkdirp');
 const moduleName = process.argv[2];
+const modulePath = process.argv[3] || './src/components/';
+
 const jsTemplate = `
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -20,17 +22,18 @@ const packageTemplate = `
 }`;
 
 
-mkdirp(`./src/components/${moduleName}`, function (err) {
-  fs.writeFile(`./src/components/${moduleName}/${moduleName}.js`, jsTemplate, function (err) {
+mkdirp(`${modulePath}${moduleName}`, function (err) {
+  if(err) return console.log(err);
+  fs.writeFile(`${modulePath}${moduleName}/${moduleName}.js`, jsTemplate, function (err) {
     if (err) return console.log(err);
     console.log('Wrote Hello World in file helloworld.txt, just check it');
   });
-  fs.writeFile(`./src/components/${moduleName}/${moduleName}.css`, '', function (err) {
+  fs.writeFile(`${modulePath}${moduleName}/${moduleName}.css`, '', function (err) {
     if (err) return console.log(err);
     console.log('Wrote Hello World in file helloworld.txt, just check it');
   });
 
-  fs.writeFile(`./src/components/${moduleName}/package.json`, packageTemplate, function (err) {
+  fs.writeFile(`${modulePath}${moduleName}/package.json`, packageTemplate, function (err) {
     if (err) return console.log(err);
     console.log('Wrote Hello World in file helloworld.txt, just check it');
   });

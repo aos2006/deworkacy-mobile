@@ -48,7 +48,6 @@ class Html extends React.Component {
             <link key={script} rel="preload" href={script} as="script" />
           ))}
           <link rel="manifest" href="/site.webmanifest" />
-          <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css" />
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
           <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600" rel="stylesheet" />
           <link href="https://fonts.googleapis.com/css?family=Niconne:400" rel="stylesheet" />

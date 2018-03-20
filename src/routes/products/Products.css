@@ -1,0 +1,28 @@
+@lost flexbox flex;
+
+.root {}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.filters {
+  lost-column: 3/12;
+}
+.specials {
+  margin-bottom: 80px;
+}
+
+.grid {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  lost-column: 9/12 1;
+}
+
+.sortingList {
+  width: 213px;
+  margin-left: auto;
+  margin-bottom: 30px;
+}

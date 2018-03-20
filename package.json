@@ -6,7 +6,12 @@
     "node": ">=6.5",
     "npm": ">=3.10"
   },
-  "browserslist": [">1%", "last 4 versions", "Firefox ESR", "not ie < 9"],
+  "browserslist": [
+    ">1%",
+    "last 4 versions",
+    "Firefox ESR",
+    "not ie < 9"
+  ],
   "dependencies": {
     "@babel/plugin-transform-runtime": "^7.0.0-beta.42",
     "@babel/polyfill": "7.0.0-beta.39",
@@ -35,12 +40,15 @@
     "pretty-error": "^2.1.1",
     "prop-types": "^15.6.0",
     "query-string": "^5.0.1",
+    "rc-slider": "^8.6.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-fontawesome": "^1.6.1",
     "react-redux": "^5.0.6",
+    "react-select": "^1.2.1",
     "react-svg-loader": "^2.1.0",
     "react-tabs": "^2.2.1",
+    "react-treebeard": "^2.1.0",
     "redux": "^3.7.2",
     "redux-devtools-extension": "^2.13.2",
     "redux-logger": "^3.0.6",
@@ -132,7 +140,6 @@
     "webpack-hot-middleware": "^2.21.0",
     "webpack-node-externals": "^1.6.0"
   },
-
   "scripts": {
     "lint-js": "eslint --ignore-path .gitignore --ignore-pattern \"!**/.*\" .",
     "lint-css": "stylelint \"src/**/*.{css,less,styl,scss,sass,sss}\"",

@@ -10,3 +10,9 @@
   lost-column: 3/12 4;
   margin-bottom: 40px;
 }
+
+.item-3 {
+  .item {
+    lost-column: 4/12 3;
+  }
+}
