@@ -23,7 +23,8 @@ import createFetch from './createFetch';
 import router from './router';
 import assets from './assets.json'; // eslint-disable-line import/no-unresolved
 import configureStore from './store/configureStore';
-import { setRuntimeVariable } from './actions/runtime';
+import Immutable from 'seamless-immutable';
+import User from 'modules/User';
 import config from './config';
 
 process.on('unhandledRejection', (reason, p) => {
@@ -73,17 +74,10 @@ app.get('*', async (req, res, next) => {
         symbol: '$',
         type: 'usd',
       },
-      user: req.user || null,
+      [User.types.NAME]: Immutable(User.reducer.defaultState),
     };
 
     const store = configureStore(initialState, {});
-
-    store.dispatch(
-      setRuntimeVariable({
-        name: 'initialNow',
-        value: Date.now(),
-      }),
-    );
 
     // Global (context) variables that can be easily accessed from any React component
     // https://facebook.github.io/react/docs/context.html

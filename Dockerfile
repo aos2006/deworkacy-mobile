@@ -13,6 +13,7 @@ RUN yarn install --production --no-progress
 COPY ./build .
 
 # Run the container under "node" user by default
+EXPOSE 4000
 USER node
 
 CMD [ "node", "server.js" ]

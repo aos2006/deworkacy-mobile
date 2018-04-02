@@ -12,4 +12,3 @@ export const taggedReducer = (reducer, rName) => (state, action) => {
   if (name !== rName && !isInitializationCall) return state;
   return reducer(state, action);
 };
-

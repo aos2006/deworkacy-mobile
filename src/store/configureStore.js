@@ -1,14 +1,18 @@
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension/developmentOnly';
+import createSagaMiddleware from 'redux-saga';
 import { name, version } from '../../package.json';
-import rootReducer from '../reducers';
 import createHelpers from './createHelpers';
 import createLogger from './logger';
+import sagas from '../rootSagas';
+import rootReducer from '../rootReducer';
+import Immutable from 'seamless-immutable';
 
 export default function configureStore(initialState, helpersConfig) {
   const helpers = createHelpers(helpersConfig);
-  const middleware = [thunk.withExtraArgument(helpers)];
+  const sagaMiddleware = createSagaMiddleware();
+  const middleware = [thunk.withExtraArgument(helpers), sagaMiddleware];
 
   let enhancer;
 
@@ -28,7 +32,7 @@ export default function configureStore(initialState, helpersConfig) {
   }
 
   // https://redux.js.org/docs/api/createStore.html
-  const store = createStore(rootReducer, initialState, enhancer);
+  const store = createStore(rootReducer, Immutable(initialState), enhancer);
 
   // Hot reload reducers (requires Webpack or Browserify HMR to be enabled)
   if (__DEV__ && module.hot) {
@@ -37,6 +41,6 @@ export default function configureStore(initialState, helpersConfig) {
       store.replaceReducer(require('../reducers').default),
     );
   }
-
+  sagaMiddleware.run(sagas);
   return store;
 }

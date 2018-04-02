@@ -1,23 +1,29 @@
 {
   "products": {
-    "js": "/assets/products.2543543a.chunk.js"
+    "js": "/assets/products.chunk.js"
+  },
+  "register": {
+    "js": "/assets/register.chunk.js"
   },
   "privacy": {
-    "js": "/assets/privacy.9884f2c2.chunk.js"
+    "js": "/assets/privacy.chunk.js"
   },
   "about": {
-    "js": "/assets/about.cdc1d8fb.chunk.js"
+    "js": "/assets/about.chunk.js"
   },
   "not-found": {
-    "js": "/assets/not-found.07d50935.chunk.js"
+    "js": "/assets/not-found.chunk.js"
+  },
+  "lk": {
+    "js": "/assets/lk.chunk.js"
   },
   "contact": {
-    "js": "/assets/contact.3b3829cf.chunk.js"
+    "js": "/assets/contact.chunk.js"
   },
   "client": {
-    "js": "/assets/client.f8b1daf4.js"
+    "js": "/assets/client.js"
   },
   "vendor": {
-    "js": "/assets/vendor.08fd3ecc.js"
+    "js": "/assets/vendor.js"
   }
 }
