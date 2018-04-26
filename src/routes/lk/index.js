@@ -13,7 +13,11 @@ import Contact from './Lk';
 
 const title = 'Contact Us';
 
-function action() {
+function action(context) {
+  if (!context.store.getState().user.email) {
+    return {redirect: '/register'}
+  }
+
   return {
     chunks: ['lk'],
     title,

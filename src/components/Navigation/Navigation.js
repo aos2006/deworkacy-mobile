@@ -40,6 +40,7 @@ Navigation.defaultProps = {
     { txt: 'Shop', to: '/shop' },
     { txt: 'About', to: '/about' },
     { txt: 'Blog', to: '/blog' },
+    { txt: 'Personal', to: '/personal' },
   ]
 }
 

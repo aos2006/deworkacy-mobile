@@ -6,7 +6,7 @@ import history from '../../history';
 
 function* watchRegister(action) {
   const { payload, name } = action;
-  if (name === types.REGISTER) {
+  if (name === types.REGISTER || name === types.LOGIN) {
     history.push('/personal');
   }
 }

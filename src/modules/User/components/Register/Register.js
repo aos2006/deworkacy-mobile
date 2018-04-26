@@ -5,14 +5,14 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import cx from 'classnames';
 import s from './Register.css';
 import { Input, Group } from 'components/Form';
+import AlreadyFoooter from '../AlreadyFooter';
 import Title from 'components/Title';
-import Button from 'components/Button';
 import * as actions from '../../actions';
 import * as types from '../../actionTypes';
 import Validator from 'modules/Validator';
 import { Formik } from 'formik';
 
-const Register = ({ register, serverErrors, isLoading }) => (
+const Register = ({ register, serverErrors, isLoading, reset }) => (
   <Formik
     validationSchema={Validator.object().shape({
       email: Validator.string()
@@ -46,11 +46,10 @@ const Register = ({ register, serverErrors, isLoading }) => (
         email: values.email,
         password: values.password,
       });
-      setTimeout(() => setSubmitting(false), 1000);
     }}
     render={({ values, errors, handleSubmit, handleChange }) => {
       const errs = Object.assign({}, serverErrors, errors);
-      console.log(isLoading);
+
       return (
         <div className={s.root}>
           <Title type="h2" center>
@@ -74,19 +73,31 @@ const Register = ({ register, serverErrors, isLoading }) => (
                 placeholder="Email"
                 type="text"
                 value={values.email}
-                onChange={handleChange}
+                onChange={(props) => {
+                  if (serverErrors.email) {
+                    reset();
+                  }
+                  handleChange(props)
+                }}
                 error={errs.email}
               />
             </Group>
             <Group>
               <Input
+                mask={['+', '7', '(',/[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
                 label="Телефон*"
+                guide={true}
                 placeholder="Телефон"
                 type="tel"
                 name="phone"
                 error={errs.phone}
                 value={values.phone}
-                onChange={handleChange}
+                onChange={(props) => {
+                  if (serverErrors.phone) {
+                    reset()
+                  }
+                  handleChange(props)
+                }}
               />
             </Group>
             <Group>
@@ -100,21 +111,13 @@ const Register = ({ register, serverErrors, isLoading }) => (
                 onChange={handleChange}
               />
             </Group>
-            <Button
-              type="submit"
-              isLoading={isLoading}
-              theme="black"
-              fullWidth
-            >
-              Register
-            </Button>
-            <div className={s.already}>
-              <span/>
-              <span>Already have an account?</span>
-            </div>
-            <Button type="submit" theme="gray" fullWidth>
-              Login
-            </Button>
+           <AlreadyFoooter
+            descr="Already have an account?"
+            buttons={[
+              { txt: 'Register' },
+              { txt: 'Login' }
+            ]}
+           />
           </form>
         </div>
 
@@ -130,5 +133,5 @@ export default connect(
       ...state[types.NAME].register.errors,
     },
   }),
-  { register: actions.register },
+  { register: actions.register, reset: actions.resetErrors },
 )(withStyles(s)(Register));

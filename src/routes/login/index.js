@@ -10,6 +10,7 @@
 import React from 'react';
 import Layout from '../../components/Layout';
 import Login from './Login';
+import Breadcrumbs from 'components/Breadcrumbs';
 
 const title = 'Log In';
 
@@ -19,6 +20,13 @@ function action() {
     title,
     component: (
       <Layout>
+        <Breadcrumbs
+          list={[
+            {to: '/', txt: 'Home'},
+            {to: '/shop', txt: 'Shop'},
+            {to: '/register', txt: 'Login'},
+          ]}
+        />
         <Login title={title} />
       </Layout>
     ),
