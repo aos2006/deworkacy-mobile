@@ -24,7 +24,6 @@ import router from './router';
 import assets from './assets.json'; // eslint-disable-line import/no-unresolved
 import configureStore from './store/configureStore';
 import Immutable from 'seamless-immutable';
-import User from 'modules/User';
 import config from './config';
 
 process.on('unhandledRejection', (reason, p) => {
@@ -74,7 +73,6 @@ app.get('*', async (req, res, next) => {
         symbol: '$',
         type: 'usd',
       },
-      [User.types.NAME]: Immutable(User.reducer.defaultState),
     };
 
     const store = configureStore(initialState, {});

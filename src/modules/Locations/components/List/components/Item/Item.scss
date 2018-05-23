@@ -1,0 +1,51 @@
+@import "src/styles/grid";
+@import "src/styles/fonts";
+
+.root {
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.11);
+  border-radius: 2px;
+  background-color: #242a32;
+  transform-origin: center center 0px;
+  transition: all 0.2s ease 0s;
+  @include susy-phone() {
+    //height: 153px;
+    margin: 0 2px;
+    padding: 17px 20px 17px 20px;
+  }
+}
+
+h2.title {
+  @include susy-phone() {
+    margin-bottom: 4px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+  }
+}
+
+.para {
+  margin: 0;
+}
+
+.header {
+  @include susy-phone() {
+    margin-bottom: 5px;
+    p {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0;
+    }
+  }
+  span {
+    @include fontBold();
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 0.81px;
+  }
+}
+
+.active {
+  background-color: #65c8ce;
+}

@@ -8,7 +8,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import cx from 'classnames';
-import s from './${moduleName}.css';
+import s from './${moduleName}.scss';
 const ${moduleName} = props => ();
 
 export default withStyles(s)(${moduleName})`;
@@ -28,7 +28,7 @@ mkdirp(`${modulePath}${moduleName}`, function (err) {
     if (err) return console.log(err);
     console.log('Wrote Hello World in file helloworld.txt, just check it');
   });
-  fs.writeFile(`${modulePath}${moduleName}/${moduleName}.css`, '', function (err) {
+  fs.writeFile(`${modulePath}${moduleName}/${moduleName}.scss`, '', function (err) {
     if (err) return console.log(err);
     console.log('Wrote Hello World in file helloworld.txt, just check it');
   });

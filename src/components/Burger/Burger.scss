@@ -1,0 +1,22 @@
+@import "src/styles/vars";
+
+.root {
+  background-color: transparent;
+  cursor: pointer;
+  border-color: transparent;
+  outline: none;
+
+  //svg circle {
+  //  transition: fill .2s ease-in-out;
+  //}
+  //&:hover {
+  //  svg circle {
+  //    fill: $primary-hover;
+  //  }
+  //}
+  //&:focus {
+  //  svg circle {
+  //    fill: $primary-focus
+  //  }
+  //}
+}

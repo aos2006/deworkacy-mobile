@@ -1,9 +1,6 @@
 import { combineReducers } from 'redux';
-import User from 'modules/User';
+import Locations from 'modules/Locations';
 
 export default combineReducers({
-  user: combineReducers({
-    login: User.reducer.loginReducer,
-    register: User.reducer.registerReducer,
-  }),
+  [Locations.types.NAME]: Locations.reducer,
 });

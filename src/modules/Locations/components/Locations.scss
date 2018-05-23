@@ -1,0 +1,39 @@
+@import "src/styles/grid";
+@import "src/styles/fonts";
+.root {
+  @include susy-phone() {
+    height: 100%;
+  }
+}
+.map {
+  position: relative;
+  @include susy-phone() {
+    height: 100%;
+  }
+}
+
+.list {
+  position: absolute;
+  bottom: 33px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.header {
+  @include susy-phone() {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 15px;
+    right: 15px;
+  }
+}
+
+h2.title {
+  @include fontBold();
+  @include susy-phone() {
+    font-size: 24px;
+    line-height: 31px;
+  }
+}

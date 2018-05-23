@@ -2,7 +2,7 @@
 import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import cx from 'classnames';
-import s from './Container.css';
+import s from './Container.scss';
 
 const Container = props => (
   <div className={cx(

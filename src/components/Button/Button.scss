@@ -1,0 +1,62 @@
+@import "src/styles/fonts";
+@import "src/styles/vars";
+
+.root {
+  position: relative;
+  padding: 15px 0;
+  border: none;
+  outline: none;
+  @include fontBold();
+  background-color: $primary;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0.26px;
+  text-align: center;
+  line-height: 19px;
+  min-width: 150px;
+  min-height: 50px;
+  transition: background-color .2s ease-in-out;
+
+  &:hover {
+    background-color: $primary-hover;
+  }
+  &:focus {
+    background-color: $primary-focus;
+  }
+}
+
+
+
+.fullWidth {
+  width: 100%;
+}
+
+.disabled {
+  /* Base_buttons: */
+  background: $disabled;
+  &:hover, &:focus {
+    background-color: $disabled;
+  }
+}
+
+.arrow {
+  animation: rotate 1s infinite forwards linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.spin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

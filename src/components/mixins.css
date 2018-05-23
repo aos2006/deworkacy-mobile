@@ -1,0 +1,5 @@
+@define-mixin font $w {
+  font-family: 'PF Bague Sans Pro';
+  font-style: normal;
+  font-weight: $(w);
+}

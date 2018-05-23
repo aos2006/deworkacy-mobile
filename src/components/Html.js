@@ -53,6 +53,10 @@ class Html extends React.Component {
           <link href="https://fonts.googleapis.com/css?family=Niconne:400" rel="stylesheet" />
           <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700" rel="stylesheet" />
           <link rel="apple-touch-icon" href="/icon.png" />
+          <link rel="stylesheet" type="text/css" charSet="UTF-8"
+                href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"/>
+          <link rel="stylesheet" type="text/css"
+                href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"/>
           {styles.map(style => (
             <style
               key={style.id}
@@ -85,7 +89,21 @@ class Html extends React.Component {
               defer
             />
           )}
-        </body>
+          <script
+            src="http://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous" />
+          <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"
+          />
+          <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js"
+          />
+        <script dangerouslySetInnerHTML={{
+          __html: '$(\'#page\').fullpage({ "fadingEffect": true, touchSensitivity: 5, paddingTop: 0, paddingBottom: 0, lazyLoading: false});'
+        }} />
+
+          </body>
       </html>
     );
   }

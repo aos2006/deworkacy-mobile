@@ -1,0 +1,73 @@
+/**
+ * React Starter Kit (https://www.reactstarterkit.com/)
+ *
+ * Copyright © 2014-present Kriasoft, LLC. All rights reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+@import "src/styles/grid";
+@import '../variables.css';
+
+
+
+.root {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: none;
+  width: 100%;
+   @include susy-phone() {}
+}
+
+.container {
+  @include susy-phone() {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.burger {
+  display: none;
+}
+
+.phone {
+  position: relative;
+  //margin-right: 8px;
+  svg circle {
+    transition: fill .2s ease-in-out;
+  }
+  &:hover {
+    svg circle {
+      fill: #BF2641
+    }
+  }
+
+  &:focus {
+    svg circle {
+      fill: #81192B;
+    }
+  }
+}
+
+.logo {
+  @include susy-phone() {
+
+    svg {
+      width: 95px;
+      height: 28px;
+    }
+  }
+}
+
+
+.actions {
+  //@include susy-phone() {
+  //  right: 10px;
+  //  top: 10px;
+  //}
+}

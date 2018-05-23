@@ -1,0 +1,7 @@
+
+{
+  "name": "SponceredBy",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./SponceredBy.js"
+}

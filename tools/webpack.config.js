@@ -96,6 +96,11 @@ const config = {
             ['@babel/preset-react', { development: isDebug }],
           ],
           plugins: [
+            '@babel/transform-runtime',
+            ['import', {
+              libraryName: 'antd',
+              style: 'css',
+            }],
             // Treat React JSX elements as value types and hoist them to the highest scope
             // https://github.com/babel/babel/tree/master/packages/babel-plugin-transform-react-constant-elements
             ...(isDebug ? [] : ['@babel/transform-react-constant-elements']),
@@ -131,9 +136,13 @@ const config = {
 
           // Process internal/project styles (from src folder)
           {
+            exclude: [
+              /antdTheme/,
+              /globalStyles/,
+            ],
             include: [
               path.resolve(__dirname, '../src'),
-              /flexboxgrid/
+              /flexboxgrid/,
             ],
             loader: 'css-loader',
             options: {
@@ -168,19 +177,32 @@ const config = {
           //   loader: 'less-loader',
           // },
 
-          // Compile Sass to CSS
-          // https://github.com/webpack-contrib/sass-loader
-          // Install dependencies before uncommenting: yarn add --dev sass-loader node-sass
-          // {
-          //   test: /\.(scss|sass)$/,
-          //   loader: 'sass-loader',
-          // },
+          {
+            test: /\.(scss|sass)$/,
+            loader: 'sass-loader',
+          },
         ],
       },
       // Rules for images
       {
         test: reImage,
         oneOf: [
+          // Inline lightweight images into CSS
+          {
+            issuer: reStyle,
+            oneOf: [
+              // Inline lightweight SVGs as UTF-8 encoded DataUrl string
+
+              // Inline lightweight images as Base64 encoded DataUrl string
+              {
+                loader: 'url-loader',
+                options: {
+                  name: staticAssetName,
+                  limit: 4096, // 4kb
+                },
+              },
+            ],
+          },
           {
             test: /\.svg$/,
             use: [
@@ -198,21 +220,12 @@ const config = {
               }
             ]
           },
-          // Inline lightweight images into CSS
           {
-            issuer: reStyle,
-            oneOf: [
-              // Inline lightweight SVGs as UTF-8 encoded DataUrl string
-
-              // Inline lightweight images as Base64 encoded DataUrl string
-              {
-                loader: 'url-loader',
-                options: {
-                  name: staticAssetName,
-                  limit: 4096, // 4kb
-                },
-              },
-            ],
+            test: /\.(woff|woff2|ttf)$/i,
+            loader: 'url-loader',
+            options: {
+              name: staticAssetName,
+            }
           },
 
           // Or return public URL to image resource
@@ -308,6 +321,15 @@ const clientConfig = {
       'process.env.NODE_ENV': isDebug ? '"development"' : '"production"',
       'process.env.BROWSER': true,
       __DEV__: isDebug,
+    }),
+
+    new webpack.ProvidePlugin({
+      '$': 'jquery',
+      'window.$': 'jquery',
+      jquery: 'jquery',
+      jQuery: 'jquery',
+      'window.jquery': 'jquery',
+      'window.jQuery': 'jquery',
     }),
 
     // Emit a file with assets paths
@@ -448,7 +470,7 @@ const serverConfig = {
   externals: [
     './assets.json',
     nodeExternals({
-      whitelist: [reStyle, reImage],
+      whitelist: [reStyle, reImage, /antd/],
     }),
   ],
 

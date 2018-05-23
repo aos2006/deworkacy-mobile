@@ -10,11 +10,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import Footer from 'components/Footer';
 // external-global styles must be imported in your JS.
 import normalizeCss from 'normalize.css';
+import fontStyles from './fonts/stylesheet.css';
+import grid from '../../styles/grid.scss';
 import s from './Layout.css';
 import Header from '../Header';
+import notifyS from 'antd/lib/notification/style/index.css';
+import baseAntdStyle from 'antd/lib/style/index.css';
+import globalS from './globalStyles/global.scss';
+
 
 class Layout extends React.Component {
   static propTypes = {
@@ -24,12 +29,11 @@ class Layout extends React.Component {
   render() {
     return (
       <div>
-        <Header />
+        {this.props.noHeader || <Header/>}
         {this.props.children}
-        <Footer />
       </div>
     );
   }
 }
 
-export default withStyles(normalizeCss, s)(Layout);
+export default withStyles(baseAntdStyle, normalizeCss, notifyS, fontStyles, grid, globalS, s)(Layout);

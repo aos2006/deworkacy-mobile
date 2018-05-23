@@ -4,24 +4,15 @@ import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import cx from 'classnames';
 import s from './Logo.css';
+import Dwy from './dwy.svg';
 
-const Logo = ({
-  classes,
-  theme,
-              }) => (
+const Logo = props => (
   <div className={cx([
     s.root,
-    s[theme],
-    classes.root,
+    props.className,
   ])}>
-    Shippon
+    <Dwy />
   </div>
 );
-
-
-Logo.defaultProps = {
-  theme: '',
-  classes: { root: '' },
-};
 
 export default withStyles(s)(Logo)

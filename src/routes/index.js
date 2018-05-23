@@ -22,32 +22,8 @@ const routes = {
       load: () => import(/* webpackMode: 'eager' */ './home'),
     },
     {
-      path: '/shop',
-      load: () => import(/* webpackChunkName: 'products' */ './products'),
-    },
-    {
-      path: '/register',
-      load: () => import(/* webpackChunkName: 'register' */ './register'),
-    },
-    {
-      path: '/login',
-      load: () => import(/* webpackChunkName: 'login' */ './login'),
-    },
-    {
-      path: '/contact',
-      load: () => import(/* webpackChunkName: 'contact' */ './contact'),
-    },
-    {
-      path: '/personal',
-      load: () => import(/* webpackChunkName: 'lk' */ './lk'),
-    },
-    {
-      path: '/about',
-      load: () => import(/* webpackChunkName: 'about' */ './about'),
-    },
-    {
-      path: '/privacy',
-      load: () => import(/* webpackChunkName: 'privacy' */ './privacy'),
+      path: '/ui',
+      load: () => import(/* webpackChunkName: 'ui' */ './ui'),
     },
     // Wildcard routes, e.g. { path: '(.*)', ... } (must go last)
     {

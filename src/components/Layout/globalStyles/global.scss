@@ -1,0 +1,14 @@
+.section {
+  opacity: 0;
+  transition: opacity .2s ease-out;
+}
+
+.section.active {
+  opacity: 1;
+}
+
+.fp-viewing-0 {
+  .app-header {
+    display: block;
+  }
+}

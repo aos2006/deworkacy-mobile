@@ -23,7 +23,13 @@ module.exports = () => ({
     require('postcss-custom-properties')(),
     // W3C CSS Custom Media Queries, e.g. @custom-media --small-viewport (max-width: 30em);
     // https://github.com/postcss/postcss-custom-media
-    require('postcss-custom-media')(),
+    require('postcss-custom-media')({
+      extensions: {
+        '--phone': '(min-width: 315px)',
+        '--tablet': '(min-width: 525px)',
+      }
+    }),
+    require('postcss-mixins')(),
     // CSS4 Media Queries, e.g. @media screen and (width >= 500px) and (width <= 1200px) { }
     // https://github.com/postcss/postcss-media-minmax
     require('postcss-media-minmax')(),

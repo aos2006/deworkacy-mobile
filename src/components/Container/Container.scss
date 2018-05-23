@@ -1,0 +1,23 @@
+@import "src/styles/grid";
+@import '~susy/sass/plugins/svg-grid/prefix';
+
+
+.root {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1170px;
+  //background: susy-svg-grid() no-repeat scroll;
+  @include susy-phone() {
+    padding-left: 15px;
+    padding-right: 15px;
+    //max-width: 320px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+

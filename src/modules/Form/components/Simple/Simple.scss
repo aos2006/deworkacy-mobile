@@ -1,0 +1,56 @@
+@import "src/styles/fonts";
+@import "src/styles/grid";
+
+.root {
+  background-image: url('../icons/mailBg.svg');
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  @include susy-phone() {
+    padding-top: 74px;
+    padding-bottom: 32px;
+    background-size: 332px 260px;
+  }
+}
+
+.label {
+  display: block;
+  @include fontNormal();
+  color: #8e9397;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 12px;
+}
+
+
+.inputGroup {
+  margin-bottom: 15px;
+}
+
+h3.title {
+  @include susy-phone() {
+    text-align: center;
+  }
+}
+
+.para {
+  @include susy-phone() {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+}
+
+.radioGroup {
+  @include susy-phone() {
+    margin-bottom: 30px;
+  }
+}
+
+.radio {
+  @include susy-phone() {
+    margin-bottom: 17px;
+  }
+}
+
+.tooltip {
+  width: 100%;
+}

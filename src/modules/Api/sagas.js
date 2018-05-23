@@ -5,21 +5,25 @@ import api from './actions';
 function getErrorData(data){
   return data.json().then(data => data);
 }
-function* fetch({ url, params, method = 'get', name = 'NOTHING_TYPE' }) {
+
+const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
+function* fetch({ url, params, method = 'get', name = 'NOTHING_TYPE', isMock = false, mockData = {}, type = '', meta = {} }) {
   try {
-    // yield put({ type: `${name}_${types.REQUEST_START}`, name });
-    const resp = yield call(api[method.toLowerCase()], { url, params });
+    const resp = yield call(api[method.toLowerCase()], { url, params })
     yield put({
-      type: types.REQUEST_SUCCESS,
+      type: `${name}_request_success`,
       name,
+      meta,
       payload: {
         ...resp,
       },
-    });
+    })
   } catch (error) {
+    console.log(error);
     let data = yield call(getErrorData, error.resp);
     yield put({
-      type: types.REQUEST_FAIL,
+      type: `${name}_request_fail`,
       name,
       payload: {
         statusText: error.resp.statusText,
@@ -32,5 +36,5 @@ function* fetch({ url, params, method = 'get', name = 'NOTHING_TYPE' }) {
 }
 
 export default function* watchFetchRequests() {
-  yield takeEvery(types.REQUEST_START, fetch);
+  yield takeEvery((action) => action.type.includes('request_start'), fetch);
 }

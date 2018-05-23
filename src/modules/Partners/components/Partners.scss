@@ -1,0 +1,44 @@
+@import "src/styles/grid";
+@import "src/styles/fonts";
+
+.root {
+  height: 100%;
+}
+
+
+
+.header {
+  @include susy-phone() {
+    margin-bottom: 15px;
+  }
+}
+
+.row {
+  @include row();
+}
+
+.slider {
+  @include susy-phone() {
+    width: 100%;
+    margin-top: auto;
+  }
+}
+
+.company {
+  border-radius: 2px;
+  background-color: #ffffff;
+  height: 97px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.companyWrapper {
+  @include susy-phone() {
+    padding: 2px;
+  }
+}
+
+.dots {
+  margin-top: 30px;
+}

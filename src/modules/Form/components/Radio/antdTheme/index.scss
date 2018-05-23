@@ -1,0 +1,32 @@
+@import "src/styles/fonts";
+@import "src/styles/grid";
+@import 'src/styles/vars';
+
+.custom-radio {
+  .ant-radio {
+    margin-right: 15px;
+  }
+
+  .ant-radio-checked .ant-radio-inner {
+    border-color: transparent;
+  }
+
+  .ant-radio-inner:after {
+    background-color: $primary;
+  }
+
+  .ant-radio + span {
+    @include fontNormal();
+    padding: 0;
+    color: #fff;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.26px;
+  }
+}
+
+.ant-radio-wrapper:hover .ant-radio .ant-radio-inner,
+.ant-radio:hover .ant-radio-inner,
+.ant-radio-focused .ant-radio-inner {
+  border-color: transparent !important;
+}

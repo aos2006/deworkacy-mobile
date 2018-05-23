@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import cx from 'classnames';
-import s from './Title.css';
+import s from './Title.scss';
 
 const Title = ({ type, children, classes, center, id }) =>
   React.createElement(
@@ -11,10 +11,10 @@ const Title = ({ type, children, classes, center, id }) =>
       id,
       className: cx([
         s.title,
-        classes.root,
         {
           [s.center]: center,
         },
+        classes.root,
       ]),
     },
     children,

@@ -1,0 +1,7 @@
+
+{
+  "name": "Burger",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Burger.js"
+}

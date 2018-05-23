@@ -6,7 +6,9 @@ class Layout extends Component {
 
   render() {
     return (
-      <div style={{
+      <div
+
+        style={{
         padding: '30px',
         backgroundColor: 'gray',
         maxWidth: '1170px'

@@ -1,0 +1,20 @@
+@import "src/styles/fonts";
+@import "src/styles/grid";
+.root {
+  @include fontLight();
+  color: #FFFFFF;
+}
+
+.large {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.medium {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.gray {
+  color: #8E9397;
+}

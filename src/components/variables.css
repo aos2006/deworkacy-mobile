@@ -13,6 +13,16 @@
    * ======================================================================== */
 
   --font-family-base: 'Segoe UI', 'HelveticaNeue-Light', sans-serif;
+  --font
+  
+  
+  /*
+  * Colors
+  * ======================================================================== */
+  --primary: #65C8CE;
+  --primary-hover: #41AAB1;
+  --primary-active: #248F95;
+  --primary-disabled: #2A3642;
 
   /*
    * Layout

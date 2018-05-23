@@ -1,0 +1,17 @@
+@import "src/styles/grid";
+
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include susy-phone() {
+    padding-top: 12px;
+    width: 100%;
+  }
+}
+
+h2.title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31px;
+}

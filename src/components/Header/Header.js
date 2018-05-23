@@ -9,29 +9,31 @@
 
 import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import s from './Header.css';
-import SocialsList from '../SocialsList';
-import Container from '../Container';
-import Logo from '../Logo';
-import Navigation from '../Navigation';
-import ToolBar from '../ToolBar';
+import s from './Header.scss';
+import Burger from 'components/Burger';
+import Phone from 'components/Phone';
+import Logo from 'components/Logo';
+import Container from 'components/Container';
+import cx from 'classnames';
 
 class Header extends React.Component {
   render() {
     return (
-      <div className={s.root}>
-        <div className={s.top}>
-          <Container>
-            <SocialsList />
-          </Container>
-        </div>
-        <div className={s.middle}>
-          <Container className={s.row}>
-            <Logo />
-            <Navigation />
-            <ToolBar />
-          </Container>
-        </div>
+      <div className={cx([
+        s.root,
+        'app-header',
+      ])}>
+        <Container
+          className={s.container}
+        >
+          <Logo
+            className={s.logo}
+          />
+          <div className={s.actions}>
+            <Phone className={s.phone} />
+            <Burger className={s.burger} />
+          </div>
+        </Container>
       </div>
     );
   }
