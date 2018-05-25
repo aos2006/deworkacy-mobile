@@ -1,0 +1,36 @@
+@import "src/styles/fonts";
+
+.root {
+  position: relative;
+}
+
+.tooltip {
+  opacity: 0;
+  transition: opacity .2s ease-in;
+  display: inline-block;
+  @include fontNormal();
+  font-size: 12px;
+  color: #fff;
+  background-color: #ED2B4D;
+  border-radius: 3px;
+  position: absolute;
+  bottom: calc(100% + 10px);
+  right: 0;
+  padding: 10px;
+  &:before {
+    position: absolute;
+    left: 50%;
+    margin-left: -5px;
+    top: 100%;
+    content: '  ';
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #ED2B4D;
+  }
+}
+
+.visible .tooltip {
+  opacity: 1;
+}

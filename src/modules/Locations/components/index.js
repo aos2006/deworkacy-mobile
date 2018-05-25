@@ -13,34 +13,36 @@ class Locations extends PureComponent {
   handleChange = i => this.props.locationChange(i);
 
   render() {
+    console.log(this.props);
     return (
-      <div className={cx([
-        s.root,
-      ])}>
+      <div className={cx([s.root])}>
         <div className={s.map}>
           <div className={s.header}>
-            <SectionHeader title="Локации"/>
+            <SectionHeader title="Локации" />
           </div>
-          <Map
-            defaultCenter={this.props.position}
-          />
+
+          <Map defaultCenter={this.props.position} />
           <div className={s.list}>
             <List
+              list={this.props.locations}
               activeLocation={this.props.activeLocation}
               onLocationChange={this.handleChange}
             />
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default connect(state => {
-  const activeLocation = state[types.NAME].activeLocation;
-  console.log(activeLocation);
-  return {
-    activeLocation,
-    position: state[types.NAME].entities[`${activeLocation}`].position,
-  }
-}, { locationChange: actions.locationChange })(withStyles(s)(Locations));
+export default connect(
+  state => {
+    const activeLocation = state[types.NAME].activeLocation;
+    console.log(activeLocation);
+    return {
+      activeLocation,
+      position: state[types.NAME].entities[`${activeLocation}`].position,
+    };
+  },
+  { locationChange: actions.locationChange },
+)(withStyles(s)(Locations));

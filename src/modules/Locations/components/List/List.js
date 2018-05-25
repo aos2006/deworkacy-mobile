@@ -6,6 +6,7 @@ import cx from 'classnames';
 import s from './List.scss';
 import Slider from 'components/Slider';
 import Item from './components/Item';
+import globalS from './globalStyles/index.scss';
 
 class List extends PureComponent {
   state = {
@@ -26,13 +27,15 @@ class List extends PureComponent {
           infinite: true,
           beforeChange: (current, next) => {},
           afterChange: current => this.props.onLocationChange(current),
-          className: s.slider,
+          className: cx([s.slider, 'locations-slider']),
         }}>
-          {[1, 2, 3].map((item, index) => (
+          {this.props.list.map((item, index) => (
             <Item
-              from={item}
-              to={3}
-              key={index}
+              from={index + 1}
+              title={item.title}
+              addr={item.address}
+              to={this.props.list.length}
+              key={item.id}
               isActive={index === this.props.activeLocation}
             />
           ))}
@@ -42,4 +45,7 @@ class List extends PureComponent {
   }
 }
 
-export default withStyles(s)(List);
+List.defaultProps = {
+  list: [],
+}
+export default withStyles(globalS, s)(List);

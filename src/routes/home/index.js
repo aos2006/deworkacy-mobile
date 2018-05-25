@@ -12,12 +12,19 @@ import Home from './Home';
 import Layout from '../../components/Layout';
 
 async function action({ fetch }) {
-
+  const resp = await fetch('http://api.deworkacy.ru/api/dwy/site/v2/mainpage/info');
+  const data = await resp.json();
   return {
-    title: 'React Starter Kit',
+    title: 'Home Page',
     component: (
       <Layout>
-        <Home />
+        <Home
+          banner={data.banner}
+          locations={data.locations}
+          services={data.services}
+          partners={data.trusted}
+          reviews={data.reviewBlock}
+        />
       </Layout>
     ),
   };

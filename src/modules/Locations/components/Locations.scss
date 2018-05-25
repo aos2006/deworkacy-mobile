@@ -1,5 +1,6 @@
 @import "src/styles/grid";
 @import "src/styles/fonts";
+
 .root {
   @include susy-phone() {
     height: 100%;

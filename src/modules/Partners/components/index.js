@@ -27,12 +27,12 @@ class Partners extends PureComponent {
                 slidesPerRow: 2,
               }}
             >
-              {[1, 2, 4, 5, 6, 7, 8, 7, 10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2].map(
+              {this.props.list.map(
                 (item, index) => (
-                  <div className={s.companyWrapper} key={index}>
+                  <div className={s.companyWrapper} key={item.id || index}>
                     <div className={s.company}>
                       <a href="">
-                        <Alpha />
+                        <img src={item.image.photo75} alt="" />
                       </a>
                     </div>
                   </div>

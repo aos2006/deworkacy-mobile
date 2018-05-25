@@ -27,9 +27,15 @@ class Header extends React.Component {
           className={s.container}
         >
           <Logo
-            className={s.logo}
+            className={cx([
+              s.logo,
+              'app-logo',
+            ])}
           />
-          <div className={s.actions}>
+          <div className={cx([
+            s.actions,
+            'header-actions'
+          ])}>
             <Phone className={s.phone} />
             <Burger className={s.burger} />
           </div>

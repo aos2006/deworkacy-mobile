@@ -1,0 +1,58 @@
+@import "src/styles/fonts";
+@import "src/styles/grid";
+
+.root {
+  position: relative;
+}
+
+.calendar {
+  @include susy-phone() {
+    margin-bottom: 10px;
+  }
+}
+
+.header {
+  @include susy-phone() {
+    margin-bottom: 30px;
+  }
+}
+
+.calendarHeader {
+  @include susy-phone() {
+    margin-bottom: 10px;
+  }
+}
+
+.sectionHeader {
+  @include susy-phone() {
+    margin-bottom: 30px;
+  }
+}
+
+.nothing {
+  @include fontBold();
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, .4);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+}
+
+.dots {
+  position: absolute;
+  bottom: 4px;
+  right: 15px;
+}

@@ -1,0 +1,101 @@
+@import "src/styles/fonts";
+
+.app-calendar .ant-fullcalendar-header {
+  display: none;
+}
+
+.app-calendar .ant-fullcalendar {
+  border-top: none;
+}
+
+.app-calendar thead {
+  border-bottom: 1px solid rgba(142, 147, 151, .5);
+}
+
+.ant-fullcalendar-calendar-body {
+  padding: 0;
+}
+.app-calendar {
+  tbody tr:nth-child(1) {
+    td {
+      //padding-top: 10px;
+    }
+  }
+
+ .ant-fullcalendar-value {
+   @include fontBold();
+   position: relative;
+   height: 36px;
+   width: 36px;
+   border-radius: 50%;
+   line-height: 36px;
+   color: #ffffff;
+   font-size: 12px;
+   font-weight: 500;
+   text-transform: uppercase;
+   &:before {
+     transition: opacity .2s ease-in;
+     position: absolute;
+     bottom: -4px;
+     left: 50%;
+     margin-left: -4px;
+     z-index: 2;
+     border-radius: 50%;
+     opacity: 0;
+     width: 8px;
+     height: 8px;
+     border: 1px solid #151b21;
+     background-color: #65c8ce;
+     content: '';
+   }
+ }
+
+  .ant-fullcalendar-value.app-calendar__has-event {
+    background-color: #fff;
+    color: #151b21;
+  }
+
+  .ant-fullcalendar-value:hover,
+  .ant-fullcalendar-value.app-calendar__selected {
+    background-color: #65c8ce;
+    color: #fff;
+    &:before {
+      opacity: 1;
+    }
+  }
+
+  .ant-fullcalendar-selected-day .ant-fullcalendar-value, .ant-fullcalendar-month-panel-selected-cell .ant-fullcalendar-value {
+    background-color: #65c8ce;
+    color: #fff;
+    &:before { opacity: 1 }
+  }
+
+  .app-calendar .ant-fullcalendar-selected-day .ant-fullcalendar-value {
+    background-color: transparent;
+    &:before {
+      opacity: 0;
+    }
+  }
+
+
+  .ant-fullcalendar-today .ant-fullcalendar-value, .ant-fullcalendar-month-panel-current-cell .ant-fullcalendar-value {
+    box-shadow: none;
+  }
+
+  .ant-fullcalendar-last-month-cell .ant-fullcalendar-value, .ant-fullcalendar-next-month-btn-day .ant-fullcalendar-value {
+    color: #8e9397;
+  }
+  .ant-fullcalendar-column-header .ant-fullcalendar-column-header-inner {
+    @include fontNormal();
+    padding-bottom: 5px;
+    color: #8e9397;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+
+
+.app-calendar .ant-fullcalendar-last-month-cell .ant-fullcalendar-value, .app-calendar .ant-fullcalendar-next-month-btn-day .ant-fullcalendar-value {
+  display: none;
+}

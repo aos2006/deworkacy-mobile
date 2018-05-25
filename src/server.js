@@ -23,7 +23,6 @@ import createFetch from './createFetch';
 import router from './router';
 import assets from './assets.json'; // eslint-disable-line import/no-unresolved
 import configureStore from './store/configureStore';
-import Immutable from 'seamless-immutable';
 import config from './config';
 
 process.on('unhandledRejection', (reason, p) => {
@@ -86,6 +85,7 @@ app.get('*', async (req, res, next) => {
       query: req.query,
       // You can access redux through react-redux connect
       store,
+      fetch,
       storeSubscription: null,
     };
 

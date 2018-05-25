@@ -18,33 +18,43 @@ import { Locations } from 'modules/Locations';
 import { Partners } from 'modules/Partners';
 import { Reviews } from 'modules/Reviews';
 import { Simple } from 'modules/Form';
+import { Calendar } from 'modules/Calendar';
 import Footer from 'components/Footer';
 
 class Home extends React.Component {
-  componentDidMount() {
-    // console.log($.fullpage)
-    // $('#page').fullpage();
-  }
   render() {
     return (
       <div className={s.root} id="page">
-        <div className="section">
-          <Banner/>
+        <div className="section" data-anchor="banner">
+          <Banner
+            list={this.props.banner.screens}
+          />
         </div>
-        <ServicesList />
-        <div className="section">
-          <Locations/>
+        <ServicesList
+          list={this.props.services.objects}
+        />
+        <div className="section" data-anchor="locations">
+          <Locations
+            locations={this.props.locations}
+          />
         </div>
-        <div className='section'>
-          <Partners/>
+        <div className='section' data-anchor="partners">
+          <Partners
+            list={this.props.partners.objects}
+          />
         </div>
-        <div className="section">
-          <Reviews/>
+        <div className="section" data-anchor="reviews">
+          <Reviews
+            list={this.props.reviews.objects}
+          />
         </div>
-        <div className="section">
-          <Simple/>
+        <div className="section" data-anchor="calendar">
+          <Calendar />
         </div>
-        <div className="section">
+        <div className="section" data-anchor="order">
+          <Simple />
+        </div>
+        <div className="section" data-anchor="footer">
           <Footer />
         </div>
       </div>

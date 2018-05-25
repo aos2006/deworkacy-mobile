@@ -28,23 +28,17 @@ class Reviews extends PureComponent {
                 slidesToScroll: 1,
                 speed: 500,
             }}>
-              {[1,1,1,1].map((item, index) => (
-                <div className={s.comment} key={index}>
-                 <p className={s.txt}>
-                   Мы очень довольны организацией мероприятия. Качество и разнообразие еды были оценены нашими клиентами
-                   на 5ку.
-                   Сейчас мы составляем календарь наших мероприятий на ближайшие полгода, как только определимся с
-                   ближайшими мероприятиями - прийдем к вам с обсуждением).
-                 </p>
+              {this.props.list.map((item, index) => (
+                <div className={s.comment} key={item.id}>
+                 <p className={s.txt}>{item.reviewText}</p>
                   <footer className={s.footer}>
-                    <img src="https://loremflickr.com/66/66" alt="" className={s.man} />
+                    <img src={item.image.photo75} alt="" className={s.man} />
                     <div className={s.commentInner}>
                       <Title type="h4">
-                        Константинопольская
-                        Ирина
+                        {item.reviewerTitle}
                       </Title>
                       <span className={s.company}>
-                        AllContainerLines
+                        {item.companyTitle}
                       </span>
                     </div>
                   </footer>

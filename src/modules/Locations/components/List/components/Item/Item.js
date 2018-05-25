@@ -22,12 +22,10 @@ const Item = props => (
       </p>
     </header>
     <Title type="h2" classes={{ root: s.title }}>
-      Deworkacy
-      Красный Октябрь
+      {props.title}
     </Title>
     <Para className={s.para}>
-      Берсеневская наб., д. 6, стр. 3, этаж 6
-      (10 минут от м. Кропоткинская)
+      {props.addr}
     </Para>
   </article>
 );

@@ -70,38 +70,21 @@ class Html extends React.Component {
           <script
             dangerouslySetInnerHTML={{ __html: `window.App=${serialize(app)}` }}
           />
-          {scripts.map(script => <script key={script} src={script} />)}
-          {config.analytics.googleTrackingId && (
-            <script
-              dangerouslySetInnerHTML={{
-                __html:
-                  'window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;' +
-                  `ga('create','${
-                    config.analytics.googleTrackingId
-                  }','auto');ga('send','pageview')`,
-              }}
-            />
-          )}
-          {config.analytics.googleTrackingId && (
-            <script
-              src="https://www.google-analytics.com/analytics.js"
-              async
-              defer
-            />
-          )}
           <script
             src="http://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous" />
+            crossorigin="anonymous"/>
           <script
             src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"
           />
-          <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js"
-          />
-        <script dangerouslySetInnerHTML={{
-          __html: '$(\'#page\').fullpage({ "fadingEffect": true, touchSensitivity: 5, paddingTop: 0, paddingBottom: 0, lazyLoading: false});'
-        }} />
+          {scripts.map(script => <script key={script} src={script} />)}
+        {/*<script dangerouslySetInnerHTML={{*/}
+          {/*__html: '$(\'#page\').fullpage({ ' +*/}
+          {/*'touchSensitivity: 5, ' +*/}
+          {/*'lazyLoading: false,' +*/}
+            {/*'anchors: ["banner", "services-0", "services-1", "services-2", "locations", "partners", "reviews", "order", "footer"]' +*/}
+          {/*'});'*/}
+        {/*}} />*/}
 
           </body>
       </html>

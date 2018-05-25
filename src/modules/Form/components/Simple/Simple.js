@@ -14,14 +14,18 @@ import RadioGroup from '../RadioGroup';
 import Validator from 'modules/Validator';
 import Api from 'modules/Api';
 import * as cons from '../../constants';
-import { notification } from 'antd';
+import { notification, message } from 'antd';
+import messageS from 'antd/lib/message/style/index.css';
 import Tooltip from 'components/Tooltip';
+import Rules from '../Rules';
+
 
 const schema = Validator.object().shape({
-  fio: Validator.string().required('Обязательное поле'),
+  fio: Validator.string().required('Имя и фамилия обязательное поле'),
   phone: Validator.string()
     .phone('Неккоректный телефон')
-    .required('Обязательное поле'),
+    .required('Телефон обязательное поле'),
+  rules: Validator.boolean().oneOf([true], 'Необходимо согласиться'),
 });
 
 const Simple = props => (
@@ -61,13 +65,11 @@ const Simple = props => (
       fio: '',
       phone: '',
       type: 1,
+      rules: false,
     }}
     render={({
       values,
       errors,
-      touched,
-      handleChange,
-      handleBlur,
       setFieldValue,
       handleSubmit,
       isSubmitting,
@@ -98,54 +100,66 @@ const Simple = props => (
             </div>
             <span className={s.label}>Ваши контакты:</span>
             <div className={s.inputGroup}>
-              <Tooltip placement="topRight" visible={errors.fio || false} title={errors.fio || null} className={s.tooltip}/>
-              <Input
-                value={values.fio}
-                placeholder="Имя и Фамилия"
-                name="fio"
-                onChange={ev => setFieldValue('fio', ev.target.value)}
-              />
+              <Tooltip title={errors.fio} visible={errors.fio}>
+                <Input
+                  value={values.fio}
+                  placeholder="Имя и Фамилия"
+                  name="fio"
+                  onChange={ev => setFieldValue('fio', ev.target.value)}
+                />
+              </Tooltip>
             </div>
             <div className={s.inputGroup}>
-              <Tooltip placement="topRight" visible={errors.phone || false} title={errors.phone || null} className={s.tooltip}/>
-              <Input
-                value={values.phone}
-                onChange={ev => setFieldValue('phone', ev.target.value)}
-                name="phone"
-                placeholder="Телефон"
-                mask={[
-                  '+',
-                  '7',
-                  '(',
-                  /[1-9]/,
-                  /\d/,
-                  /\d/,
-                  ')',
-                  ' ',
-                  /\d/,
-                  /\d/,
-                  /\d/,
-                  '-',
-                  /\d/,
-                  /\d/,
-                  /\d/,
-                  /\d/,
-                ]}
-              />
+              <Tooltip
+                visible={errors.phone}
+                title={errors.phone}>
+                <Input
+                  value={values.phone}
+                  onChange={ev => setFieldValue('phone', ev.target.value)}
+                  name="phone"
+                  placeholder="Телефон"
+                  mask={[
+                    '+',
+                    '7',
+                    '(',
+                    /[1-9]/,
+                    /\d/,
+                    /\d/,
+                    ')',
+                    ' ',
+                    /\d/,
+                    /\d/,
+                    /\d/,
+                    '-',
+                    /\d/,
+                    /\d/,
+                    /\d/,
+                    /\d/,
+                  ]}
+                />
+              </Tooltip>
             </div>
-            <Button
-              fullWidth
-              type="submit"
-              onClick={handleSubmit}
-              isLoading={isSubmitting}
-            >
-              Отправить заявку
-            </Button>
+            <div className={s.inputGroup}>
+              <Button
+                fullWidth
+                type="submit"
+                onClick={handleSubmit}
+                isLoading={isSubmitting}
+              >
+                Отправить заявку
+              </Button>
+            </div>
+            <Tooltip visible={errors.rules} title={errors.rules}>
+              <Rules
+                onChange={(ev) => setFieldValue('rules', ev.target.checked)}
+                checked={values.rules}
+              />
+            </Tooltip>
           </Container>
         </div>
-      )
+      );
     }}
   />
 );
 
-export default withStyles(s)(Simple);
+export default withStyles(messageS, s)(Simple);

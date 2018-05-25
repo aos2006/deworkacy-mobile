@@ -1,3 +1,3 @@
-export const BASE_API = 'http://api-dwy.herokuapp.com/api/dwy/site/v1';
+import { BASE_API } from "../constants";
 
 export const simple_form_api = `${BASE_API}/form/event`;

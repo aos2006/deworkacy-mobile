@@ -19,16 +19,33 @@ import Header from '../Header';
 import notifyS from 'antd/lib/notification/style/index.css';
 import baseAntdStyle from 'antd/lib/style/index.css';
 import globalS from './globalStyles/global.scss';
+import Loader from 'components/Loader';
 
 
 class Layout extends React.Component {
-  static propTypes = {
-    children: PropTypes.node.isRequired,
-  };
-
+  state = {
+    isLoaded: false,
+  }
+  componentDidMount() {
+    $('#page').fullpage({
+      touchSensitivity: 5,
+      paddingTop: '0',
+      paddingBottom: '0',
+      anchors: ["banner", "services-0", "services-1", "services-2", "locations", "partners", "reviews", "calendar", "order", "footer"],
+      afterLoad: (anchorLink) => {
+        if (anchorLink == 'banner') {
+          this.setState({
+            isLoaded: true,
+          })
+        }
+      }
+    })
+  }
   render() {
+
     return (
       <div>
+        <Loader hide={this.state.isLoaded} />
         {this.props.noHeader || <Header/>}
         {this.props.children}
       </div>

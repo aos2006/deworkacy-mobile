@@ -18,34 +18,19 @@ const Banner = props => (
       className={s.slider}
       dotsClass={s.dots}
     >
-      {[
-        {
-          id: 1,
-          title: '',
-          descr: '',
-          img: 'https://loremflickr.com/320/565'
-        },
-        {
-          id: 2,
-          title: '',
-          descr: '',
-          img: 'https://loremflickr.com/320/565',
-        }
-      ].map(item => (
+      {props.list.map(item => (
         <div className={s.content} key={item.id}>
-          <img src={item.img} alt="" className={s.img} />
+          <img src={item.image || 'https://loremflickr.com/320/565'} alt="" className={s.img} />
           <div className={s.inner}>
             <Container className={s.container}>
               <Title type="h1" classes={{ root: s.title }}>
-                Делайте бизнес комфортно
+                {item.title}
               </Title>
               <Para className={s.para}>
-                Ваши рабочие пространста
-                в престижных локациях Москвы
-                со всем необходимым для развития стартапа
+                {item.text}
               </Para>
-              <Button classes={{ root: s.button }}>
-                Оставьте заявку
+              <Button classes={{ root: s.button }} href="#order" fullWidth>
+                {item.buttonText}
               </Button>
             </Container>
           </div>
@@ -54,5 +39,7 @@ const Banner = props => (
     </Slider>
   </div>
 );
-
+Banner.defaultProps = {
+  list: [],
+}
 export default withStyles(s)(Banner)

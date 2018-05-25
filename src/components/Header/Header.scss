@@ -17,7 +17,6 @@
   left: 0;
   right: 0;
   z-index: 999;
-  display: none;
   width: 100%;
    @include susy-phone() {}
 }
@@ -56,7 +55,7 @@
 
 .logo {
   @include susy-phone() {
-
+    display: none;
     svg {
       width: 95px;
       height: 28px;
@@ -66,8 +65,10 @@
 
 
 .actions {
-  //@include susy-phone() {
-  //  right: 10px;
-  //  top: 10px;
-  //}
+  @include susy-phone() {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 333;
+  }
 }

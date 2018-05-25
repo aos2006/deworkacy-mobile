@@ -324,12 +324,12 @@ const clientConfig = {
     }),
 
     new webpack.ProvidePlugin({
-      '$': 'jquery',
-      'window.$': 'jquery',
-      jquery: 'jquery',
-      jQuery: 'jquery',
-      'window.jquery': 'jquery',
-      'window.jQuery': 'jquery',
+      // '$': 'jquery',
+      // 'window.$': 'jquery',
+      // jquery: 'jquery',
+      // jQuery: 'jquery',
+      // 'window.jquery': 'jquery',
+      // 'window.jQuery': 'jquery',
     }),
 
     // Emit a file with assets paths

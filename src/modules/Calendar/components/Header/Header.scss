@@ -1,0 +1,11 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left, .right {
+  display: inline-block;
+}
+.left {
+  margin-right: 40px;
+}
