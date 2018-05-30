@@ -2,29 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5539d989-f18b-4467-b502-5cfebb15b9e7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Link/Link.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/modules/Locations/components/Card/icons/arrow.svg" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/build/LICENSE.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets.json" afterPath="$PROJECT_DIR$/build/assets.json" />
       <change beforePath="$PROJECT_DIR$/build/chunks/not-found.js" afterPath="$PROJECT_DIR$/build/chunks/not-found.js" />
-      <change beforePath="$PROJECT_DIR$/build/chunks/not-found.js.map" afterPath="" />
       <change beforePath="$PROJECT_DIR$/build/chunks/ui.js" afterPath="$PROJECT_DIR$/build/chunks/ui.js" />
-      <change beforePath="$PROJECT_DIR$/build/chunks/ui.js.map" afterPath="" />
       <change beforePath="$PROJECT_DIR$/build/package.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/119c2ccb.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/a1b9b3c0.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/client.777af330.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/client.777af330.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/d41d8cd9.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/d41d8cd9.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/d41d8cd9.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/not-found.cd2a917a.chunk.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/not-found.cd2a917a.chunk.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/ui.fec65666.chunk.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/ui.fec65666.chunk.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/vendor.5021a969.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/vendor.5021a969.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/public/assets/client.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/public/assets/not-found.chunk.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/public/assets/src/components/Layout/fonts/PFBagueSansPro-Bold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/public/assets/src/components/Layout/fonts/PFBagueSansPro-Bold.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/public/assets/src/components/Layout/fonts/PFBagueSansPro-Bold.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/public/assets/src/components/Layout/fonts/PFBagueSansPro-Light.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/public/assets/src/components/Layout/fonts/PFBagueSansPro-Light.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/public/assets/src/components/Layout/fonts/PFBagueSansPro-Light.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/public/assets/src/components/Layout/fonts/PFBagueSansPro-Medium.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/public/assets/src/components/Layout/fonts/PFBagueSansPro-Medium.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/public/assets/src/components/Layout/fonts/PFBagueSansPro-Medium.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/public/assets/src/components/Layout/fonts/PFBagueSansPro.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/public/assets/src/components/Layout/fonts/PFBagueSansPro.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/public/assets/src/components/Layout/fonts/PFBagueSansPro.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/public/assets/src/components/ServicesList/images/events-bg.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/public/assets/src/modules/Form/components/icons/mailBg.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/public/assets/src/modules/Reviews/components/icons/bg.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/public/assets/ui.chunk.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/public/assets/vendor.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/build/public/browserconfig.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/build/public/crossdomain.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/build/public/favicon.ico" afterPath="" />
@@ -36,55 +37,8 @@
       <change beforePath="$PROJECT_DIR$/build/public/tile-wide.png" afterPath="" />
       <change beforePath="$PROJECT_DIR$/build/public/tile.png" afterPath="" />
       <change beforePath="$PROJECT_DIR$/build/server.js" afterPath="$PROJECT_DIR$/build/server.js" />
-      <change beforePath="$PROJECT_DIR$/build/server.js.map" afterPath="" />
       <change beforePath="$PROJECT_DIR$/build/yarn.lock" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/src/components/Banner/Banner.js" afterPath="$PROJECT_DIR$/src/components/Banner/Banner.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Banner/Banner.scss" afterPath="$PROJECT_DIR$/src/components/Banner/Banner.scss" />
-      <change beforePath="$PROJECT_DIR$/src/components/Button/Button.js" afterPath="$PROJECT_DIR$/src/components/Button/Button.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Button/Button.scss" afterPath="$PROJECT_DIR$/src/components/Button/Button.scss" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.scss" afterPath="$PROJECT_DIR$/src/components/Header/Header.scss" />
-      <change beforePath="$PROJECT_DIR$/src/components/Html.js" afterPath="$PROJECT_DIR$/src/components/Html.js" />
       <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.js" afterPath="$PROJECT_DIR$/src/components/Layout/Layout.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/globalStyles/global.scss" afterPath="$PROJECT_DIR$/src/components/Layout/globalStyles/global.scss" />
-      <change beforePath="$PROJECT_DIR$/src/components/Link/Link.js" afterPath="$PROJECT_DIR$/src/components/Link/Link.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Logo/Logo.js" afterPath="$PROJECT_DIR$/src/components/Logo/Logo.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Para/Para.js" afterPath="$PROJECT_DIR$/src/components/Para/Para.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Para/Para.scss" afterPath="$PROJECT_DIR$/src/components/Para/Para.scss" />
-      <change beforePath="$PROJECT_DIR$/src/components/Phone/Phone.css" afterPath="$PROJECT_DIR$/src/components/Phone/Phone.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/Phone/Phone.js" afterPath="$PROJECT_DIR$/src/components/Phone/Phone.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/SectionHeader/SectionHeader.js" afterPath="$PROJECT_DIR$/src/components/SectionHeader/SectionHeader.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/SectionHeader/SectionHeader.scss" afterPath="$PROJECT_DIR$/src/components/SectionHeader/SectionHeader.scss" />
-      <change beforePath="$PROJECT_DIR$/src/components/ServicesList/ServicesList.js" afterPath="$PROJECT_DIR$/src/components/ServicesList/ServicesList.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/ServicesList/ServicesList.scss" afterPath="$PROJECT_DIR$/src/components/ServicesList/ServicesList.scss" />
-      <change beforePath="$PROJECT_DIR$/src/components/ServicesList/globalStyles/global.scss" afterPath="$PROJECT_DIR$/src/components/ServicesList/globalStyles/global.scss" />
-      <change beforePath="$PROJECT_DIR$/src/components/ServicesList/icons/corporate.svg" afterPath="$PROJECT_DIR$/src/components/ServicesList/icons/corporate.svg" />
-      <change beforePath="$PROJECT_DIR$/src/components/ServicesList/icons/peoples.svg" afterPath="$PROJECT_DIR$/src/components/ServicesList/icons/peoples.svg" />
-      <change beforePath="$PROJECT_DIR$/src/components/ServicesList/icons/spaces.svg" afterPath="$PROJECT_DIR$/src/components/ServicesList/icons/spaces.svg" />
-      <change beforePath="$PROJECT_DIR$/src/components/SocialList/SocialList.js" afterPath="$PROJECT_DIR$/src/components/SocialList/SocialList.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Title/Title.js" afterPath="$PROJECT_DIR$/src/components/Title/Title.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Title/Title.scss" afterPath="$PROJECT_DIR$/src/components/Title/Title.scss" />
-      <change beforePath="$PROJECT_DIR$/src/config.js" afterPath="$PROJECT_DIR$/src/config.js" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Calendar/components/Calendar.scss" afterPath="$PROJECT_DIR$/src/modules/Calendar/components/Calendar.scss" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Calendar/components/index.js" afterPath="$PROJECT_DIR$/src/modules/Calendar/components/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Form/components/Simple/Simple.js" afterPath="$PROJECT_DIR$/src/modules/Form/components/Simple/Simple.js" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Locations/components/List/List.js" afterPath="$PROJECT_DIR$/src/modules/Locations/components/List/List.js" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Locations/components/List/List.scss" afterPath="$PROJECT_DIR$/src/modules/Locations/components/List/List.scss" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Locations/components/List/components/Item/Item.js" afterPath="$PROJECT_DIR$/src/modules/Locations/components/List/components/Item/Item.js" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Locations/components/Locations.scss" afterPath="$PROJECT_DIR$/src/modules/Locations/components/Locations.scss" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Locations/components/Map/Map.js" afterPath="$PROJECT_DIR$/src/modules/Locations/components/Map/Map.js" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Locations/components/Map/Map.scss" afterPath="$PROJECT_DIR$/src/modules/Locations/components/Map/Map.scss" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Locations/components/Map/styles.js" afterPath="$PROJECT_DIR$/src/modules/Locations/components/Map/styles.js" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Locations/components/index.js" afterPath="$PROJECT_DIR$/src/modules/Locations/components/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Partners/components/Partners.scss" afterPath="$PROJECT_DIR$/src/modules/Partners/components/Partners.scss" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Partners/components/index.js" afterPath="$PROJECT_DIR$/src/modules/Partners/components/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Reviews/components/Reviews.scss" afterPath="$PROJECT_DIR$/src/modules/Reviews/components/Reviews.scss" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Reviews/components/index.js" afterPath="$PROJECT_DIR$/src/modules/Reviews/components/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/routes/home/Home.js" afterPath="$PROJECT_DIR$/src/routes/home/Home.js" />
-      <change beforePath="$PROJECT_DIR$/src/styles/grid.scss" afterPath="$PROJECT_DIR$/src/styles/grid.scss" />
-      <change beforePath="$PROJECT_DIR$/tools/webpack.config.js" afterPath="$PROJECT_DIR$/tools/webpack.config.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -95,11 +49,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/modules/Partners/components/index.js">
+      <file leaf-file-name="Layout.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Layout/Layout.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+            <state relative-caret-position="286">
+              <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -204,7 +158,6 @@
         <option value="$PROJECT_DIR$/src/modules/Locations/components/List/globalStyles/index.scss" />
         <option value="$PROJECT_DIR$/src/modules/Locations/components/List/List.js" />
         <option value="$PROJECT_DIR$/src/modules/Locations/components/index.js" />
-        <option value="$PROJECT_DIR$/src/components/Layout/Layout.js" />
         <option value="$PROJECT_DIR$/src/components/SectionHeader/SectionHeader.js" />
         <option value="$PROJECT_DIR$/src/components/Header/Header.scss" />
         <option value="$PROJECT_DIR$/src/components/Phone/Phone.css" />
@@ -212,6 +165,7 @@
         <option value="$PROJECT_DIR$/src/modules/Locations/components/Card/Card.scss" />
         <option value="$PROJECT_DIR$/src/modules/Locations/components/Locations.scss" />
         <option value="$PROJECT_DIR$/src/modules/Partners/components/index.js" />
+        <option value="$PROJECT_DIR$/src/components/Layout/Layout.js" />
       </list>
     </option>
   </component>
@@ -673,12 +627,12 @@
       <workItem from="1526904982107" duration="94456000" />
       <workItem from="1527493599042" duration="25000" />
       <workItem from="1527585208346" duration="24746000" />
-      <workItem from="1527663145674" duration="15472000" />
+      <workItem from="1527663145674" duration="15861000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="303523000" />
+    <option name="totallyTimeSpent" value="303912000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="37" y="0" width="1243" height="800" extended-state="6" />
@@ -1042,14 +996,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Layout/Layout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="48" column="12" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Header/Header.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
@@ -1124,8 +1070,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/Partners/components/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+        <state relative-caret-position="485">
+          <caret line="26" column="16" lean-forward="true" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Layout/Layout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
           <folding />
         </state>
       </provider>

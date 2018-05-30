@@ -31,7 +31,7 @@ class Layout extends React.Component {
   componentDidMount() {
     this.setState({
       skPage: skrollr.init({
-        mobileDeceleration: 0.001,
+        mobileDeceleration: 1,
       })
     });
     }
