@@ -9,6 +9,7 @@ import Icon from './icons/phone.svg';
 const Phone = props => (
   <a {...props} className={cx([
     s.root,
+    s.phone,
     props.className,
   ])}>
     <Icon />

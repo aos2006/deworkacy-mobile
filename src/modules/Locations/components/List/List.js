@@ -7,6 +7,7 @@ import s from './List.scss';
 import Slider from 'components/Slider';
 import Item from './components/Item';
 import globalS from './globalStyles/index.scss';
+import Card from '../Card';
 
 class List extends PureComponent {
   state = {
@@ -30,14 +31,18 @@ class List extends PureComponent {
           className: cx([s.slider, 'locations-slider']),
         }}>
           {this.props.list.map((item, index) => (
-            <Item
-              from={index + 1}
-              title={item.title}
-              addr={item.address}
-              to={this.props.list.length}
-              key={item.id}
-              isActive={index === this.props.activeLocation}
-            />
+            <div>
+              <Item
+                id={index}
+                onClick={this.props.handleToggle}
+                from={index + 1}
+                title={item.title}
+                addr={item.address}
+                to={this.props.list.length}
+                key={item.id}
+                isActive={index === this.props.activeLocation}
+              />
+            </div>
           ))}
         </Slider>
       </div>

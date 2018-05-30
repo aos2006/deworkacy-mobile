@@ -9,7 +9,9 @@ import Para from 'components/Para';
 import InfoIcon from './info.svg';
 
 const Item = props => (
-  <article className={cx(
+  <article
+    onClick={() => props.onClick(props.id)}
+    className={cx(
     s.root,
     {
       [s.active]: props.isActive,

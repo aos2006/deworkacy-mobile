@@ -20,37 +20,43 @@ import notifyS from 'antd/lib/notification/style/index.css';
 import baseAntdStyle from 'antd/lib/style/index.css';
 import globalS from './globalStyles/global.scss';
 import Loader from 'components/Loader';
-
+import Footer from 'components/Footer';
 
 class Layout extends React.Component {
   state = {
-    isLoaded: false,
-  }
-  componentDidMount() {
-    $('#page').fullpage({
-      touchSensitivity: 5,
-      paddingTop: '0',
-      paddingBottom: '0',
-      anchors: ["banner", "services-0", "services-1", "services-2", "locations", "partners", "reviews", "calendar", "order", "footer"],
-      afterLoad: (anchorLink) => {
-        if (anchorLink == 'banner') {
-          this.setState({
-            isLoaded: true,
-          })
-        }
-      }
-    })
-  }
-  render() {
+    isLoaded: true,
+    skPage: null,
+  };
 
+  componentDidMount() {
+    this.setState({
+      skPage: skrollr.init({
+        mobileDeceleration: 0.001,
+      })
+    });
+    }
+  render() {
     return (
       <div>
         <Loader hide={this.state.isLoaded} />
-        {this.props.noHeader || <Header/>}
-        {this.props.children}
+        <div id="skrollr-body">
+          {this.props.noHeader || <Header/>}
+          {React.Children.map(this.props.children, child =>
+            React.cloneElement(child, { skPage: this.state.skPage }),
+          )}
+          <Footer />
+        </div>
       </div>
     );
   }
 }
 
-export default withStyles(baseAntdStyle, normalizeCss, notifyS, fontStyles, grid, globalS, s)(Layout);
+export default withStyles(
+  baseAntdStyle,
+  normalizeCss,
+  notifyS,
+  fontStyles,
+  grid,
+  globalS,
+  s,
+)(Layout);

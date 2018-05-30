@@ -43,7 +43,7 @@ class Html extends React.Component {
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <title>{title}</title>
           <meta name="description" content={description} />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
           {scripts.map(script => (
             <link key={script} rel="preload" href={script} as="script" />
           ))}
@@ -74,18 +74,7 @@ class Html extends React.Component {
             src="http://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"/>
-          <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"
-          />
-          {scripts.map(script => <script key={script} src={script} />)}
-        {/*<script dangerouslySetInnerHTML={{*/}
-          {/*__html: '$(\'#page\').fullpage({ ' +*/}
-          {/*'touchSensitivity: 5, ' +*/}
-          {/*'lazyLoading: false,' +*/}
-            {/*'anchors: ["banner", "services-0", "services-1", "services-2", "locations", "partners", "reviews", "order", "footer"]' +*/}
-          {/*'});'*/}
-        {/*}} />*/}
-
+            {scripts.map(script => <script key={script} src={script} />)}
           </body>
       </html>
     );

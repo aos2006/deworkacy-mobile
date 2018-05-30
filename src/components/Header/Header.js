@@ -19,7 +19,8 @@ import cx from 'classnames';
 class Header extends React.Component {
   render() {
     return (
-      <div className={cx([
+      <div
+        className={cx([
         s.root,
         'app-header',
       ])}>
@@ -27,14 +28,19 @@ class Header extends React.Component {
           className={s.container}
         >
           <Logo
+            dataAttrs={{
+              'data-0': 'opacity: 1',
+              'data-200': "opacity: 0",
+            }}
             className={cx([
               s.logo,
               'app-logo',
             ])}
           />
-          <div className={cx([
+          <div
+            data-start="transform: translateX(0)"
+            className={cx([
             s.actions,
-            'header-actions'
           ])}>
             <Phone className={s.phone} />
             <Burger className={s.burger} />

@@ -11,10 +11,22 @@ import SectionHeader from 'components/SectionHeader';
 class Partners extends PureComponent {
   render() {
     return (
-      <article className={cx([s.root])}>
+      <article
+        data-top="opacity: 1;"
+        data-200-top="opacity: 0;"
+        data--106-top="opacity: 0"
+        data--50-top="opacity: 1"
+        className={cx([s.root])}
+      >
         <Container>
           <div className={s.row}>
-            <SectionHeader title="Нам доверяют" className={s.header} />
+            <SectionHeader
+              dataAttrs={{
+                'data-80-top': 'opacity: 0',
+                'data-30-top': 'opacity: 1',
+              }}
+              title="Нам доверяют"
+              className={s.header} />
             <Slider
               dotsClass={s.dots}
               className={s.slider}

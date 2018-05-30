@@ -7,7 +7,9 @@ import s from './Logo.css';
 import Dwy from './dwy.svg';
 
 const Logo = props => (
-  <div className={cx([
+  <div
+    {...props.dataAttrs}
+    className={cx([
     s.root,
     props.className,
   ])}>

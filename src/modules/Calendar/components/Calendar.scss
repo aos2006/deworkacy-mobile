@@ -3,6 +3,10 @@
 
 .root {
   position: relative;
+  @include susy-phone() {
+    margin-top: -100%;
+    min-height: 100vh;
+  }
 }
 
 .calendar {

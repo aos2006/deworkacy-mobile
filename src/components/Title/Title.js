@@ -4,7 +4,7 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import cx from 'classnames';
 import s from './Title.scss';
 
-const Title = ({ type, children, classes, center, id }) =>
+const Title = ({ type, children, classes, center, id, black }) =>
   React.createElement(
     type,
     {
@@ -13,6 +13,7 @@ const Title = ({ type, children, classes, center, id }) =>
         s.title,
         {
           [s.center]: center,
+          [s.black]: black,
         },
         classes.root,
       ]),
@@ -32,6 +33,7 @@ Title.propTypes = {
 Title.defaultProps = {
   children: '',
   id: '',
+  black: false,
   type: 'h3',
   center: false,
   classes: { root: '' },

@@ -11,7 +11,10 @@ import Button from 'components/Button';
 import Container from 'components/Container';
 
 const Banner = props => (
-  <div className={cx([
+  <div
+    data-0="opacity: 1; transform: translateY(0)"
+    data-200="opacity: 0;"
+    className={cx([
     s.root,
   ])}>
     <Slider
@@ -29,7 +32,9 @@ const Banner = props => (
               <Para className={s.para}>
                 {item.text}
               </Para>
-              <Button classes={{ root: s.button }} href="#order" fullWidth>
+              <Button
+                onClick={props.handleGoTo}
+                classes={{ root: s.button }} fullWidth>
                 {item.buttonText}
               </Button>
             </Container>

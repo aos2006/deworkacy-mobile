@@ -11,7 +11,7 @@ import spinStyles from 'antd/lib/spin/style/index.css';
 
 const handleClick = (fn, isLoading, isDisabled) => ev => isLoading || isDisabled ? null : fn(ev);
 
-const Button = ({ classes, onClick, children, theme, fullWidth, isLoading, href, ...rest }) => (
+const Button = ({ classes, onClick, children, theme, fullWidth, isLoading, href, medium, ...rest }) => (
   href ? (
     <a
       href={href}
@@ -21,6 +21,7 @@ const Button = ({ classes, onClick, children, theme, fullWidth, isLoading, href,
         ([s[theme]]: true),
         {
           [s.fullWidth]: fullWidth,
+          [s.medium]: medium,
         },
         classes.root,
       ])}
@@ -39,6 +40,7 @@ const Button = ({ classes, onClick, children, theme, fullWidth, isLoading, href,
         ([s[theme]]: true),
         {
           [s.fullWidth]: fullWidth,
+          [s.medium]: medium,
         },
         classes.root,
       ])}

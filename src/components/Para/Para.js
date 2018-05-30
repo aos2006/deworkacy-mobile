@@ -10,6 +10,7 @@ const Para = props => (
     props.className,
     {
       [s[props.type]]: true,
+      [s.black]: props.black,
       [s[props.theme]]: true,
     }
   ])}>

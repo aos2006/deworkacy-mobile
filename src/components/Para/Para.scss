@@ -1,5 +1,6 @@
 @import "src/styles/fonts";
 @import "src/styles/grid";
+
 .root {
   @include fontLight();
   color: #FFFFFF;
@@ -17,4 +18,8 @@
 
 .gray {
   color: #8E9397;
+}
+
+.black {
+  color: #151B21;
 }

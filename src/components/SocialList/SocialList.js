@@ -19,7 +19,7 @@ const SocialList = props => (
     {[
       {
         id: 88,
-        icon: <Fb />,
+        icon: <Fb width={13} height={25} />,
         href: '#',
       },
       {

@@ -10,7 +10,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import history from '../../history';
+import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import cx from 'classnames';
+import s from './Link.scss';
 
 function isLeftClickEvent(event) {
   return event.button === 0;
@@ -52,6 +54,7 @@ class Link extends React.Component {
     const { to, children, ...props } = this.props;
     return (
       <a href={to} {...props} onClick={this.handleClick} className={cx([
+          s.root,
         props.className,
         {
           // [props.activeClassName]: to === this.context.pathname || to === history.location.pathname,
@@ -71,4 +74,4 @@ Link.contextTypes = {
   pathname: PropTypes.string,
 };
 
-export default Link;
+export default withStyles(s)(Link);

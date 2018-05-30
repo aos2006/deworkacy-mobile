@@ -1,55 +1,9 @@
 @import "src/styles/vars";
 @import "src/styles/grid";
 
-.section {
-  opacity: 0;
-  transition: opacity .5s ease-in-out;
-  transition-delay: .2s;
-}
-
-.section.active {
-  opacity: 1;
-}
-
-.header-actions {
-  @include susy-phone() {
-    transition: opacity .3s ease-in;
-  }
-
-}
-
-
-.fp-viewing-banner {
-  .app-logo {
-    display: block;
-  }
-
-  .header-actions {
-    @include susy-phone() {
-      opacity: 1;
-    }
-  }
-}
-
-.fp-viewing-order,
-.fp-viewing-footer {
-  .header-actions {
-    @include susy-phone() {
-      opacity: 0;
-    }
-  }
-}
 
 .ant-spin {
   color: $primary!important;
-}
-
-.fp-tableCell {
-  vertical-align: top!important;
-}
-
-.fp-tableCell + article {
-  height: 100%;
 }
 
 img {

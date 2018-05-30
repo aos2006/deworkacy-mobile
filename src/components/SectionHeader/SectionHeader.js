@@ -9,17 +9,22 @@ import Phone from 'components/Phone';
 import Burger from 'components/Burger';
 
 const SectionHeader = props => (
-  <div className={cx([
+  <div
+    {...props.dataAttrs}
+    className={cx([
     s.root,
     props.className,
   ])}>
-    <Title type="h2" classes={{root: s.title}}>
-      {props.title}
-    </Title>
-   <div>
-     {/*<Phone className={s.phone}/>*/}
-     {/*<Burger className={s.burger}/>*/}
-   </div>
+    <div>
+      <Title
+        type="h2" classes={{root: s.title}}>
+        {props.title}
+      </Title>
+    </div>
+   {/*<div>*/}
+     <Phone className={s.phone} />
+     {/*<Burger className={s.burger} />*/}
+   {/*</div>*/}
   </div>
 );
 

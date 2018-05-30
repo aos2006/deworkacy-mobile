@@ -98,7 +98,12 @@ class AppCalendar extends PureComponent {
     const headerTitle = currentMonthStr.charAt(0).toUpperCase() + currentMonthStr.slice(1);
 
     return (
-      <div className={s.root}>
+      <div
+        data-top="opacity: 1;"
+        data-200-top="opacity: 0;"
+        data--106-top="opacity: 0"
+        data--50-top="opacity: 1"
+        className={s.root}>
         {this.props.isLoading && <Spin indicator={antIcon} className={s.loader} />}
         <Container>
           <SectionHeader

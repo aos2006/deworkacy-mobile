@@ -1,0 +1,13 @@
+@import "src/styles/grid";
+@import "src/styles/fonts";
+@import "src/styles/vars";
+
+.root {
+  @include fontNormal();
+  color: $primary;
+  font-size: 14px;
+  line-height: 15px;
+  &:hover {
+    color: $primary-hover;
+  }
+}

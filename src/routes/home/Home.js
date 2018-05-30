@@ -19,44 +19,39 @@ import { Partners } from 'modules/Partners';
 import { Reviews } from 'modules/Reviews';
 import { Simple } from 'modules/Form';
 import { Calendar } from 'modules/Calendar';
-import Footer from 'components/Footer';
 
 class Home extends React.Component {
+
+  scrollToOrder = () => {
+    console.log('Вызвалось');
+    const coordsTop = this.props.skPage.relativeToAbsolute(document.getElementById('simpleOrder'), 'top');
+    this.props.skPage.animateTo(coordsTop, {
+      duration: 1000,
+    })
+  }
+
   render() {
     return (
       <div className={s.root} id="page">
-        <div className="section" data-anchor="banner">
-          <Banner
-            list={this.props.banner.screens}
-          />
-        </div>
+        <Banner
+          handleGoTo={this.scrollToOrder}
+          list={this.props.banner.screens}
+        />
         <ServicesList
+          handleGoTo={this.scrollToOrder}
           list={this.props.services.objects}
         />
-        <div className="section" data-anchor="locations">
-          <Locations
-            locations={this.props.locations}
-          />
-        </div>
-        <div className='section' data-anchor="partners">
-          <Partners
-            list={this.props.partners.objects}
-          />
-        </div>
-        <div className="section" data-anchor="reviews">
-          <Reviews
-            list={this.props.reviews.objects}
-          />
-        </div>
-        <div className="section" data-anchor="calendar">
-          <Calendar />
-        </div>
-        <div className="section" data-anchor="order">
-          <Simple />
-        </div>
-        <div className="section" data-anchor="footer">
-          <Footer />
-        </div>
+        <Locations
+          locations={this.props.locations}
+        />
+        <Partners
+          list={this.props.partners.objects}
+        />
+        <Reviews
+          list={this.props.reviews.objects}
+        />
+        <Calendar/>
+        <Simple/>
       </div>
     );
   }

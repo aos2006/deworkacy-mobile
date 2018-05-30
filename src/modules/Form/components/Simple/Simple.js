@@ -75,7 +75,9 @@ const Simple = props => (
       isSubmitting,
     }) => {
       return (
-        <div className={cx([s.root])}>
+        <div
+          id="simpleOrder"
+          className={cx([s.root])}>
           <Container>
             <Title type="h3" classes={{root: s.title}}>
               Оставьте заявку
@@ -95,6 +97,9 @@ const Simple = props => (
                 </Radio>
                 <Radio className={s.radio} value={2}>
                   Рабочие простанства
+                </Radio>
+                <Radio className={s.radio} value={3}>
+                  Корпоративные инновации
                 </Radio>
               </RadioGroup>
             </div>

@@ -1,18 +1,3 @@
-//.section.active .services-list__icon path {
-//  stroke-dashoffset: 0;
-//}
 
-.section .services-list__icon {
-  path {
-    stroke-dashoffset: 10000;
-    transition: stroke-dashoffset 5s ease-in-out;
-    transition-delay: 1s;
-  }
-}
 
-.section.active .services-list__icon {
-  path {
-    stroke-dashoffset: 0;
-  }
-}
 

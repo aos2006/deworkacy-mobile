@@ -324,6 +324,7 @@ const clientConfig = {
     }),
 
     new webpack.ProvidePlugin({
+      skrollr: 'skrollr',
       // '$': 'jquery',
       // 'window.$': 'jquery',
       // jquery: 'jquery',

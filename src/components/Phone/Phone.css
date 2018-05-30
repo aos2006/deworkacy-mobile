@@ -1,3 +1,42 @@
 .root {
   cursor: pointer;
 }
+
+.phone {
+  position: relative;
+  box-shadow: 0 0 0 #BF2641;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+
+  svg circle {
+    transition: fill .2s ease-in-out;
+  }
+
+  &:hover {
+  
+    svg circle {
+      fill: #BF2641
+    }
+    
+  }
+
+  &:focus {
+  
+    svg circle {
+      fill: #81192B;
+    }
+    
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #BF2641;
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 20px rgba(204, 169, 44, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
+}

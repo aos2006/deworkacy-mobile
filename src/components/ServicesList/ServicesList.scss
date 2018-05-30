@@ -1,7 +1,11 @@
 @import "src/styles/grid";
 
 .root {
+  position: relative;
   background-color: #151b21;
+  @include susy-phone() {
+    //margin-top: -100%;
+  }
 }
 
 
@@ -82,13 +86,15 @@
 
 .icon {
   @include susy-phone() {
+    margin-right: -15px;
     display: block;
+    width: 100%;
     //width: 90%;
-    margin-right: auto;
     path {
-      stroke-dasharray: 10000;
-      stroke-dashoffset: 10000;
+      //stroke-dasharray: 10000;
+      //stroke-dashoffset: 10000;
       fill: none;
+      stroke-width: 4px;
       stroke: #65C8CE;
     }
   }
@@ -96,31 +102,65 @@
 
 .peoples {
  @include susy-phone() {
-   height: 160px;
+   height: 200px;
    //width: 80%;
  }
 }
 
 .spaces {
   @include susy-phone() {
-    height: 150px;
+    height: 200px;
   }
 }
 
 .corporate {
+  height: 200px;
   top: 30px;
 }
 
 .fullWidth {
   @include susy-phone() {
+    margin-right: -15px;
     margin-top: auto;
     margin-left: -15px;
-    margin-right: -15px;
   }
 }
-
-.itemRoot, .inner, .wrapper {
+.bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+}
+.wrapper {
   @include susy-phone() {
-    height: 100%
+    position: relative;
+    z-index: 2;
+    min-height: calc(100vh - 100px);
   }
+}
+.itemRoot {
+  @include susy-phone() {
+    position: relative;
+    background-color: #151b21;
+    margin-top: -100%;
+    &:nth-child(1) {
+      z-index: 3;
+      //background-image: url('./images/events-bg.jpg');
+      //background-repeat: no-repeat;
+      //background-position: top center;
+      //background-size: 100% auto;
+    }
+    &:nth-child(2) {
+      z-index: 2;
+    }
+
+    &:nth-child(3) {
+      z-index: 1;
+    }
+  }
+
 }

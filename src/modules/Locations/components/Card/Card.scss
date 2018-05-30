@@ -1,0 +1,47 @@
+@import "src/styles/grid";
+@import "src/styles/fonts";
+
+.root {
+  @include fullWidth();
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  padding: 26px 30px 45px 30px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s ease-out;
+}
+
+.button {
+  @include susy-phone() {
+    width: 220px;
+    margin-bottom: 15px;
+  }
+}
+
+.descr {
+  margin-bottom: 20px;
+}
+
+.address {
+  margin-bottom: 35px;
+}
+
+.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header {
+  @include susy-phone() {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 15px;
+    justify-content: space-between;
+  }
+}
+
+.arrow {}

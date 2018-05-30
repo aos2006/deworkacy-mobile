@@ -12,13 +12,20 @@
 
 
 .root {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
+  //position: absolute;
+  //top: 0;
+  //left: 0;
+  //right: 0;
+  //z-index: 333;
   width: 100%;
-   @include susy-phone() {}
+   @include susy-phone() {
+     position: relative;
+     z-index: 20;
+     margin-bottom: -70px;
+     & ~ .root.active {
+       display: none;
+     }
+   }
 }
 
 .container {
@@ -36,6 +43,9 @@
 
 .phone {
   position: relative;
+  box-shadow: 0 0 0 #BF2641;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
   //margin-right: 8px;
   svg circle {
     transition: fill .2s ease-in-out;
@@ -55,7 +65,7 @@
 
 .logo {
   @include susy-phone() {
-    display: none;
+    //display: none;
     svg {
       width: 95px;
       height: 28px;
@@ -66,9 +76,14 @@
 
 .actions {
   @include susy-phone() {
-    position: fixed;
-    top: 15px;
-    right: 15px;
-    z-index: 333;
+    //transition: transform .2s linear;
+    //transform: translateX(200px);
+    //position: fixed;
+    //top: 24px;
+    //right: 15px;
+    //z-index: 333;
   }
 }
+
+
+
