@@ -99,11 +99,9 @@ class AppCalendar extends PureComponent {
 
     return (
       <div
-        data-top="opacity: 1;"
-        data-200-top="opacity: 0;"
-        data--106-top="opacity: 0"
-        data--50-top="opacity: 1"
-        className={s.root}>
+        className={cx([
+          s.root,
+        ])}>
         {this.props.isLoading && <Spin indicator={antIcon} className={s.loader} />}
         <Container>
           <SectionHeader
@@ -149,12 +147,11 @@ class AppCalendar extends PureComponent {
           }}>
             {
               this.state.events.map(item => {
-                console.log(item);
                 return (
                   <Event
                     place={item.location}
                     className={s.event}
-                    img={item.photo.url}
+                    // img={item.photo.url}
                     key={item.id}
                     title={item.title}
                     range={`${moment(item.timestampStart).format('DD MMMM')} - ${moment(item.timestampFinish).format('DD MMMM')}`}

@@ -2,7 +2,7 @@ require("source-map-support").install();
 exports.ids = [0];
 exports.modules = {
 
-/***/ 332:
+/***/ 330:
 /*!********************************!*\
   !*** ./src/routes/ui/index.js ***!
   \********************************/
@@ -20,8 +20,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__babel_runtime_helpers_asyncToGenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__babel_runtime_helpers_asyncToGenerator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react__ = __webpack_require__(/*! react */ 0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Ui__ = __webpack_require__(/*! ./Ui */ 334);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_components_Layout__ = __webpack_require__(/*! components/Layout */ 77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Ui__ = __webpack_require__(/*! ./Ui */ 332);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_components_Layout__ = __webpack_require__(/*! components/Layout */ 78);
 
 
 
@@ -75,7 +75,7 @@ function _action() {
 
 /***/ }),
 
-/***/ 334:
+/***/ 332:
 /*!*****************************!*\
   !*** ./src/routes/ui/Ui.js ***!
   \*****************************/
@@ -86,15 +86,15 @@ function _action() {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx__ = __webpack_require__(/*! @babel/runtime/helpers/jsx */ 5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(/*! @babel/runtime/core-js/object/get-prototype-of */ 9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(/*! @babel/runtime/core-js/object/get-prototype-of */ 7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__babel_runtime_helpers_classCallCheck__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ 10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__babel_runtime_helpers_classCallCheck__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ 8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__babel_runtime_helpers_classCallCheck___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__babel_runtime_helpers_classCallCheck__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__babel_runtime_helpers_createClass__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ 11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__babel_runtime_helpers_createClass__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ 9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__babel_runtime_helpers_createClass___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__babel_runtime_helpers_createClass__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__babel_runtime_helpers_possibleConstructorReturn__ = __webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ 12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__babel_runtime_helpers_possibleConstructorReturn__ = __webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ 10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__babel_runtime_helpers_possibleConstructorReturn___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__babel_runtime_helpers_possibleConstructorReturn__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__babel_runtime_helpers_inherits__ = __webpack_require__(/*! @babel/runtime/helpers/inherits */ 13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__babel_runtime_helpers_inherits__ = __webpack_require__(/*! @babel/runtime/helpers/inherits */ 11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__babel_runtime_helpers_inherits___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__babel_runtime_helpers_inherits__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_react__ = __webpack_require__(/*! react */ 0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_react__);
@@ -102,9 +102,9 @@ function _action() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_isomorphic_style_loader_lib_withStyles__ = __webpack_require__(/*! isomorphic-style-loader/lib/withStyles */ 6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_isomorphic_style_loader_lib_withStyles__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__Ui_scss__ = __webpack_require__(/*! ./Ui.scss */ 335);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__Ui_scss__ = __webpack_require__(/*! ./Ui.scss */ 333);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__Ui_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__Ui_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_components_Title__ = __webpack_require__(/*! components/Title */ 16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_components_Title__ = __webpack_require__(/*! components/Title */ 22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_components_Para__ = __webpack_require__(/*! components/Para */ 28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_components_Button__ = __webpack_require__(/*! components/Button */ 32);
 
@@ -199,7 +199,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 335:
+/***/ 333:
 /*!*******************************!*\
   !*** ./src/routes/ui/Ui.scss ***!
   \*******************************/
@@ -208,7 +208,7 @@ function (_React$Component) {
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--1-rules-2!../../../node_modules/postcss-loader/lib??ref--1-rules-3!../../../node_modules/sass-loader/lib/loader.js!./Ui.scss */ 336);
+    var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--1-rules-2!../../../node_modules/postcss-loader/lib??ref--1-rules-3!../../../node_modules/sass-loader/lib/loader.js!./Ui.scss */ 334);
     var insertCss = __webpack_require__(/*! ../../../node_modules/isomorphic-style-loader/lib/insertCss.js */ 1);
 
     if (typeof content === 'string') {
@@ -240,7 +240,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 336:
+/***/ 334:
 /*!********************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--1-rules-2!./node_modules/postcss-loader/lib??ref--1-rules-3!./node_modules/sass-loader/lib/loader.js!./src/routes/ui/Ui.scss ***!
   \********************************************************************************************************************************************************************/

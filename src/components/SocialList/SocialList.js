@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import cx from 'classnames';
 import s from './SocialList.scss';
-import Vk from './icons/vk.svg';
-import Fb from './icons/fb.svg';
-import Inst from './icons/inst.svg';
+// import Vk from './icons/vk.svg';
+// import Fb from './icons/fb.svg';
+// import Inst from './icons/inst.svg';
 
 const SocialList = props => (
   <ul className={cx([
@@ -19,23 +19,23 @@ const SocialList = props => (
     {[
       {
         id: 88,
-        icon: <Fb width={13} height={25} />,
-        href: '#',
+        icon: 'fb.svg',
+        href: 'https://www.facebook.com/Deworkacy',
       },
       {
         id: 77,
-        icon: <Vk />,
-        href: '#',
+        icon: 'vk.svg',
+        href: 'https://vk.com/deworkacy',
       },
       {
         id: 28,
-        icon: <Inst />,
-        href: '#',
+        icon: 'inst.svg',
+        href: 'https://www.instagram.com/deworkacy/',
       }
     ].map(item => (
       <li className={s.item} key={item.id}>
-        <a href={item.href} className={s.social}>
-          {item.icon}
+        <a href={item.href} className={s.social} target="_blank">
+          <img src={item.icon} alt="" />
         </a>
       </li>
     ))}

@@ -14,6 +14,7 @@ import Layout from '../../components/Layout';
 async function action({ fetch }) {
   const resp = await fetch('http://api.deworkacy.ru/api/dwy/site/v2/mainpage/info');
   const data = await resp.json();
+  console.log(data);
   return {
     title: 'Home Page',
     component: (

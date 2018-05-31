@@ -12,10 +12,10 @@ import Container from 'components/Container';
 
 const Banner = props => (
   <div
-    data-0="opacity: 1; transform: translateY(0)"
-    data-200="opacity: 0;"
     className={cx([
-    s.root,
+      s.root,
+      'section',
+      'app-banner',
   ])}>
     <Slider
       className={s.slider}
@@ -23,9 +23,12 @@ const Banner = props => (
     >
       {props.list.map(item => (
         <div className={s.content} key={item.id}>
-          <img src={item.image || 'https://loremflickr.com/320/565'} alt="" className={s.img} />
+          <img src={item.image.photo860} alt="" className={s.img} height="565"/>
           <div className={s.inner}>
-            <Container className={s.container}>
+            <Container className={cx([
+              s.container,
+              'banner-content',
+            ])}>
               <Title type="h1" classes={{ root: s.title }}>
                 {item.title}
               </Title>

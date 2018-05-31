@@ -34,11 +34,11 @@ const Card = props => (
         Оставить заявку
       </Button>
     </div>
-    <div className={s.link}>
-      <Link href={props.presentation}>
-        Скачать презентацию
-      </Link>
-    </div>
+    {/*<div className={s.link}>*/}
+      {/*<Link href={props.presentation}>*/}
+        {/*Скачать презентацию*/}
+      {/*</Link>*/}
+    {/*</div>*/}
   </article>
 );
 

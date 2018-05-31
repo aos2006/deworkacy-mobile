@@ -3,8 +3,6 @@
 
 .root {
   @include susy-phone() {
-    margin-top: -100%;
-    min-height: 100vh;
   }
 }
 
@@ -28,6 +26,7 @@
 }
 
 .company {
+  overflow: hidden;
   border-radius: 2px;
   background-color: #ffffff;
   height: 97px;
@@ -44,4 +43,10 @@
 
 .dots {
   margin-top: 30px;
+}
+
+.object {
+  //display: flex;
+  //align-items: center;
+  //justify-content: center;
 }

@@ -8,9 +8,12 @@ import Logo from 'components/Logo';
 import SocialList from 'components/SocialList';
 import Contacts from 'components/Contacts';
 import s from './Footer.scss';
-import Apple from './icons/apple.svg';
-import Google from './icons/google.svg';
+// import Apple from './icons/apple.svg';
+// import Google from './icons/google.svg';
+import Google from './icons/google-png.png';
+import Apple from './icons/appstore-icon-mobile-retina.png';
 import Moscow from './icons/moscow.svg';
+import Link from 'components/Link';
 
 class Footer extends React.Component {
   render() {
@@ -20,9 +23,11 @@ class Footer extends React.Component {
       ])}>
         <Container>
           <div className={s.row}>
-            <Logo
-              className={s.logo}
-            />
+            <Link to="/">
+              <Logo
+                className={s.logo}
+              />
+            </Link>
             <Contacts
               className={s.contacts}
             />
@@ -33,14 +38,14 @@ class Footer extends React.Component {
               <span className={s.label}>
                 При поддержке
               </span>
-              <Moscow />
+              <img src="moscow.svg" alt="" />
             </div>
             <div className={s.apps}>
-              <a href="" className={s.appLink}>
-                <Apple />
+              <a href="https://play.google.com/store/apps/details?id=ru.mobsolutions.deworkacy" className={s.appLink} target="_blank">
+                <img src={Apple} />
               </a>
-              <a href="" className={s.appLink}>
-                <Google />
+              <a href="https://itunes.apple.com/ru/app/deworkacy/id1261089175?mt=8" className={s.appLink} target="_blank">
+                <img src={Google}  />
               </a>
             </div>
           </div>

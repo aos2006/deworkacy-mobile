@@ -20,32 +20,44 @@ import notifyS from 'antd/lib/notification/style/index.css';
 import baseAntdStyle from 'antd/lib/style/index.css';
 import globalS from './globalStyles/global.scss';
 import Loader from 'components/Loader';
-import Footer from 'components/Footer';
 
 class Layout extends React.Component {
   state = {
     isLoaded: true,
-    skPage: null,
+    moveTo: null,
   };
 
   componentDidMount() {
-    this.setState({
-      skPage: skrollr.init({
-        mobileDeceleration: 1,
-      })
+    $('#page').fullpage({
+      touchSensitivity: 20,
+      paddingTop: '0',
+      paddingBottom: '0',
+      loopTop: false,
+      easingcss3: 'ease-in-out',
+      fitToSectionDelay: 200,
+      bigSectionsDestination: 'bottom',
+      loopHorizontal: true,
+      scrollingSpeed: 700,
+      responsiveHeight: 460,
+      scrollOverflowOptions: {
+        eventPassthrough: 'horizontal',
+      },
+      verticalCentered: false,
+      scrollOverflow: true,
+      recordHistory: false,
+      normalScrollElements: '.app-map, .locations-slider',
     });
-    }
+  }
   render() {
     return (
       <div>
         <Loader hide={this.state.isLoaded} />
-        <div id="skrollr-body">
-          {this.props.noHeader || <Header/>}
-          {React.Children.map(this.props.children, child =>
-            React.cloneElement(child, { skPage: this.state.skPage }),
-          )}
-          <Footer />
-        </div>
+        {this.props.noHeader || <Header/>}
+       <div id="page">
+         {React.Children.map(this.props.children, child => (
+           React.cloneElement(child, { moveTo: (...args) => $.fn.fullpage.moveTo(...args) })
+         ))}
+       </div>
       </div>
     );
   }

@@ -14,55 +14,48 @@ class Locations extends PureComponent {
   handleChange = i => this.props.locationChange(i);
   state = {
     clickedLocation: null,
-  }
+  };
 
-  handleClose = () => this.setState({
-    clickedLocation: null,
-  })
+  handleClose = () =>
+    this.setState({
+      clickedLocation: null,
+    });
 
-  handleToggle = i => this.setState({
-    clickedLocation: i,
-  });
+  handleToggle = i =>
+    this.setState({
+      clickedLocation: i,
+    });
 
   render() {
     return (
-      <div
-        data-center="opacity: 1;"
-        data-200-top="opacity: 0;"
-        data--30p-top="opacity: 0"
-        data--50-top="opacity: 1"
-        className={cx([s.root])}
-      >
+      <div className={cx([s.root, 'section'])}>
         <div className={s.map}>
           <div className={s.header}>
             <SectionHeader title="Локации" />
           </div>
           <Card
             handleClose={this.handleClose}
-            show={0 === this.state.clickedLocation}
-            title="Deworkacy Красный Октябрь"
-            address="Берсеневская наб., д. 6, стр. 3, этаж 6  (10 минут от м. Кропоткинская)"
-            txt="Флагманское пространство Deworkacy расположено в сердце креативного кластера Красного Октября. Кирпичный лофт общей площадью 1700 кв.м занимает шестой этаж бывшего цеха кондитерской фабрики, памятника архитектуры XIX века. Проект обеспечивает идеальную эргономику помещения; единое пространство поделено на несколько функциональных зон: коворкинг, офисы, переговорные, библиотека, два лектория и конференц-зал."
+            show={this.state.clickedLocation === 0}
+            title={this.props.locations[0].title}
+            address={this.props.locations[0].address}
+            txt={this.props.locations[0].information}
           />
           <Card
             handleClose={this.handleClose}
-            show={1 === this.state.clickedLocation}
-            title="Deworkacy Красный Октябрь"
-            address="Берсеневская наб., д. 6, стр. 3, этаж 6  (10 минут от м. Кропоткинская)"
-            txt="Флагманское пространство Deworkacy расположено в сердце креативного кластера Красного Октября. Кирпичный лофт общей площадью 1700 кв.м занимает шестой этаж бывшего цеха кондитерской фабрики, памятника архитектуры XIX века. Проект обеспечивает идеальную эргономику помещения; единое пространство поделено на несколько функциональных зон: коворкинг, офисы, переговорные, библиотека, два лектория и конференц-зал."
+            show={this.state.clickedLocation === 1}
+            title={this.props.locations[1].title}
+            address={this.props.locations[1].address}
+            txt={this.props.locations[1].information}
           />
           <Card
             handleClose={this.handleClose}
-            show={2 === this.state.clickedLocation}
-            title="Deworkacy Красный Октябрь"
-            address="Берсеневская наб., д. 6, стр. 3, этаж 6  (10 минут от м. Кропоткинская)"
-            txt="Флагманское пространство Deworkacy расположено в сердце креативного кластера Красного Октября. Кирпичный лофт общей площадью 1700 кв.м занимает шестой этаж бывшего цеха кондитерской фабрики, памятника архитектуры XIX века. Проект обеспечивает идеальную эргономику помещения; единое пространство поделено на несколько функциональных зон: коворкинг, офисы, переговорные, библиотека, два лектория и конференц-зал."
+            show={this.state.clickedLocation === 2}
+            title={this.props.locations[2].title}
+            address={this.props.locations[2].address}
+            txt={this.props.locations[2].information}
           />
           <Map defaultCenter={this.props.position} />
-          <div
-            data-start="transform: translateX(100%)"
-            data-10-bottom="transform: translateX(0)"
-            className={s.list}>
+          <div className={cx([s.list, 'locations-list'])}>
             <List
               handleToggle={this.handleToggle}
               list={this.props.locations}

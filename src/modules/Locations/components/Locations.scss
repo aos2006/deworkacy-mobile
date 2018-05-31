@@ -6,7 +6,6 @@
   z-index: 334;
   @include susy-phone() {
     height: calc(100vh - 33px);
-    margin-top: -100%;
   }
 }
 .map {

@@ -15,76 +15,57 @@ import globalS from './globalStyles/global.scss';
 import bg from './images/events-bg.jpg';
 
 const ServicesList = props => (
-  <div
-    className={cx([s.root])}>
+  <div className={cx([s.root, 'section'])}>
     <article className={s.inner}>
       <div>
-        {props.list.map((item, index) => (
-          <div
-            data-start="opacity: 0"
-            data--50-top="opacity: 0"
-            data--20-top="opacity: 1"
-            data-50-top="opacity: 1"
-            className={cx([s.itemRoot])}
-            key={props.id}>
-            <img src={bg} alt="" className={s.bg} />
-            <Container className={s.wrapper}>
-              <SectionHeader
-                dataAttrs={{
-                  'data-80-top': 'opacity: 0',
-                  'data-30-top': 'opacity: 1',
-                }}
-                title="Услуги"
-                className={s.sectionHeader}/>
-              {props.icons[index].icon}
-              <div className={s.row}>
-                <section
-                  data-start="transform: translateY(110%)"
-                  data-50p-top="transform: translateY(0)"
-                  className={s.info}>
-                  <Title type="h1" classes={{root: s.sectionTitle}}>
-                    {item.title}
-                  </Title>
-                  {/*<Para className={s.para}>{item.descr}</Para>*/}
-                  <Para className={s.para}>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti incidunt inventore maxime non
-                    pariatur perferendis quisquam ratione velit voluptatibus! Autem ex ipsum quasi tempore vitae! Ad
-                    expedita nobis omnis voluptatem?
-                  </Para>
-                </section>
-              </div>
-              <div
-                className={s.fullWidth}>
-                <Button classes={{root: s.button}} onClick={props.handleGoTo}>
-                  Оставить заявку
-                </Button>
-              </div>
-            </Container>
+        <div className={cx([s.itemRoot])} key={props.id}>
+          <div className={s.bg}>
+            <img src={props.src} alt="" />
           </div>
-        ))}
+          <Container className={s.wrapper}>
+            <SectionHeader title="Услуги" className={s.sectionHeader} />
+            {props.icon}
+            <div className={s.row}>
+              <section className={cx([s.info, 'services_para'])}>
+                <Title type="h1" classes={{ root: s.sectionTitle }}>
+                  {props.title}
+                </Title>
+                <Para className={s.para}>{props.descr}</Para>
+              </section>
+            </div>
+            <div className={cx(s.fullWidth, 'services_button')}>
+              <Button classes={{ root: s.button }} onClick={props.handleGoTo}>
+                Оставить заявку
+              </Button>
+            </div>
+          </Container>
+        </div>
       </div>
-
     </article>
   </div>
 );
 const items = [
   {
-    icon: (
-      <Peoples className={cx([s.icon, s.peoples])} />
-    ),
+    icon: <Peoples className={cx([s.icon, s.peoples, 'services_icon'])} />,
   },
   {
-    icon: <Spaces className={cx([s.icon, s.spaces])} />,
+    icon: <Spaces className={cx([s.icon, s.spaces, 'services_icon'])} />,
   },
   {
     id: 109,
-    icon: (
-      <Corporate className={cx([s.icon, s.corporate])} />
-    ),
+    icon: <Corporate className={cx([s.icon, s.corporate, 'services_icon'])} />,
   },
 ];
 
 const Component = withStyles(globalS, s)(ServicesList);
-const List = props => <Component handleGoTo={props.handleGoTo} list={props.list} icons={items} />
+const List = props =>
+  props.list.map((item, index) => (
+    <Component
+      handleGoTo={props.handleGoTo}
+      icon={items[index].icon}
+      title={item.title}
+      descr={item.text}
+      src={item.image.photo640}
+    />
+  ));
 export default List;
-

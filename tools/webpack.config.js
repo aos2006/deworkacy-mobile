@@ -192,7 +192,6 @@ const config = {
             issuer: reStyle,
             oneOf: [
               // Inline lightweight SVGs as UTF-8 encoded DataUrl string
-
               // Inline lightweight images as Base64 encoded DataUrl string
               {
                 loader: 'url-loader',

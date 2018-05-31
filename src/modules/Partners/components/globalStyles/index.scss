@@ -1,0 +1,10 @@
+.partners-slider {
+  .slick-slide + div {
+    display: flex;
+  }
+}
+
+.partners-slider .slick-slide > div {
+  display: flex;
+
+}

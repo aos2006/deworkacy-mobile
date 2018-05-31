@@ -64,6 +64,7 @@ class MyFancyComponent extends React.PureComponent {
       <div
         className={cx([
         s.root,
+        'app-map',
         this.props.classes.root,
       ])}>
         <MyMapComponent

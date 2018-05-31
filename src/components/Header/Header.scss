@@ -64,7 +64,9 @@
 }
 
 .logo {
+  transition: opacity .2s ease-out;
   @include susy-phone() {
+    opacity: 0;
     //display: none;
     svg {
       width: 95px;

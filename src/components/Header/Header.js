@@ -15,6 +15,7 @@ import Phone from 'components/Phone';
 import Logo from 'components/Logo';
 import Container from 'components/Container';
 import cx from 'classnames';
+import Link from 'components/Link';
 
 class Header extends React.Component {
   render() {
@@ -27,22 +28,20 @@ class Header extends React.Component {
         <Container
           className={s.container}
         >
-          <Logo
-            dataAttrs={{
-              'data-0': 'opacity: 1',
-              'data-200': "opacity: 0",
-            }}
-            className={cx([
-              s.logo,
-              'app-logo',
-            ])}
-          />
-          <div
-            data-start="transform: translateX(0)"
-            className={cx([
-            s.actions,
+          <Link to="/" className={cx([
+            s.logo,
+            'app-logo',
           ])}>
-            <Phone className={s.phone} />
+            <Logo
+            />
+          </Link>
+          <div
+            className={cx([
+            s.actions, 'app-header-actions'
+          ])}>
+            <a href="tel:+74951234535">
+              <Phone className={s.phone}/>
+            </a>
             <Burger className={s.burger} />
           </div>
         </Container>

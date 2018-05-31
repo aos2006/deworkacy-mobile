@@ -12,8 +12,16 @@ const AppCheckbox = props => (
   <div className={cx([
     s.root,
     props.className,
+    {
+      'isError': props.isError,
+    }
   ])}>
-    <Checkbox onChange={props.onChange} checked={props.checked} classNAme='app-checkbox'>
+    <Checkbox
+      type="checkbox"
+      onChange={props.onChange}
+      checked={props.checked}
+      onClick={props.onChange}
+      classNAme='app-checkbox'>
       {props.children}
     </Checkbox>
   </div>

@@ -8,7 +8,7 @@ import { Radio } from 'antd';
 const Group = Radio.Group;
 
 const RadioGroup = (props) => (
-  <Group defaultValue={props.defaultValue} value={props.value} onChange={props.onChange}>
+  <Group {...props} defaultValue={props.defaultValue} value={props.value} onChange={props.onChange}>
     {props.children}
   </Group>
 );

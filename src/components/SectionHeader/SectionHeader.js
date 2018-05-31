@@ -22,7 +22,7 @@ const SectionHeader = props => (
       </Title>
     </div>
    {/*<div>*/}
-     <Phone className={s.phone} />
+     {/*<Phone className={s.phone} />*/}
      {/*<Burger className={s.burger} />*/}
    {/*</div>*/}
   </div>

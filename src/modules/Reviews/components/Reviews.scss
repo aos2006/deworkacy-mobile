@@ -6,8 +6,6 @@
   background-size: 437px 177px;
   background-repeat: no-repeat;
   @include susy-phone() {
-    margin-top: -100%;
-    min-height: 100vh;
     //padding-top: 24px;
     padding-bottom: 30px;
     background-position: 50% 90%;

@@ -7,8 +7,11 @@ import s from './Rules.scss';
 import Checkbox from '../Checkbox';
 
 const Rules = props => (
-  <div className={cx([
+  <div
+    onClick={props.onClick}
+    className={cx([
     s.root,
+
     props.className,
   ])}>
     <Checkbox

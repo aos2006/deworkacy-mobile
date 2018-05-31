@@ -10,11 +10,11 @@ const Contacts = props => (
     s.root,
     props.className,
   ])}>
-    <a href="tel:+74951080347" className={cx([
+    <a href="tel:+74951234535" className={cx([
       s.contact,
       s.tel,
     ])}>
-      +7 (495) 108-03-47
+      +7 (495) 123-45-35
     </a>
     <a href="mailto:apply@deworkacy.ru" className={cx([
       s.contact,

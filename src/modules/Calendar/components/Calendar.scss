@@ -4,8 +4,8 @@
 .root {
   position: relative;
   @include susy-phone() {
-    margin-top: -100%;
-    min-height: 100vh;
+    height: 713px;
+    padding-bottom: 30px;
   }
 }
 
@@ -56,7 +56,5 @@
 }
 
 .dots {
-  position: absolute;
-  bottom: 4px;
-  right: 15px;
+  margin-top: 15px;
 }

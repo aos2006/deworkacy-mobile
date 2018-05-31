@@ -91,8 +91,7 @@
     width: 100%;
     //width: 90%;
     path {
-      //stroke-dasharray: 10000;
-      //stroke-dashoffset: 10000;
+      transition: stroke-dashoffset 5s ease-out;
       fill: none;
       stroke-width: 4px;
       stroke: #65C8CE;
@@ -102,20 +101,32 @@
 
 .peoples {
  @include susy-phone() {
-   height: 200px;
+   height: 180px;
    //width: 80%;
+   path {
+     stroke-dasharray: 7242;
+     stroke-dashoffset: 7242;
+   }
  }
 }
 
 .spaces {
   @include susy-phone() {
-    height: 200px;
+    height: 180px;
+    path {
+      stroke-dasharray: 8564;
+      stroke-dashoffset: 8564;
+    }
   }
 }
 
 .corporate {
-  height: 200px;
+  height: 180px;
   top: 30px;
+  path {
+    stroke-dasharray: 5806;
+    stroke-dashoffset: 5806;
+  }
 }
 
 .fullWidth {
@@ -134,33 +145,33 @@
   z-index: 1;
   width: 100%;
   height: auto;
+  &:before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    background-image: linear-gradient(1deg, #151B21 41%, rgba(21, 27, 33, 0.41) 89%);
+    content: '';
+  }
+  img {
+    width: 100%;
+    //height: 325px;
+  }
 }
 .wrapper {
   @include susy-phone() {
     position: relative;
     z-index: 2;
-    min-height: calc(100vh - 100px);
   }
 }
 .itemRoot {
   @include susy-phone() {
     position: relative;
     background-color: #151b21;
-    margin-top: -100%;
-    &:nth-child(1) {
-      z-index: 3;
-      //background-image: url('./images/events-bg.jpg');
-      //background-repeat: no-repeat;
-      //background-position: top center;
-      //background-size: 100% auto;
-    }
-    &:nth-child(2) {
-      z-index: 2;
-    }
-
-    &:nth-child(3) {
-      z-index: 1;
-    }
   }
 
 }
+
+

@@ -12,11 +12,7 @@ class Reviews extends PureComponent {
   render() {
     return (
       <article
-        data-top="opacity: 1;"
-        data-200-top="opacity: 0;"
-        data--106-top="opacity: 0"
-        data--50-top="opacity: 1"
-        className={cx([s.root])}>
+        className={cx([s.root, 'section'])}>
         <Container>
           <div className={s.row}>
             <Sectionheader
