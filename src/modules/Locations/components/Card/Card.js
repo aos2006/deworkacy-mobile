@@ -30,7 +30,7 @@ const Card = props => (
       {props.txt}
     </Para>
     <div className={s.button}>
-      <Button fullWidth medium>
+      <Button fullWidth medium onClick={props.handleGoTo}>
         Оставить заявку
       </Button>
     </div>

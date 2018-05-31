@@ -40,6 +40,7 @@ class Home extends React.Component {
             list={this.props.services.objects}
           />
           <Locations
+            handleGoTo={this.scrollToOrder}
             locations={this.props.locations}
           />
           <Partners

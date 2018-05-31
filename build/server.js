@@ -2160,11 +2160,6 @@ Burger.defaultProps = {
 
 
 
-var _ref2 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()(__WEBPACK_IMPORTED_MODULE_10_components_Button__["a" /* default */], {
-  fullWidth: true,
-  medium: true
-}, void 0, "\u041E\u0441\u0442\u0430\u0432\u0438\u0442\u044C \u0437\u0430\u044F\u0432\u043A\u0443");
-
 var Card = function Card(props) {
   return __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("article", {
     className: __WEBPACK_IMPORTED_MODULE_5_classnames___default()([__WEBPACK_IMPORTED_MODULE_6__Card_scss___default.a.root, __WEBPACK_IMPORTED_MODULE_1__babel_runtime_helpers_defineProperty___default()({}, __WEBPACK_IMPORTED_MODULE_6__Card_scss___default.a.show, props.show)])
@@ -2188,7 +2183,11 @@ var Card = function Card(props) {
     black: true
   }, void 0, props.txt), __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("div", {
     className: __WEBPACK_IMPORTED_MODULE_6__Card_scss___default.a.button
-  }, void 0, _ref2));
+  }, void 0, __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()(__WEBPACK_IMPORTED_MODULE_10_components_Button__["a" /* default */], {
+    fullWidth: true,
+    medium: true,
+    onClick: props.handleGoTo
+  }, void 0, "\u041E\u0441\u0442\u0430\u0432\u0438\u0442\u044C \u0437\u0430\u044F\u0432\u043A\u0443")));
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_4_isomorphic_style_loader_lib_withStyles___default()(__WEBPACK_IMPORTED_MODULE_6__Card_scss___default.a)(Card));
@@ -4485,6 +4484,7 @@ function (_React$Component) {
         handleGoTo: this.scrollToOrder,
         list: this.props.services.objects
       }), __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()(__WEBPACK_IMPORTED_MODULE_14_modules_Locations__["a" /* Locations */], {
+        handleGoTo: this.scrollToOrder,
         locations: this.props.locations
       }), __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()(__WEBPACK_IMPORTED_MODULE_15_modules_Partners__["a" /* Partners */], {
         list: this.props.partners.objects
@@ -6361,6 +6361,15 @@ function (_PureComponent) {
           clickedLocation: i
         });
       }
+    }), Object.defineProperty(__WEBPACK_IMPORTED_MODULE_6__babel_runtime_helpers_assertThisInitialized___default()(_this), "handleGoTo", {
+      configurable: true,
+      enumerable: true,
+      writable: true,
+      value: function value() {
+        _this.handleClose();
+
+        _this.props.handleGoTo();
+      }
     }), _temp));
   }
 
@@ -6375,17 +6384,20 @@ function (_PureComponent) {
         className: __WEBPACK_IMPORTED_MODULE_12__Locations_scss___default.a.header
       }, void 0, _ref2), __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()(__WEBPACK_IMPORTED_MODULE_17__Card__["a" /* default */], {
         handleClose: this.handleClose,
+        handleGoTo: this.handleGoTo,
         show: this.state.clickedLocation === 0,
         title: this.props.locations[0].title,
         address: this.props.locations[0].address,
         txt: this.props.locations[0].information
       }), __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()(__WEBPACK_IMPORTED_MODULE_17__Card__["a" /* default */], {
+        handleGoTo: this.handleGoTo,
         handleClose: this.handleClose,
         show: this.state.clickedLocation === 1,
         title: this.props.locations[1].title,
         address: this.props.locations[1].address,
         txt: this.props.locations[1].information
       }), __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()(__WEBPACK_IMPORTED_MODULE_17__Card__["a" /* default */], {
+        handleGoTo: this.handleGoTo,
         handleClose: this.handleClose,
         show: this.state.clickedLocation === 2,
         title: this.props.locations[2].title,

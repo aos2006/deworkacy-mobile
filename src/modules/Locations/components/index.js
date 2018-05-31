@@ -26,6 +26,11 @@ class Locations extends PureComponent {
       clickedLocation: i,
     });
 
+  handleGoTo = () => {
+    this.handleClose();
+    this.props.handleGoTo();
+  }
+
   render() {
     return (
       <div className={cx([s.root, 'section'])}>
@@ -35,12 +40,14 @@ class Locations extends PureComponent {
           </div>
           <Card
             handleClose={this.handleClose}
+            handleGoTo={this.handleGoTo}
             show={this.state.clickedLocation === 0}
             title={this.props.locations[0].title}
             address={this.props.locations[0].address}
             txt={this.props.locations[0].information}
           />
           <Card
+            handleGoTo={this.handleGoTo}
             handleClose={this.handleClose}
             show={this.state.clickedLocation === 1}
             title={this.props.locations[1].title}
@@ -48,6 +55,7 @@ class Locations extends PureComponent {
             txt={this.props.locations[1].information}
           />
           <Card
+            handleGoTo={this.handleGoTo}
             handleClose={this.handleClose}
             show={this.state.clickedLocation === 2}
             title={this.props.locations[2].title}
