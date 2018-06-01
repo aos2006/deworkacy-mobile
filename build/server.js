@@ -3803,143 +3803,145 @@ var _ref2 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("
   content: "ie=edge"
 });
 
-var _ref3 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
+var _ref3 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("title", {}, void 0, "Deworkacy");
+
+var _ref4 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
   rel: "apple-touch-icon",
   sizes: "57x57",
   href: "/apple-icon-57x57.png"
 });
 
-var _ref4 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
+var _ref5 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
   rel: "apple-touch-icon",
   sizes: "60x60",
   href: "/apple-icon-60x60.png"
 });
 
-var _ref5 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
+var _ref6 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
   rel: "apple-touch-icon",
   sizes: "72x72",
   href: "/apple-icon-72x72.png"
 });
 
-var _ref6 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
+var _ref7 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
   rel: "apple-touch-icon",
   sizes: "76x76",
   href: "/apple-icon-76x76.png"
 });
 
-var _ref7 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
+var _ref8 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
   rel: "apple-touch-icon",
   sizes: "114x114",
   href: "/apple-icon-114x114.png"
 });
 
-var _ref8 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
+var _ref9 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
   rel: "apple-touch-icon",
   sizes: "120x120",
   href: "/apple-icon-120x120.png"
 });
 
-var _ref9 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
+var _ref10 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
   rel: "apple-touch-icon",
   sizes: "144x144",
   href: "/apple-icon-144x144.png"
 });
 
-var _ref10 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
+var _ref11 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
   rel: "apple-touch-icon",
   sizes: "152x152",
   href: "/apple-icon-152x152.png"
 });
 
-var _ref11 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
+var _ref12 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
   rel: "apple-touch-icon",
   sizes: "180x180",
   href: "/apple-icon-180x180.png"
 });
 
-var _ref12 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
+var _ref13 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
   rel: "icon",
   type: "image/png",
   sizes: "192x192",
   href: "/android-icon-192x192.png"
 });
 
-var _ref13 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
+var _ref14 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
   rel: "icon",
   type: "image/png",
   sizes: "32x32",
   href: "/favicon-32x32.png"
 });
 
-var _ref14 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
+var _ref15 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
   rel: "icon",
   type: "image/png",
   sizes: "96x96",
   href: "/favicon-96x96.png"
 });
 
-var _ref15 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
+var _ref16 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
   rel: "icon",
   type: "image/png",
   sizes: "16x16",
   href: "/favicon-16x16.png"
 });
 
-var _ref16 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("meta", {
+var _ref17 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("meta", {
   name: "viewport",
   content: "width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"
 });
 
-var _ref17 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
+var _ref18 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
   rel: "manifest",
   href: "/site.webmanifest"
 });
 
-var _ref18 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
+var _ref19 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
   rel: "stylesheet",
   href: "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 });
 
-var _ref19 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
+var _ref20 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
   href: "https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600",
   rel: "stylesheet"
 });
 
-var _ref20 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
+var _ref21 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
   href: "https://fonts.googleapis.com/css?family=Niconne:400",
   rel: "stylesheet"
 });
 
-var _ref21 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
+var _ref22 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
   href: "https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700",
   rel: "stylesheet"
 });
 
-var _ref22 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
+var _ref23 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
   rel: "apple-touch-icon",
   href: "/icon.png"
 });
 
-var _ref23 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
+var _ref24 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
   rel: "stylesheet",
   type: "text/css",
   charSet: "UTF-8",
   href: "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
 });
 
-var _ref24 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
+var _ref25 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
   rel: "stylesheet",
   type: "text/css",
   href: "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
 });
 
-var _ref25 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("script", {
+var _ref26 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("script", {
   src: "http://code.jquery.com/jquery-3.3.1.min.js",
   integrity: "sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=",
   crossorigin: "anonymous"
 });
 
-var _ref26 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("script", {
+var _ref27 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("script", {
   src: "https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"
 });
 
@@ -3967,16 +3969,16 @@ function (_React$Component) {
       return __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("html", {
         className: "no-js",
         lang: "en"
-      }, void 0, __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("head", {}, void 0, _ref, _ref2, __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("title", {}, void 0, title), __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("meta", {
+      }, void 0, __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("head", {}, void 0, _ref, _ref2, _ref3, __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("meta", {
         name: "description",
         content: description
-      }), _ref3, _ref4, _ref5, _ref6, _ref7, _ref8, _ref9, _ref10, _ref11, _ref12, _ref13, _ref14, _ref15, _ref16, scripts.map(function (script) {
+      }), _ref4, _ref5, _ref6, _ref7, _ref8, _ref9, _ref10, _ref11, _ref12, _ref13, _ref14, _ref15, _ref16, _ref17, scripts.map(function (script) {
         return __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("link", {
           rel: "preload",
           href: script,
           as: "script"
         }, script);
-      }), _ref17, _ref18, _ref19, _ref20, _ref21, _ref22, _ref23, _ref24, styles.map(function (style) {
+      }), _ref18, _ref19, _ref20, _ref21, _ref22, _ref23, _ref24, _ref25, styles.map(function (style) {
         return __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("style", {
           id: style.id,
           dangerouslySetInnerHTML: {
@@ -3992,7 +3994,7 @@ function (_React$Component) {
         dangerouslySetInnerHTML: {
           __html: "window.App=".concat(__WEBPACK_IMPORTED_MODULE_8_serialize_javascript___default()(app))
         }
-      }), _ref25, _ref26, scripts.map(function (script) {
+      }), _ref26, _ref27, scripts.map(function (script) {
         return __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("script", {
           src: script
         }, script);

@@ -41,7 +41,7 @@ class Html extends React.Component {
         <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-          <title>{title}</title>
+          <title>Deworkacy</title>
           <meta name="description" content={description} />
           <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png"/>
           <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png"/>
