@@ -6,6 +6,8 @@ import Title from 'components/Title';
 import Container from 'components/Container';
 import Slider from 'components/Slider';
 import Sectionheader from 'components/SectionHeader';
+import Button from 'components/Button';
+import SectionDevider from 'components/SectionDevider';
 
 class Reviews extends PureComponent {
 
@@ -47,6 +49,10 @@ class Reviews extends PureComponent {
               ))}
             </Slider>
           </div>
+          <Button fullWidth classes={{ root: s.button }} onClick={this.props.handleGoTo}>
+            Оставить заявку
+          </Button>
+          <SectionDevider />
         </Container>
       </article>
     )

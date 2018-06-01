@@ -4,9 +4,11 @@
 .root {
   position: relative;
   @include susy-phone() {
-    height: 713px;
-    padding-bottom: 30px;
   }
+}
+
+.devider {
+  margin-top: 30px;
 }
 
 .calendar {

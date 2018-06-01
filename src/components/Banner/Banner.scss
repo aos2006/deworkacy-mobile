@@ -59,7 +59,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 35px;
+  bottom: 30px;
   z-index: 5;
   //padding-top: 35px;`
 }
@@ -67,6 +67,10 @@
 .title {
   @include susy-phone() {
     margin-bottom: 15px;
+    text-transform: lowercase;
+    &::first-letter {
+      text-transform: uppercase;
+    }
   }
 }
 

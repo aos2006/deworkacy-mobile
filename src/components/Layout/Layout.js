@@ -20,6 +20,7 @@ import notifyS from 'antd/lib/notification/style/index.css';
 import baseAntdStyle from 'antd/lib/style/index.css';
 import globalS from './globalStyles/global.scss';
 import Loader from 'components/Loader';
+import Footer from 'components/Footer';
 
 class Layout extends React.Component {
   state = {
@@ -29,35 +30,39 @@ class Layout extends React.Component {
 
   componentDidMount() {
     $('#page').fullpage({
-      touchSensitivity: 20,
+      touchSensitivity: 17,
       paddingTop: '0',
       paddingBottom: '0',
+      autoScrolling: false,
+      fitToSection: false,
       loopTop: false,
       easingcss3: 'ease-in-out',
       fitToSectionDelay: 200,
       bigSectionsDestination: 'bottom',
       loopHorizontal: true,
-      scrollingSpeed: 700,
-      responsiveHeight: 460,
+      scrollingSpeed: 400,
+      responsiveHeight: 900,
       scrollOverflowOptions: {
         eventPassthrough: 'horizontal',
       },
+      onLeave: (index, nextIndex) => {
+        console.log(index, nextIndex);
+      },
       verticalCentered: false,
-      scrollOverflow: true,
-      recordHistory: false,
-      normalScrollElements: '.app-map, .locations-slider',
+      recordHistory: true,
     });
   }
   render() {
     return (
       <div>
-        <Loader hide={this.state.isLoaded} />
         {this.props.noHeader || <Header/>}
+        <Loader hide={this.state.isLoaded} />
        <div id="page">
          {React.Children.map(this.props.children, child => (
            React.cloneElement(child, { moveTo: (...args) => $.fn.fullpage.moveTo(...args) })
          ))}
        </div>
+        <Footer />
       </div>
     );
   }

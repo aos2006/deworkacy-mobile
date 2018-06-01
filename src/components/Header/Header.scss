@@ -12,7 +12,7 @@
 
 
 .root {
-  //position: absolute;
+  position: absolute;
   //top: 0;
   //left: 0;
   //right: 0;
@@ -78,12 +78,10 @@
 
 .actions {
   @include susy-phone() {
-    //transition: transform .2s linear;
-    //transform: translateX(200px);
-    //position: fixed;
-    //top: 24px;
-    //right: 15px;
-    //z-index: 333;
+    position: fixed;
+    top: 24px;
+    right: 15px;
+    z-index: 333;
   }
 }
 

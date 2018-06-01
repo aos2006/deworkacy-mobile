@@ -4,7 +4,7 @@
 .root {
   @include susy-phone() {
     width: 100%;
-    padding-bottom: 15px;
+    padding-bottom: 21px;
     border-bottom: 1px solid rgba(142, 147, 151, .5);
   }
 }

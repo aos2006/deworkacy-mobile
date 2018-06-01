@@ -38,7 +38,7 @@
 .header {
   @include susy-phone() {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     margin-bottom: 15px;
     justify-content: space-between;
   }

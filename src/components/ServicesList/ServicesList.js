@@ -12,7 +12,8 @@ import Spaces from './icons/spaces.svg';
 import Corporate from './icons/corporate.svg';
 import SectionHeader from 'components/SectionHeader';
 import globalS from './globalStyles/global.scss';
-import bg from './images/events-bg.jpg';
+import bg from './images/events-bg.png';
+import SectionDevider from 'components/SectionDevider';
 
 const ServicesList = props => (
   <div className={cx([s.root, 'section'])}>
@@ -20,24 +21,33 @@ const ServicesList = props => (
       <div>
         <div className={cx([s.itemRoot])} key={props.id}>
           <div className={s.bg}>
-            <img src={props.src} alt="" />
+            {/*<img src={props.src} alt="" />*/}
+            <img src={bg} alt="" />
           </div>
           <Container className={s.wrapper}>
-            <SectionHeader title="Услуги" className={s.sectionHeader} />
-            {props.icon}
+            <div className={s.iconWrapper}>
+              {props.icon}
+            </div>
             <div className={s.row}>
               <section className={cx([s.info, 'services_para'])}>
-                <Title type="h1" classes={{ root: s.sectionTitle }}>
-                  {props.title}
+                <Title type="h5" classes={{ root: s.pretitle }}>
+                  Услуги
                 </Title>
-                <Para className={s.para}>{props.descr}</Para>
+                <Title type="h1" classes={{ root: s.sectionTitle }}>
+                  Организация мероприятий
+                  {/*{props.title}*/}
+                </Title>
+                <Para className={s.para}>
+                  Сеть деловых пространств Deworkacy предлагает ряд разнообразных локаций под мероприятия. Наша команда
+                  поможет организовать мероприятие любого формата от бизнес-завтраков и тренингов до хакатонов и
+                  конференций.
+                  {/*{props.descr}*/}
+                  </Para>
               </section>
             </div>
-            <div className={cx(s.fullWidth, 'services_button')}>
-              <Button classes={{ root: s.button }} onClick={props.handleGoTo}>
-                Оставить заявку
-              </Button>
-            </div>
+            <Button classes={{root: s.button}} onClick={props.handleGoTo}>
+              Оставить заявку
+            </Button>
           </Container>
         </div>
       </div>
@@ -58,14 +68,18 @@ const items = [
 ];
 
 const Component = withStyles(globalS, s)(ServicesList);
-const List = props =>
-  props.list.map((item, index) => (
-    <Component
-      handleGoTo={props.handleGoTo}
-      icon={items[index].icon}
-      title={item.title}
-      descr={item.text}
-      src={item.image.photo640}
-    />
-  ));
+const List = props => (
+    <div>
+      {props.list.map((item, index) => (
+        <Component
+          handleGoTo={props.handleGoTo}
+          icon={items[index].icon}
+          title={item.title}
+          descr={item.text}
+          src={item.image.photo640}
+        />
+      ))}
+      <SectionDevider />
+    </div>
+  );
 export default List;

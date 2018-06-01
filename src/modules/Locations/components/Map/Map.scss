@@ -1,14 +1,27 @@
 .root {
   position: relative;
   height: 100%;
+  > div > div > div {
+    background-color: #151B21!important;
+  }
   &:before {
     position: absolute;
-    bottom: 0;
-    height: 35px;
+    top: 0;
     left: 0;
     right: 0;
-    content: '';
-    background-color: #151B21;
+    height: 222px;
     z-index: 2;
+    content: '';
+    background-image: linear-gradient(-180deg, #151B21 0%, rgba(21, 27, 33, 0.00) 100%);
+  }
+  &:after {
+    position: absolute;
+    content: '';
+    z-index: -1;
+    background-color: #151B21;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 }

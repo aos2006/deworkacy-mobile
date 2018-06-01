@@ -10,6 +10,7 @@ import calendarAntdS from 'antd/lib/calendar/style/index.css';
 import antdTheme from './antdTheme/index.scss';
 import SectionHeader from 'components/SectionHeader';
 import Container from 'components/Container';
+import SectionDevider from 'components/SectionDevider';
 import moment from 'moment';
 import 'moment/locale/ru';
 const momentInit = moment.locale('ru');
@@ -162,6 +163,7 @@ class AppCalendar extends PureComponent {
             }
           </Slider>) : <p className={s.nothing}>Нет мероприятий</p>}
         </Container>
+        <SectionDevider className={s.devider} />
       </div>
     )
   }

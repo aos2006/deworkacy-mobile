@@ -3,15 +3,16 @@
 
 .root {
   position: relative;
+  overflow: hidden;
   z-index: 334;
   @include susy-phone() {
-    height: calc(100vh - 33px);
+    height: 570px;
   }
 }
 .map {
   position: relative;
   @include susy-phone() {
-    height: 100%;
+    height: 570px;
   }
 }
 
@@ -27,10 +28,20 @@
   height: 100%;
 }
 
+.devider {
+  @include susy-phone() {
+    //position: absolute;
+    //bottom: 0;
+    //left: 0;
+    //right: 0;
+    //z-index: 1;
+  }
+}
+
 .header {
   @include susy-phone() {
     position: absolute;
-    z-index: 1;
+    z-index: 3;
     top: 0;
     left: 15px;
     right: 15px;

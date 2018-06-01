@@ -1,4 +1,5 @@
 @import "src/styles/grid";
+@import "src/styles/fonts";
 
 .root {
   position: relative;
@@ -28,8 +29,9 @@
 
 .para {
   @include susy-phone() {
-    margin-bottom: 48px;
+    margin-bottom: 16px;
     width: susy-span(11 last);
+
   }
 }
 
@@ -86,23 +88,29 @@
 
 .icon {
   @include susy-phone() {
-    margin-right: -15px;
-    display: block;
-    width: 100%;
-    //width: 90%;
     path {
-      transition: stroke-dashoffset 5s ease-out;
+      transition: stroke-dashoffset 10s ease-out;
       fill: none;
-      stroke-width: 4px;
       stroke: #65C8CE;
     }
   }
 }
 
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include susy-phone() {
+    margin-bottom: 8px;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
 .peoples {
  @include susy-phone() {
-   height: 180px;
-   //width: 80%;
+   width: 414px!important;
+   height: 230px!important;
    path {
      stroke-dasharray: 7242;
      stroke-dashoffset: 7242;
@@ -112,7 +120,8 @@
 
 .spaces {
   @include susy-phone() {
-    height: 180px;
+    margin-top: 82px;
+    margin-bottom: -35px;
     path {
       stroke-dasharray: 8564;
       stroke-dashoffset: 8564;
@@ -121,19 +130,20 @@
 }
 
 .corporate {
-  height: 180px;
-  top: 30px;
+  margin-top: 35px;
+  margin-bottom: 20px;
   path {
     stroke-dasharray: 5806;
     stroke-dashoffset: 5806;
   }
 }
 
-.fullWidth {
+
+
+.pretitle {
   @include susy-phone() {
-    margin-right: -15px;
-    margin-top: auto;
-    margin-left: -15px;
+    @include fontBold();
+    margin-bottom: 5px;
   }
 }
 .bg {
@@ -141,7 +151,6 @@
   left: 0;
   right: 0;
   top: 0;
-  bottom: 0;
   z-index: 1;
   width: 100%;
   height: auto;
@@ -152,12 +161,11 @@
     top: 0;
     right: 0;
     z-index: 2;
-    background-image: linear-gradient(1deg, #151B21 41%, rgba(21, 27, 33, 0.41) 89%);
+    background-image: linear-gradient(1deg, #151B21 15%, rgba(21, 27, 33, 0.41) 89%);
     content: '';
   }
   img {
     width: 100%;
-    //height: 325px;
   }
 }
 .wrapper {
@@ -169,6 +177,7 @@
 .itemRoot {
   @include susy-phone() {
     position: relative;
+    padding-bottom: 33px;
     background-color: #151b21;
   }
 

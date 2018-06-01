@@ -1,12 +1,19 @@
 @import "src/styles/vars";
 @import "src/styles/grid";
-
+#page {
+  overflow: hidden;
+}
 .section {
-  opacity: 0;
+  //opacity: 0;
   transition: opacity .5s ease-out;
+  min-height: 500px!important;
+  height: auto!important;
 }
 
-.section.active {
+
+
+.section.active,
+.section.fp-completely {
   opacity: 1;
   transition-delay: .1s;
 }
@@ -14,6 +21,7 @@
 .section .fp-tableCell {
   vertical-align: top;
 }
+
 .fp-viewing-0 {
   .app-logo {
     opacity: 1;
@@ -25,23 +33,24 @@
     stroke-dashoffset: 0;
   }
 }
-.section.active .services_button {
-  animation: fromBottom .2s ease-out forwards;
-  transform: translateY(100%);
-  animation-delay: 1s;
-}
+//.section.active .services_button {
+//  animation: fromBottom .2s ease-out forwards;
+//  transform: translateY(100%);
+//  animation-delay: 1s;
+//}
 
 .section.active .locations-list {
-  transform: translateX(100%);
-  animation: leftRight .5s ease-out forwards;
-  animation-delay: .6s;
+  //transform: translateX(100%);
+  //animation: leftRight .5s ease-out forwards;
+  //animation-delay: .6s;
 }
 
-.section.active .services_para {
-  opacity: 0;
-  animation: fade .6s ease-out forwards;
-  animation-delay: 1s;
-}
+//.section.active .services_para {
+//  opacity: 0;
+//  animation: fade .6s ease-out forwards;
+//  animation-delay: 1s;
+//}
+
 .section .banner-content {
   opacity: 0;
   transform: translateY(30%);

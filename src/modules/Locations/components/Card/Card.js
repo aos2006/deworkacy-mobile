@@ -6,9 +6,8 @@ import cx from 'classnames';
 import s from './Card.scss';
 import Title from 'components/Title';
 import Para from 'components/Para';
-import Arrow from './icons/arrow.svg';
+import Close from './icons/close.svg';
 import Button from 'components/Button';
-import Link from 'components/Link';
 
 const Card = props => (
   <article className={cx([
@@ -21,7 +20,7 @@ const Card = props => (
       <Title black classes={{ root: s.title }}>
         {props.title}
       </Title>
-      <Arrow className={s.arrow} onClick={props.handleClose} />
+      <Close className={s.arrow} onClick={props.handleClose} width={24} height={24}/>
     </header>
     <Para className={s.address} medium black>
       {props.address}

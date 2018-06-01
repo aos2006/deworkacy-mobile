@@ -11,8 +11,8 @@ const MyMapComponent = compose(
   withProps({
     googleMapURL: 'https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBmOrSKmMpi4m6L2ycqjWF8a6wRCcAYDdc&libraries=geometry,drawing,places',
     loadingElement: <div style={{height: '100%', backgroundColor: '#151B21', width: '100%'}}/>,
-    containerElement: <div style={{height: '100%', backgroundColor: '#151B21', width: '100%'}}/>,
-    mapElement: <div style={{height: '100%', backgroundColor: '#151B21', width: '100%'}}/>,
+    containerElement: <div style={{height: '100%', backgroundColor: '#151B21', width: '100%'}} />,
+    mapElement: <div style={{height: '110%', backgroundColor: '#151B21', width: '100%'}}/>,
     disableDefaultUI: true,
   }),
   withScriptjs,
@@ -58,6 +58,7 @@ class MyFancyComponent extends React.PureComponent {
     this.setState({isMarkerShown: false});
     this.delayedShowMarker();
   }
+
 
   render() {
     return (

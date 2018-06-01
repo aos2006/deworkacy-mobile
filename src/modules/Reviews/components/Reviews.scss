@@ -7,8 +7,13 @@
   background-repeat: no-repeat;
   @include susy-phone() {
     //padding-top: 24px;
-    padding-bottom: 30px;
-    background-position: 50% 90%;
+    background-position: 50% 85%;
+  }
+}
+
+.button {
+  @include susy-phone() {
+    margin-bottom: 38px;
   }
 }
 
@@ -34,7 +39,7 @@ h2.title {
     width: 100%;
     display: flex;
     flex-direction: column-reverse;
-    margin-bottom: 93px;
+    margin-bottom: -72px;
   }
 }
 

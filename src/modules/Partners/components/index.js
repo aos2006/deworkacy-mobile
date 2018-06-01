@@ -6,6 +6,7 @@ import Container from 'components/Container';
 import Slider from 'components/Slider';
 import SectionHeader from 'components/SectionHeader';
 import globalS from './globalStyles/index.scss';
+import SectionDevider from 'components/SectionDevider';
 
 class Partners extends PureComponent {
   render() {
@@ -37,8 +38,7 @@ class Partners extends PureComponent {
                 (item, index) => (
                   <div className={s.companyWrapper} key={item.id || index}>
                     <div className={s.company}>
-                      <object data={item.image} className={s.object} type="image/svg+xml" width={100}
-                              height={item.height}/>
+                      <img src={item.image} className={s.object} />
                       {/*<a href="">*/}
                        {/**/}
                       {/*</a>*/}
@@ -49,6 +49,7 @@ class Partners extends PureComponent {
             </Slider>
           </div>
         </Container>
+        <SectionDevider className={s.devider} />
       </article>
     );
   }
