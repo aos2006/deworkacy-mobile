@@ -38,8 +38,9 @@ h2.title {
   @include susy-phone() {
     width: 100%;
     display: flex;
+    margin-bottom: 15px;
     flex-direction: column-reverse;
-    margin-bottom: -72px;
+    //margin-bottom: -72px;
   }
 }
 

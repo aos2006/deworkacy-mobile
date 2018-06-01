@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5539d989-f18b-4467-b502-5cfebb15b9e7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/modules/Form/components/Simple/Simple.scss" afterPath="$PROJECT_DIR$/src/modules/Form/components/Simple/Simple.scss" />
+      <change beforePath="$PROJECT_DIR$/build/assets.json" afterPath="$PROJECT_DIR$/build/assets.json" />
+      <change beforePath="$PROJECT_DIR$/build/chunks/not-found.js" afterPath="$PROJECT_DIR$/build/chunks/not-found.js" />
+      <change beforePath="$PROJECT_DIR$/build/chunks/ui.js" afterPath="$PROJECT_DIR$/build/chunks/ui.js" />
+      <change beforePath="$PROJECT_DIR$/build/server.js" afterPath="$PROJECT_DIR$/build/server.js" />
+      <change beforePath="$PROJECT_DIR$/src/components/Banner/Banner.js" afterPath="$PROJECT_DIR$/src/components/Banner/Banner.js" />
+      <change beforePath="$PROJECT_DIR$/src/components/ServicesList/ServicesList.js" afterPath="$PROJECT_DIR$/src/components/ServicesList/ServicesList.js" />
+      <change beforePath="$PROJECT_DIR$/src/components/SocialList/SocialList.js" afterPath="$PROJECT_DIR$/src/components/SocialList/SocialList.js" />
+      <change beforePath="$PROJECT_DIR$/src/modules/Form/components/Simple/images/simple-bg-1.jpg" afterPath="$PROJECT_DIR$/src/modules/Form/components/Simple/images/simple-bg-1.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/modules/Reviews/components/Reviews.scss" afterPath="$PROJECT_DIR$/src/modules/Reviews/components/Reviews.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Simple.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/modules/Form/components/Simple/Simple.scss">
+      <file leaf-file-name="SocialList.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/SocialList/SocialList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="23" column="70" lean-forward="false" selection-start-line="23" selection-start-column="70" selection-end-line="23" selection-end-column="70" />
+            <state relative-caret-position="153">
+              <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -96,21 +104,17 @@
         <option value="$PROJECT_DIR$/src/components/SocialList/SocialList.scss" />
         <option value="$PROJECT_DIR$/src/modules/Form/components/Rules/Rules.js" />
         <option value="$PROJECT_DIR$/src/components/Footer/Footer.js" />
-        <option value="$PROJECT_DIR$/src/components/SocialList/SocialList.js" />
         <option value="$PROJECT_DIR$/src/components/Contacts/Contacts.js" />
         <option value="$PROJECT_DIR$/src/components/ServicesList/icons/spaces.svg" />
         <option value="$PROJECT_DIR$/src/components/ServicesList/icons/corporate.svg" />
-        <option value="$PROJECT_DIR$/src/components/Banner/Banner.js" />
         <option value="$PROJECT_DIR$/src/components/Title/Title.scss" />
         <option value="$PROJECT_DIR$/src/components/ServicesList/icons/peoples.svg" />
-        <option value="$PROJECT_DIR$/src/components/ServicesList/ServicesList.js" />
         <option value="$PROJECT_DIR$/src/components/SectionHeader/SectionHeader.scss" />
         <option value="$PROJECT_DIR$/src/modules/Locations/components/Map/Map.scss" />
         <option value="$PROJECT_DIR$/src/modules/Locations/components/Locations.scss" />
         <option value="$PROJECT_DIR$/src/modules/Locations/components/Map/Map.js" />
         <option value="$PROJECT_DIR$/src/modules/Locations/components/index.js" />
         <option value="$PROJECT_DIR$/src/modules/Calendar/components/index.js" />
-        <option value="$PROJECT_DIR$/src/modules/Reviews/components/Reviews.scss" />
         <option value="$PROJECT_DIR$/src/components/SectionDevider/SectionDevider.js" />
         <option value="$PROJECT_DIR$/src/components/SectionDevider/SectionDevider.scss" />
         <option value="$PROJECT_DIR$/src/components/Contacts/Contacts.scss" />
@@ -133,6 +137,10 @@
         <option value="$PROJECT_DIR$/src/modules/Reviews/components/index.js" />
         <option value="$PROJECT_DIR$/src/components/Layout/globalStyles/global.scss" />
         <option value="$PROJECT_DIR$/src/modules/Form/components/Simple/Simple.scss" />
+        <option value="$PROJECT_DIR$/src/modules/Reviews/components/Reviews.scss" />
+        <option value="$PROJECT_DIR$/src/components/Banner/Banner.js" />
+        <option value="$PROJECT_DIR$/src/components/ServicesList/ServicesList.js" />
+        <option value="$PROJECT_DIR$/src/components/SocialList/SocialList.js" />
       </list>
     </option>
   </component>
@@ -684,12 +692,12 @@
       <workItem from="1527585208346" duration="24746000" />
       <workItem from="1527663145674" duration="18851000" />
       <workItem from="1527711437524" duration="16891000" />
-      <workItem from="1527841150065" duration="12233000" />
+      <workItem from="1527841150065" duration="13714000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="336026000" />
+    <option name="totallyTimeSpent" value="337507000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -769,25 +777,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/SocialList/SocialList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="33" column="7" lean-forward="false" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Header/Header.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="492">
           <caret line="39" column="43" lean-forward="true" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Footer/Footer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="673">
-          <caret line="40" column="43" lean-forward="false" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
           <folding />
         </state>
       </provider>
@@ -824,14 +817,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Banner/Banner.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="31" column="40" lean-forward="false" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Title/Title.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-94">
@@ -849,14 +834,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ServicesList/ServicesList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="69" column="40" lean-forward="false" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -924,14 +901,6 @@
           <folding>
             <element signature="e#0#45#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/Reviews/components/Reviews.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1124,8 +1093,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/Form/components/Simple/Simple.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="23" column="70" lean-forward="false" selection-start-line="23" selection-start-column="70" selection-end-line="23" selection-end-column="70" />
+        <state relative-caret-position="470">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/Reviews/components/Reviews.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Footer/Footer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="673">
+          <caret line="40" column="43" lean-forward="false" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Banner/Banner.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="35" column="16" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ServicesList/ServicesList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="73" column="34" lean-forward="false" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/SocialList/SocialList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
           <folding />
         </state>
       </provider>

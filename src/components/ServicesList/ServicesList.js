@@ -21,8 +21,7 @@ const ServicesList = props => (
       <div>
         <div className={cx([s.itemRoot])} key={props.id}>
           <div className={s.bg}>
-            {/*<img src={props.src} alt="" />*/}
-            <img src={bg} alt="" />
+            <img src={props.src} alt="" />
           </div>
           <Container className={s.wrapper}>
             <div className={s.iconWrapper}>
@@ -34,14 +33,10 @@ const ServicesList = props => (
                   Услуги
                 </Title>
                 <Title type="h1" classes={{ root: s.sectionTitle }}>
-                  Организация мероприятий
-                  {/*{props.title}*/}
+                  {props.title}
                 </Title>
                 <Para className={s.para}>
-                  Сеть деловых пространств Deworkacy предлагает ряд разнообразных локаций под мероприятия. Наша команда
-                  поможет организовать мероприятие любого формата от бизнес-завтраков и тренингов до хакатонов и
-                  конференций.
-                  {/*{props.descr}*/}
+                  {props.descr}
                   </Para>
               </section>
             </div>
@@ -76,7 +71,7 @@ const List = props => (
           icon={items[index].icon}
           title={item.title}
           descr={item.text}
-          src={item.image.photo640}
+          src={item.image.photo320}
         />
       ))}
       <SectionDevider />

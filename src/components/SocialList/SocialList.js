@@ -20,17 +20,17 @@ const SocialList = props => (
       {
         id: 88,
         icon: 'fb.svg',
-        href: 'https://www.facebook.com/Deworkacy',
+        href: 'https://facebook.com/Deworkacy',
       },
       {
         id: 77,
         icon: 'vk.svg',
-        href: 'https://vk.com/deworkacy',
+        href: 'vk://vk.com/deworkacy',
       },
       {
         id: 28,
         icon: 'inst.svg',
-        href: 'https://www.instagram.com/deworkacy/',
+        href: 'instagram://user?username=deworkacy',
       }
     ].map(item => (
       <li className={s.item} key={item.id}>

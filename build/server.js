@@ -685,7 +685,7 @@ var Container = function Container(props) {
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "55253190.jpg";
+module.exports = __webpack_require__.p + "f25750b0.jpg";
 
 /***/ }),
 /* 27 */
@@ -4765,7 +4765,7 @@ var Banner = function Banner(props) {
       }
     }, void 0, item.title), __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()(__WEBPACK_IMPORTED_MODULE_8_components_Para__["a" /* default */], {
       className: __WEBPACK_IMPORTED_MODULE_5__Banner_scss___default.a.para
-    }, void 0, "\u0412\u0430\u0448\u0438 \u0440\u0430\u0431\u043E\u0447\u0438\u0435 \u043F\u0440\u043E\u0441\u0442\u0440\u0430\u043D\u0441\u0442\u0430 \u0432 \u043F\u0440\u0435\u0441\u0442\u0438\u0436\u043D\u044B\u0445 \u043B\u043E\u043A\u0430\u0446\u0438\u044F\u0445 \u041C\u043E\u0441\u043A\u0432\u044B \u0441\u043E \u0432\u0441\u0435\u043C \u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u044B\u043C \u0434\u043B\u044F \u0440\u0430\u0437\u0432\u0438\u0442\u0438\u044F \u0441\u0442\u0430\u0440\u0442\u0430\u043F\u0430"), __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()(__WEBPACK_IMPORTED_MODULE_9_components_Button__["a" /* default */], {
+    }, void 0, item.text), __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()(__WEBPACK_IMPORTED_MODULE_9_components_Button__["a" /* default */], {
       onClick: props.handleGoTo,
       classes: {
         root: __WEBPACK_IMPORTED_MODULE_5__Banner_scss___default.a.button
@@ -5545,11 +5545,6 @@ exports.locals = {
 
 
 
-var _ref = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("img", {
-  src: __WEBPACK_IMPORTED_MODULE_15__images_events_bg_png___default.a,
-  alt: ""
-});
-
 var ServicesList = function ServicesList(props) {
   return __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("div", {
     className: __WEBPACK_IMPORTED_MODULE_4_classnames___default()([__WEBPACK_IMPORTED_MODULE_5__ServicesList_scss___default.a.root, 'section'])
@@ -5559,7 +5554,10 @@ var ServicesList = function ServicesList(props) {
     className: __WEBPACK_IMPORTED_MODULE_4_classnames___default()([__WEBPACK_IMPORTED_MODULE_5__ServicesList_scss___default.a.itemRoot])
   }, props.id, __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("div", {
     className: __WEBPACK_IMPORTED_MODULE_5__ServicesList_scss___default.a.bg
-  }, void 0, _ref), __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()(__WEBPACK_IMPORTED_MODULE_6_components_Container__["a" /* default */], {
+  }, void 0, __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("img", {
+    src: props.src,
+    alt: ""
+  })), __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()(__WEBPACK_IMPORTED_MODULE_6_components_Container__["a" /* default */], {
     className: __WEBPACK_IMPORTED_MODULE_5__ServicesList_scss___default.a.wrapper
   }, void 0, __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("div", {
     className: __WEBPACK_IMPORTED_MODULE_5__ServicesList_scss___default.a.iconWrapper
@@ -5577,9 +5575,9 @@ var ServicesList = function ServicesList(props) {
     classes: {
       root: __WEBPACK_IMPORTED_MODULE_5__ServicesList_scss___default.a.sectionTitle
     }
-  }, void 0, "\u041E\u0440\u0433\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u044F \u043C\u0435\u0440\u043E\u043F\u0440\u0438\u044F\u0442\u0438\u0439"), __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()(__WEBPACK_IMPORTED_MODULE_8_components_Para__["a" /* default */], {
+  }, void 0, props.title), __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()(__WEBPACK_IMPORTED_MODULE_8_components_Para__["a" /* default */], {
     className: __WEBPACK_IMPORTED_MODULE_5__ServicesList_scss___default.a.para
-  }, void 0, "\u0421\u0435\u0442\u044C \u0434\u0435\u043B\u043E\u0432\u044B\u0445 \u043F\u0440\u043E\u0441\u0442\u0440\u0430\u043D\u0441\u0442\u0432 Deworkacy \u043F\u0440\u0435\u0434\u043B\u0430\u0433\u0430\u0435\u0442 \u0440\u044F\u0434 \u0440\u0430\u0437\u043D\u043E\u043E\u0431\u0440\u0430\u0437\u043D\u044B\u0445 \u043B\u043E\u043A\u0430\u0446\u0438\u0439 \u043F\u043E\u0434 \u043C\u0435\u0440\u043E\u043F\u0440\u0438\u044F\u0442\u0438\u044F. \u041D\u0430\u0448\u0430 \u043A\u043E\u043C\u0430\u043D\u0434\u0430 \u043F\u043E\u043C\u043E\u0436\u0435\u0442 \u043E\u0440\u0433\u0430\u043D\u0438\u0437\u043E\u0432\u0430\u0442\u044C \u043C\u0435\u0440\u043E\u043F\u0440\u0438\u044F\u0442\u0438\u0435 \u043B\u044E\u0431\u043E\u0433\u043E \u0444\u043E\u0440\u043C\u0430\u0442\u0430 \u043E\u0442 \u0431\u0438\u0437\u043D\u0435\u0441-\u0437\u0430\u0432\u0442\u0440\u0430\u043A\u043E\u0432 \u0438 \u0442\u0440\u0435\u043D\u0438\u043D\u0433\u043E\u0432 \u0434\u043E \u0445\u0430\u043A\u0430\u0442\u043E\u043D\u043E\u0432 \u0438 \u043A\u043E\u043D\u0444\u0435\u0440\u0435\u043D\u0446\u0438\u0439."))), __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()(__WEBPACK_IMPORTED_MODULE_9_components_Button__["a" /* default */], {
+  }, void 0, props.descr))), __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()(__WEBPACK_IMPORTED_MODULE_9_components_Button__["a" /* default */], {
     classes: {
       root: __WEBPACK_IMPORTED_MODULE_5__ServicesList_scss___default.a.button
     },
@@ -5603,7 +5601,7 @@ var items = [{
 }];
 var Component = __WEBPACK_IMPORTED_MODULE_3_isomorphic_style_loader_lib_withStyles___default()(__WEBPACK_IMPORTED_MODULE_14__globalStyles_global_scss___default.a, __WEBPACK_IMPORTED_MODULE_5__ServicesList_scss___default.a)(ServicesList);
 
-var _ref2 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()(__WEBPACK_IMPORTED_MODULE_16_components_SectionDevider__["a" /* default */], {});
+var _ref = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()(__WEBPACK_IMPORTED_MODULE_16_components_SectionDevider__["a" /* default */], {});
 
 var List = function List(props) {
   return __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("div", {}, void 0, props.list.map(function (item, index) {
@@ -5612,9 +5610,9 @@ var List = function List(props) {
       icon: items[index].icon,
       title: item.title,
       descr: item.text,
-      src: item.image.photo640
+      src: item.image.photo320
     });
-  }), _ref2);
+  }), _ref);
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (List);
@@ -6327,7 +6325,6 @@ module.exports = ""
   !*** ./src/components/ServicesList/images/events-bg.png ***!
   \**********************************************************/
 /*! dynamic exports provided */
-/*! exports used: default */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "744e7f6d.png";
@@ -8080,7 +8077,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "@media (min-width:320px){.wkCeY,h2._25YmH{font-family:PF Bague Sans Pro,sans-serif;font-weight:600;color:#fff;font-size:24px;font-weight:700;line-height:31px}}._3Q2vR{background-image:url(" + escape(__webpack_require__(/*! ./icons/bg.svg */ 186)) + ");background-size:437px 177px;background-repeat:no-repeat}@media (min-width:320px){._3Q2vR{background-position:50% 85%}}@media (min-width:320px){.ZlAJm{margin-bottom:38px}}@media (min-width:320px){h2._25YmH{margin-bottom:15px}}@media (min-width:320px){.Kd6vo{margin-bottom:46px}}._1vrpE{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-align:start;align-items:flex-start;-ms-flex-pack:start;justify-content:flex-start}@media (min-width:320px){._1NGY3{width:100%;display:-ms-flexbox;display:flex;-ms-flex-direction:column-reverse;flex-direction:column-reverse;margin-bottom:-72px}}._2HF1o{font-family:PF Bague Sans Pro,sans-serif;font-weight:300;color:#151b21;padding:25px;-webkit-box-shadow:inset 4px -14px 11px rgba(0,0,0,.02);box-shadow:inset 4px -14px 11px rgba(0,0,0,.02);border-radius:2px;background-color:#fff;margin-top:0}@media (min-width:320px){._2HF1o{font-size:14px;line-height:20px;margin-bottom:14px}}@media (min-width:320px){.vpJ8K{margin-bottom:15px}}@media (min-width:320px){._2NKl2{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-align:start;-ms-flex-pack:start;justify-content:flex-start;-ms-flex-wrap:nowrap;flex-wrap:nowrap;align-items:flex-start}}._25EuG{display:block;margin-right:15px;border-radius:50%;width:66px;height:66px}._1qR01{font-family:PF Bague Sans Pro,sans-serif;font-weight:400;color:#8e9397;font-size:12px;line-height:16px}", ""]);
+exports.push([module.i, "@media (min-width:320px){.wkCeY,h2._25YmH{font-family:PF Bague Sans Pro,sans-serif;font-weight:600;color:#fff;font-size:24px;font-weight:700;line-height:31px}}._3Q2vR{background-image:url(" + escape(__webpack_require__(/*! ./icons/bg.svg */ 186)) + ");background-size:437px 177px;background-repeat:no-repeat}@media (min-width:320px){._3Q2vR{background-position:50% 85%}}@media (min-width:320px){.ZlAJm{margin-bottom:38px}}@media (min-width:320px){h2._25YmH{margin-bottom:15px}}@media (min-width:320px){.Kd6vo{margin-bottom:46px}}._1vrpE{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-align:start;align-items:flex-start;-ms-flex-pack:start;justify-content:flex-start}@media (min-width:320px){._1NGY3{width:100%;display:-ms-flexbox;display:flex;margin-bottom:15px;-ms-flex-direction:column-reverse;flex-direction:column-reverse}}._2HF1o{font-family:PF Bague Sans Pro,sans-serif;font-weight:300;color:#151b21;padding:25px;-webkit-box-shadow:inset 4px -14px 11px rgba(0,0,0,.02);box-shadow:inset 4px -14px 11px rgba(0,0,0,.02);border-radius:2px;background-color:#fff;margin-top:0}@media (min-width:320px){._2HF1o{font-size:14px;line-height:20px;margin-bottom:14px}}@media (min-width:320px){.vpJ8K{margin-bottom:15px}}@media (min-width:320px){._2NKl2{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-align:start;-ms-flex-pack:start;justify-content:flex-start;-ms-flex-wrap:nowrap;flex-wrap:nowrap;align-items:flex-start}}._25EuG{display:block;margin-right:15px;border-radius:50%;width:66px;height:66px}._1qR01{font-family:PF Bague Sans Pro,sans-serif;font-weight:400;color:#8e9397;font-size:12px;line-height:16px}", ""]);
 
 // exports
 exports.locals = {
@@ -13640,15 +13637,15 @@ var SocialList = function SocialList(props) {
   }, void 0, "\u0412 \u0441\u043E\u0446\u0438\u0430\u043B\u044C\u043D\u044B\u0445 \u0441\u0435\u0442\u044F\u0445"), [{
     id: 88,
     icon: 'fb.svg',
-    href: 'https://www.facebook.com/Deworkacy'
+    href: 'https://facebook.com/Deworkacy'
   }, {
     id: 77,
     icon: 'vk.svg',
-    href: 'https://vk.com/deworkacy'
+    href: 'vk://vk.com/deworkacy'
   }, {
     id: 28,
     icon: 'inst.svg',
-    href: 'https://www.instagram.com/deworkacy/'
+    href: 'instagram://user?username=deworkacy'
   }].map(function (item) {
     return __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("li", {
       className: __WEBPACK_IMPORTED_MODULE_5__SocialList_scss___default.a.item

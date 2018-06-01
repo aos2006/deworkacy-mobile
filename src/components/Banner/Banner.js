@@ -33,10 +33,7 @@ const Banner = props => (
                 {item.title}
               </Title>
               <Para className={s.para}>
-                Ваши рабочие пространста
-                в престижных локациях Москвы
-                со всем необходимым для развития стартапа
-                {/*{item.text}*/}
+                {item.text}
               </Para>
               <Button
                 onClick={props.handleGoTo}
