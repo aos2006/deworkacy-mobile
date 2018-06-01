@@ -16,9 +16,11 @@ const Event = props => (
         Сегодня
       </h5>
     </header>
-    {/*<div className={s.img}>*/}
-      {/*<img src={props.img} alt="" />*/}
-    {/*</div>*/}
+    {props.img && (
+      <div className={s.img}>
+        <img src={props.img} alt=""/>
+      </div>
+    )}
     <Title type="h4" classes={{ root: s.title }}>
       {props.title}
     </Title>

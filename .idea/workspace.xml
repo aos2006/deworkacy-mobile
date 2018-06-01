@@ -6,11 +6,8 @@
       <change beforePath="$PROJECT_DIR$/build/chunks/not-found.js" afterPath="$PROJECT_DIR$/build/chunks/not-found.js" />
       <change beforePath="$PROJECT_DIR$/build/chunks/ui.js" afterPath="$PROJECT_DIR$/build/chunks/ui.js" />
       <change beforePath="$PROJECT_DIR$/build/server.js" afterPath="$PROJECT_DIR$/build/server.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Banner/Banner.js" afterPath="$PROJECT_DIR$/src/components/Banner/Banner.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/ServicesList/ServicesList.js" afterPath="$PROJECT_DIR$/src/components/ServicesList/ServicesList.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/SocialList/SocialList.js" afterPath="$PROJECT_DIR$/src/components/SocialList/SocialList.js" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Form/components/Simple/images/simple-bg-1.jpg" afterPath="$PROJECT_DIR$/src/modules/Form/components/Simple/images/simple-bg-1.jpg" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Reviews/components/Reviews.scss" afterPath="$PROJECT_DIR$/src/modules/Reviews/components/Reviews.scss" />
+      <change beforePath="$PROJECT_DIR$/src/modules/Calendar/components/Event/Event.js" afterPath="$PROJECT_DIR$/src/modules/Calendar/components/Event/Event.js" />
+      <change beforePath="$PROJECT_DIR$/src/modules/Calendar/components/index.js" afterPath="$PROJECT_DIR$/src/modules/Calendar/components/index.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SocialList.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/SocialList/SocialList.js">
+      <file leaf-file-name="Event.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/modules/Calendar/components/Event/Event.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+            <state relative-caret-position="448">
+              <caret line="21" column="12" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -99,7 +96,6 @@
         <option value="$PROJECT_DIR$/src/modules/Form/components/Checkbox/Checkbox.js" />
         <option value="$PROJECT_DIR$/src/modules/Form/components/RadioGroup/RadioGroup.js" />
         <option value="$PROJECT_DIR$/src/components/Header/Header.js" />
-        <option value="$PROJECT_DIR$/src/modules/Calendar/components/Event/Event.js" />
         <option value="$PROJECT_DIR$/tools/webpack.config.js" />
         <option value="$PROJECT_DIR$/src/components/SocialList/SocialList.scss" />
         <option value="$PROJECT_DIR$/src/modules/Form/components/Rules/Rules.js" />
@@ -114,7 +110,6 @@
         <option value="$PROJECT_DIR$/src/modules/Locations/components/Locations.scss" />
         <option value="$PROJECT_DIR$/src/modules/Locations/components/Map/Map.js" />
         <option value="$PROJECT_DIR$/src/modules/Locations/components/index.js" />
-        <option value="$PROJECT_DIR$/src/modules/Calendar/components/index.js" />
         <option value="$PROJECT_DIR$/src/components/SectionDevider/SectionDevider.js" />
         <option value="$PROJECT_DIR$/src/components/SectionDevider/SectionDevider.scss" />
         <option value="$PROJECT_DIR$/src/components/Contacts/Contacts.scss" />
@@ -141,6 +136,8 @@
         <option value="$PROJECT_DIR$/src/components/Banner/Banner.js" />
         <option value="$PROJECT_DIR$/src/components/ServicesList/ServicesList.js" />
         <option value="$PROJECT_DIR$/src/components/SocialList/SocialList.js" />
+        <option value="$PROJECT_DIR$/src/modules/Calendar/components/index.js" />
+        <option value="$PROJECT_DIR$/src/modules/Calendar/components/Event/Event.js" />
       </list>
     </option>
   </component>
@@ -692,12 +689,12 @@
       <workItem from="1527585208346" duration="24746000" />
       <workItem from="1527663145674" duration="18851000" />
       <workItem from="1527711437524" duration="16891000" />
-      <workItem from="1527841150065" duration="13714000" />
+      <workItem from="1527841150065" duration="14106000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="337507000" />
+    <option name="totallyTimeSpent" value="337899000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -757,11 +754,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/moscow.svg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Footer/icons/google.svg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -891,16 +883,6 @@
         <state relative-caret-position="296">
           <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/Calendar/components/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="165" column="46" lean-forward="false" selection-start-line="165" selection-start-column="46" selection-end-line="165" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#45#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1123,18 +1105,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ServicesList/ServicesList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="73" column="34" lean-forward="false" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/SocialList/SocialList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ServicesList/ServicesList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="30" column="35" lean-forward="true" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/Calendar/components/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="159" column="20" lean-forward="false" selection-start-line="159" selection-start-column="20" selection-end-line="159" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/Calendar/components/Event/Event.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="21" column="12" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
           <folding />
         </state>
       </provider>

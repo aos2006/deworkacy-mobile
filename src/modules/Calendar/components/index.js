@@ -152,7 +152,7 @@ class AppCalendar extends PureComponent {
                   <Event
                     place={item.location}
                     className={s.event}
-                    // img={item.photo.url}
+                    img={item.photo ? item.photo.url : null}
                     key={item.id}
                     title={item.title}
                     range={`${moment(item.timestampStart).format('DD MMMM')} - ${moment(item.timestampFinish).format('DD MMMM')}`}

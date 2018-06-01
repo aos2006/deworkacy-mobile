@@ -10707,8 +10707,8 @@ function (_PureComponent) {
       }, void 0, this.state.events.map(function (item) {
         return __WEBPACK_IMPORTED_MODULE_12__babel_runtime_helpers_jsx___default()(__WEBPACK_IMPORTED_MODULE_27__Event__["a" /* default */], {
           place: item.location,
-          className: __WEBPACK_IMPORTED_MODULE_19__Calendar_scss___default.a.event // img={item.photo.url}
-          ,
+          className: __WEBPACK_IMPORTED_MODULE_19__Calendar_scss___default.a.event,
+          img: item.photo ? item.photo.url : null,
           title: item.title,
           range: "".concat(__WEBPACK_IMPORTED_MODULE_25_moment___default()(item.timestampStart).format('DD MMMM'), " - ").concat(__WEBPACK_IMPORTED_MODULE_25_moment___default()(item.timestampFinish).format('DD MMMM')),
           time: __WEBPACK_IMPORTED_MODULE_25_moment___default()(item.timestampStart).format('HH:MM')
@@ -12082,7 +12082,12 @@ var Event = function Event(props) {
     className: __WEBPACK_IMPORTED_MODULE_5__Event_scss___default.a.header
   }, void 0, __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("h5", {
     className: __WEBPACK_IMPORTED_MODULE_5__Event_scss___default.a.now
-  }, void 0, "\u0421\u0435\u0433\u043E\u0434\u043D\u044F")), __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()(__WEBPACK_IMPORTED_MODULE_6_components_Title__["a" /* default */], {
+  }, void 0, "\u0421\u0435\u0433\u043E\u0434\u043D\u044F")), props.img && __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("div", {
+    className: __WEBPACK_IMPORTED_MODULE_5__Event_scss___default.a.img
+  }, void 0, __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("img", {
+    src: props.img,
+    alt: ""
+  })), __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()(__WEBPACK_IMPORTED_MODULE_6_components_Title__["a" /* default */], {
     type: "h4",
     classes: {
       root: __WEBPACK_IMPORTED_MODULE_5__Event_scss___default.a.title
