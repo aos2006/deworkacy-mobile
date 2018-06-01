@@ -2,62 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5539d989-f18b-4467-b502-5cfebb15b9e7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/build/assets.json" afterPath="$PROJECT_DIR$/build/assets.json" />
-      <change beforePath="$PROJECT_DIR$/build/chunks/not-found.js" afterPath="$PROJECT_DIR$/build/chunks/not-found.js" />
-      <change beforePath="$PROJECT_DIR$/build/chunks/not-found.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/chunks/ui.js" afterPath="$PROJECT_DIR$/build/chunks/ui.js" />
-      <change beforePath="$PROJECT_DIR$/build/chunks/ui.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/119c2ccb.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/11e0bcca.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/7f81c77c.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/a1b9b3c0.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/c2238909.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/client.6d2b4aee.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/client.6d2b4aee.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/d41d8cd9.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/d41d8cd9.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/d41d8cd9.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/not-found.d3cf3b84.chunk.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/not-found.d3cf3b84.chunk.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/ui.e5350991.chunk.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/ui.e5350991.chunk.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/vendor.1ad92ef7.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/vendor.1ad92ef7.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/server.js" afterPath="$PROJECT_DIR$/build/server.js" />
-      <change beforePath="$PROJECT_DIR$/build/server.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/components/Banner/Banner.js" afterPath="$PROJECT_DIR$/src/components/Banner/Banner.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Banner/Banner.scss" afterPath="$PROJECT_DIR$/src/components/Banner/Banner.scss" />
-      <change beforePath="$PROJECT_DIR$/src/components/Contacts/Contacts.scss" afterPath="$PROJECT_DIR$/src/components/Contacts/Contacts.scss" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.scss" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.scss" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.scss" afterPath="$PROJECT_DIR$/src/components/Header/Header.scss" />
-      <change beforePath="$PROJECT_DIR$/src/components/Html.js" afterPath="$PROJECT_DIR$/src/components/Html.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.js" afterPath="$PROJECT_DIR$/src/components/Layout/Layout.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/globalStyles/global.scss" afterPath="$PROJECT_DIR$/src/components/Layout/globalStyles/global.scss" />
-      <change beforePath="$PROJECT_DIR$/src/components/ServicesList/ServicesList.js" afterPath="$PROJECT_DIR$/src/components/ServicesList/ServicesList.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/ServicesList/ServicesList.scss" afterPath="$PROJECT_DIR$/src/components/ServicesList/ServicesList.scss" />
-      <change beforePath="$PROJECT_DIR$/src/components/ServicesList/icons/corporate.svg" afterPath="$PROJECT_DIR$/src/components/ServicesList/icons/corporate.svg" />
-      <change beforePath="$PROJECT_DIR$/src/components/ServicesList/icons/peoples.svg" afterPath="$PROJECT_DIR$/src/components/ServicesList/icons/peoples.svg" />
-      <change beforePath="$PROJECT_DIR$/src/components/ServicesList/icons/spaces.svg" afterPath="$PROJECT_DIR$/src/components/ServicesList/icons/spaces.svg" />
-      <change beforePath="$PROJECT_DIR$/src/components/Title/Title.scss" afterPath="$PROJECT_DIR$/src/components/Title/Title.scss" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Calendar/components/Calendar.scss" afterPath="$PROJECT_DIR$/src/modules/Calendar/components/Calendar.scss" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Calendar/components/index.js" afterPath="$PROJECT_DIR$/src/modules/Calendar/components/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Form/components/Input/Input.scss" afterPath="$PROJECT_DIR$/src/modules/Form/components/Input/Input.scss" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Form/components/Simple/Simple.js" afterPath="$PROJECT_DIR$/src/modules/Form/components/Simple/Simple.js" />
       <change beforePath="$PROJECT_DIR$/src/modules/Form/components/Simple/Simple.scss" afterPath="$PROJECT_DIR$/src/modules/Form/components/Simple/Simple.scss" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Form/components/icons/mailBg.svg" afterPath="$PROJECT_DIR$/src/modules/Form/components/icons/mailBg.svg" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Locations/components/Card/Card.js" afterPath="$PROJECT_DIR$/src/modules/Locations/components/Card/Card.js" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Locations/components/Card/Card.scss" afterPath="$PROJECT_DIR$/src/modules/Locations/components/Card/Card.scss" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Locations/components/Locations.scss" afterPath="$PROJECT_DIR$/src/modules/Locations/components/Locations.scss" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Locations/components/Map/Map.js" afterPath="$PROJECT_DIR$/src/modules/Locations/components/Map/Map.js" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Locations/components/Map/Map.scss" afterPath="$PROJECT_DIR$/src/modules/Locations/components/Map/Map.scss" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Locations/components/index.js" afterPath="$PROJECT_DIR$/src/modules/Locations/components/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Partners/components/Partners.scss" afterPath="$PROJECT_DIR$/src/modules/Partners/components/Partners.scss" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Partners/components/globalStyles/index.scss" afterPath="$PROJECT_DIR$/src/modules/Partners/components/globalStyles/index.scss" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Partners/components/index.js" afterPath="$PROJECT_DIR$/src/modules/Partners/components/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Reviews/components/Reviews.scss" afterPath="$PROJECT_DIR$/src/modules/Reviews/components/Reviews.scss" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Reviews/components/index.js" afterPath="$PROJECT_DIR$/src/modules/Reviews/components/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/routes/home/Home.js" afterPath="$PROJECT_DIR$/src/routes/home/Home.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -71,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="global.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/Layout/globalStyles/global.scss">
+      <file leaf-file-name="Simple.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/modules/Form/components/Simple/Simple.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state relative-caret-position="638">
+              <caret line="23" column="70" lean-forward="false" selection-start-line="23" selection-start-column="70" selection-end-line="23" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -186,8 +131,8 @@
         <option value="$PROJECT_DIR$/src/modules/Form/components/Simple/Simple.js" />
         <option value="$PROJECT_DIR$/src/routes/home/Home.js" />
         <option value="$PROJECT_DIR$/src/modules/Reviews/components/index.js" />
-        <option value="$PROJECT_DIR$/src/modules/Form/components/Simple/Simple.scss" />
         <option value="$PROJECT_DIR$/src/components/Layout/globalStyles/global.scss" />
+        <option value="$PROJECT_DIR$/src/modules/Form/components/Simple/Simple.scss" />
       </list>
     </option>
   </component>
@@ -739,12 +684,12 @@
       <workItem from="1527585208346" duration="24746000" />
       <workItem from="1527663145674" duration="18851000" />
       <workItem from="1527711437524" duration="16891000" />
-      <workItem from="1527841150065" duration="12093000" />
+      <workItem from="1527841150065" duration="12233000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="335886000" />
+    <option name="totallyTimeSpent" value="336026000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -1169,18 +1114,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/Form/components/Simple/Simple.scss">
+    <entry file="file://$PROJECT_DIR$/src/components/Layout/globalStyles/global.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+        <state relative-caret-position="257">
+          <caret line="42" column="32" lean-forward="true" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Layout/globalStyles/global.scss">
+    <entry file="file://$PROJECT_DIR$/src/modules/Form/components/Simple/Simple.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        <state relative-caret-position="638">
+          <caret line="23" column="70" lean-forward="false" selection-start-line="23" selection-start-column="70" selection-end-line="23" selection-end-column="70" />
           <folding />
         </state>
       </provider>

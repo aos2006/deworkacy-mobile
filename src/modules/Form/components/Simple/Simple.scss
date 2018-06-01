@@ -2,7 +2,7 @@
 @import "src/styles/grid";
 
 .root {
-  background-image: url('../icons/mailBg.svg'), linear-gradient(to bottom, rgba(21, 27, 33, 0.00) 6%, #151B21 84%), url('./images/simple-bg-1.jpg');
+  background-image: url('../icons/mailBg.svg'), linear-gradient(to top, rgba(21, 27, 33, 0.00) 6%, #151B21 84%), url('./images/simple-bg-1.jpg');
   background-position: 16px 24px, 0 0, 0 0;
   background-repeat: no-repeat;
   transition: background-image .5s ease-out;
@@ -13,15 +13,15 @@
 }
 
 .eventsBg {
-  background-image: url('../icons/mailBg.svg'), linear-gradient(to bottom, rgba(21, 27, 33, 0.00) 6%, #151B21 84%), url('./images/simple-bg-1.jpg')
+  background-image: url('../icons/mailBg.svg'), linear-gradient(to top, rgba(21, 27, 33, 0.00) 6%, #151B21 84%), url('./images/simple-bg-1.jpg')
 }
 
 .spacesBg {
-  background-image: url('../icons/mailBg.svg'), linear-gradient(to bottom, rgba(21, 27, 33, 0.00) 6%, #151B21 84%), url('./images/simple-bg-spaces.jpg')
+  background-image: url('../icons/mailBg.svg'), linear-gradient(to top, rgba(21, 27, 33, 0.00) 6%, #151B21 84%), url('./images/simple-bg-spaces.jpg')
 }
 
 .corpBg {
-  background-image: url('../icons/mailBg.svg'), linear-gradient(to bottom, rgba(21, 27, 33, 0.00) 6%, #151B21 84%), url('./images/simple-bg-corp.jpg')
+  background-image: url('../icons/mailBg.svg'), linear-gradient(to top, rgba(21, 27, 33, 0.00) 6%, #151B21 84%), url('./images/simple-bg-corp.jpg')
 }
 .devider {
   @include susy-phone() {
