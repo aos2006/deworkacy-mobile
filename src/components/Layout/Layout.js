@@ -42,7 +42,6 @@ class Layout extends React.Component {
       loopHorizontal: true,
       scrollingSpeed: 400,
       responsiveHeight: 900,
-      scrollOverflow: true,
       scrollOverflowOptions: {
         eventPassthrough: 'horizontal',
       },
@@ -56,9 +55,9 @@ class Layout extends React.Component {
   render() {
     return (
       <div>
-        {this.props.noHeader || <Header/>}
         <Loader hide={this.state.isLoaded} />
        <div id="page">
+         {this.props.noHeader || <Header/>}
          {React.Children.map(this.props.children, child => (
            React.cloneElement(child, { moveTo: (...args) => $.fn.fullpage.moveTo(...args) })
          ))}

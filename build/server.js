@@ -3222,7 +3222,6 @@ function (_React$Component) {
         loopHorizontal: true,
         scrollingSpeed: 400,
         responsiveHeight: 900,
-        scrollOverflow: true,
         scrollOverflowOptions: {
           eventPassthrough: 'horizontal'
         },
@@ -3236,11 +3235,11 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("div", {}, void 0, this.props.noHeader || _ref2, __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()(__WEBPACK_IMPORTED_MODULE_18_components_Loader__["a" /* default */], {
+      return __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("div", {}, void 0, __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()(__WEBPACK_IMPORTED_MODULE_18_components_Loader__["a" /* default */], {
         hide: this.state.isLoaded
       }), __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("div", {
         id: "page"
-      }, void 0, __WEBPACK_IMPORTED_MODULE_7_react___default.a.Children.map(this.props.children, function (child) {
+      }, void 0, this.props.noHeader || _ref2, __WEBPACK_IMPORTED_MODULE_7_react___default.a.Children.map(this.props.children, function (child) {
         return __WEBPACK_IMPORTED_MODULE_7_react___default.a.cloneElement(child, {
           moveTo: function moveTo() {
             var _$$fn$fullpage;
@@ -3953,10 +3952,6 @@ var _ref26 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()(
 });
 
 var _ref27 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("script", {
-  src: "https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.min.js"
-});
-
-var _ref28 = __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("script", {
   src: "https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"
 });
 
@@ -4009,7 +4004,7 @@ function (_React$Component) {
         dangerouslySetInnerHTML: {
           __html: "window.App=".concat(__WEBPACK_IMPORTED_MODULE_8_serialize_javascript___default()(app))
         }
-      }), _ref26, _ref27, _ref28, scripts.map(function (script) {
+      }), _ref26, _ref27, scripts.map(function (script) {
         return __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("script", {
           src: script
         }, script);
@@ -6313,7 +6308,7 @@ var MyMapComponent = Object(__WEBPACK_IMPORTED_MODULE_10_recompose__["compose"])
       icon: "marker.svg",
       onClick: function onClick(ev) {
         var center = "".concat(marker.position.lat, ",").concat(marker.position.lng);
-        Object(__WEBPACK_IMPORTED_MODULE_11_modules_utils__["a" /* checkingApp */])("geo:".concat(center), "https://www.google.com/maps/search/?api=1&query=".concat(center));
+        Object(__WEBPACK_IMPORTED_MODULE_11_modules_utils__["a" /* checkingApp */])("comgooglemaps://?center=".concat(center), "https://www.google.com/maps/search/?api=1&query=".concat(center));
       }
     }), __WEBPACK_IMPORTED_MODULE_7__babel_runtime_helpers_jsx___default()("span", {
       className: __WEBPACK_IMPORTED_MODULE_15__Map_scss___default.a.label
@@ -6667,7 +6662,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "@media (min-width:320px){._33grC{font-family:PF Bague Sans Pro,sans-serif;font-weight:600;color:#fff;font-size:24px;font-weight:700;line-height:31px}}._2eNoT{position:relative;overflow:hidden;z-index:334}@media (min-width:320px){._2eNoT{height:570px}}.s_i7G{position:relative}@media (min-width:320px){.s_i7G{height:570px}}._3Y2Mu{position:absolute;bottom:33px;left:0;right:0;z-index:2;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;-ms-flex-pack:end;justify-content:flex-end}@media (min-width:320px){._1tF9l{position:absolute;z-index:3;top:0;left:15px;right:15px}}h2._2QHAB{font-family:PF Bague Sans Pro,sans-serif;font-weight:600}@media (min-width:320px){h2._2QHAB{font-size:24px;line-height:31px}}", ""]);
+exports.push([module.i, "@media (min-width:320px){._33grC{font-family:PF Bague Sans Pro,sans-serif;font-weight:600;color:#fff;font-size:24px;font-weight:700;line-height:31px}}._2eNoT{position:relative;overflow:hidden;z-index:2}@media (min-width:320px){._2eNoT{height:570px}}.s_i7G{position:relative}@media (min-width:320px){.s_i7G{height:570px}}._3Y2Mu{position:absolute;bottom:33px;left:0;right:0;z-index:2;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;-ms-flex-pack:end;justify-content:flex-end}@media (min-width:320px){._1tF9l{position:absolute;z-index:3;top:0;left:15px;right:15px}}h2._2QHAB{font-family:PF Bague Sans Pro,sans-serif;font-weight:600}@media (min-width:320px){h2._2QHAB{font-size:24px;line-height:31px}}", ""]);
 
 // exports
 exports.locals = {
@@ -7184,7 +7179,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "@media (min-width:320px){._2GOZx{font-family:PF Bague Sans Pro,sans-serif;font-weight:600;color:#fff;font-size:24px;font-weight:700;line-height:31px}}._1jl93{width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;position:absolute;z-index:10;top:0;bottom:0;background-color:#fff;border-radius:2px;padding:26px 30px 45px;visibility:hidden;opacity:0;-webkit-transition:opacity .2s ease-out;-o-transition:opacity .2s ease-out;transition:opacity .2s ease-out}@media (min-width:320px){._2qlrQ{width:220px;margin-bottom:15px}}._1Xg0L{margin-bottom:20px}.ObOWy{margin-bottom:35px}._1E1lz{opacity:1;visibility:visible}@media (min-width:320px){._14fsu{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;margin-bottom:15px;-ms-flex-pack:justify;justify-content:space-between}}", ""]);
+exports.push([module.i, "@media (min-width:320px){._2GOZx{font-family:PF Bague Sans Pro,sans-serif;font-weight:600;color:#fff;font-size:24px;font-weight:700;line-height:31px}}._1jl93{width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;position:absolute;z-index:10;top:0;bottom:0;background-color:#fff;border-radius:2px;padding:26px 30px 45px;visibility:hidden;opacity:0;-webkit-transition:opacity .2s ease-out;-o-transition:opacity .2s ease-out;transition:opacity .2s ease-out}@media (min-width:320px){._2qlrQ{width:220px;margin-bottom:15px}}._1Xg0L{margin-bottom:20px}.ObOWy{margin-bottom:35px}._1E1lz{opacity:1;visibility:visible}@media (min-width:320px){._14fsu{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;margin-bottom:15px;-ms-flex-pack:justify;justify-content:space-between}}.BAYon{margin-right:34px}", ""]);
 
 // exports
 exports.locals = {
@@ -7194,7 +7189,8 @@ exports.locals = {
 	"descr": "_1Xg0L",
 	"address": "ObOWy",
 	"show": "_1E1lz",
-	"header": "_14fsu"
+	"header": "_14fsu",
+	"arrow": "BAYon"
 };
 
 /***/ }),

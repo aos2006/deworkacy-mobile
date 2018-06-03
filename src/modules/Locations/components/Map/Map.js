@@ -41,7 +41,7 @@ const MyMapComponent = compose(
         icon="marker.svg"
         onClick={(ev) => {
           const center = `${marker.position.lat},${marker.position.lng}`;
-          checkingApp(`geo:${center}`, `https://www.google.com/maps/search/?api=1&query=${center}`);
+          checkingApp(`comgooglemaps://?center=${center}`, `https://www.google.com/maps/search/?api=1&query=${center}`);
         }}
       >
         <span
