@@ -22,7 +22,7 @@ const MyMapComponent = compose(
   withGoogleMap,
 )(props => (
   <GoogleMap
-    defaultZoom={17}
+    defaultZoom={15}
     defaultHeading={0}
     heading={0}
     center={props.defaultCenter}
@@ -40,7 +40,7 @@ const MyMapComponent = compose(
         labelStyle={{paddingTop: "10px"}}
         icon="marker.svg"
         onClick={(ev) => {
-          const center = `${props.defaultCenter.lat},${props.defaultCenter.lng}`;
+          const center = `${marker.position.lat},${marker.position.lng}`;
           checkingApp(`geo:${center}`, `https://www.google.com/maps/search/?api=1&query=${center}`);
         }}
       >

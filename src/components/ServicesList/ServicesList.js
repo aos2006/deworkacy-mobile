@@ -12,7 +12,6 @@ import Spaces from './icons/spaces.svg';
 import Corporate from './icons/corporate.svg';
 import globalS from './globalStyles/global.scss';
 import SectionDevider from 'components/SectionDevider';
-import {StickyContainer, Sticky} from 'react-sticky';
 
 const ServicesList = props => (
   <div className={cx([s.root, 'section'])}>
