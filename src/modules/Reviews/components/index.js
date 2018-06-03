@@ -10,7 +10,14 @@ import Button from 'components/Button';
 import SectionDevider from 'components/SectionDevider';
 
 class Reviews extends PureComponent {
-
+  sliderSettings = {
+    infinite: true,
+    customDots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 500,
+    adaptiveHeight: true,
+  }
   render() {
     return (
       <article
@@ -24,13 +31,7 @@ class Reviews extends PureComponent {
             <Slider
               dotsClass={s.dots}
               className={s.slider}
-              settings={{
-                infinite: true,
-                customDots: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                speed: 500,
-            }}>
+              settings={this.sliderSettings}>
               {this.props.list.map((item, index) => (
                 <div className={s.comment} key={item.id}>
                  <p className={s.txt}>{item.reviewText}</p>

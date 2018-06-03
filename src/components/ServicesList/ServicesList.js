@@ -10,43 +10,45 @@ import Button from 'components/Button';
 import Peoples from './icons/peoples.svg';
 import Spaces from './icons/spaces.svg';
 import Corporate from './icons/corporate.svg';
-import SectionHeader from 'components/SectionHeader';
 import globalS from './globalStyles/global.scss';
-import bg from './images/events-bg.png';
 import SectionDevider from 'components/SectionDevider';
+import {StickyContainer, Sticky} from 'react-sticky';
 
 const ServicesList = props => (
   <div className={cx([s.root, 'section'])}>
-    <article className={s.inner}>
-      <div>
-        <div className={cx([s.itemRoot])} key={props.id}>
-          <div className={s.bg}>
-            <img src={props.src} alt="" />
-          </div>
-          <Container className={s.wrapper}>
-            <div className={s.iconWrapper}>
-              {props.icon}
+      <article className={s.inner}>
+        <div>
+          <div className={cx([s.itemRoot])} key={props.id}>
+            <div className={cx([
+              s.bg,
+            ])}>
+              <img src={props.src} alt=""/>
             </div>
-            <div className={s.row}>
-              <section className={cx([s.info, 'services_para'])}>
-                <Title type="h5" classes={{ root: s.pretitle }}>
-                  Услуги
-                </Title>
-                <Title type="h1" classes={{ root: s.sectionTitle }}>
-                  {props.title}
-                </Title>
-                <Para className={s.para}>
-                  {props.descr}
+
+            <Container className={s.wrapper}>
+              <div className={s.iconWrapper}>
+                {props.icon}
+              </div>
+              <div className={s.row}>
+                <section className={cx([s.info, 'services_para'])}>
+                  <Title type="h5" classes={{root: s.pretitle}}>
+                    Услуги
+                  </Title>
+                  <Title type="h1" classes={{root: s.sectionTitle}}>
+                    {props.title}
+                  </Title>
+                  <Para className={s.para}>
+                    {props.descr}
                   </Para>
-              </section>
-            </div>
-            <Button classes={{root: s.button}} onClick={props.handleGoTo}>
-              Оставить заявку
-            </Button>
-          </Container>
+                </section>
+              </div>
+              <Button classes={{root: s.button}} onClick={props.handleGoTo}>
+                Оставить заявку
+              </Button>
+            </Container>
+          </div>
         </div>
-      </div>
-    </article>
+      </article>
   </div>
 );
 const items = [

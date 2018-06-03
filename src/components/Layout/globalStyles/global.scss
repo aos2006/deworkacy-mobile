@@ -45,6 +45,15 @@
   //animation-delay: .6s;
 }
 
+.section .services-bg {
+  transition: opacity .2s ease-out;
+  opacity: 0;
+}
+
+.section.active .services-bg {
+  opacity: 1;
+}
+
 //.section.active .services_para {
 //  opacity: 0;
 //  animation: fade .6s ease-out forwards;

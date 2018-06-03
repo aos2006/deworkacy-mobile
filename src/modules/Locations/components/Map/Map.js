@@ -1,7 +1,10 @@
 import React from 'react';
-import {compose, withProps} from 'recompose';
+import MarkerWithLabel from "react-google-maps/lib/components/addons/MarkerWithLabel";
+import {compose, withProps, lifecycle} from 'recompose';
+import { checkingApp } from "modules/utils"
 import cx from 'classnames';
-import {withScriptjs, withGoogleMap, GoogleMap, Marker} from 'react-google-maps';
+import {withScriptjs, withGoogleMap, GoogleMap, Marker, DirectionsRenderer} from 'react-google-maps';
+
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Map.scss';
 // const {MarkerClusterer} = require("react-google-maps/lib/components/addons/MarkerClusterer");
@@ -19,7 +22,6 @@ const MyMapComponent = compose(
   withGoogleMap,
 )(props => (
   <GoogleMap
-    scrollwheel={false}
     defaultZoom={17}
     defaultHeading={0}
     heading={0}
@@ -29,12 +31,22 @@ const MyMapComponent = compose(
       disableDefaultUI: true,
     }}>
     {props.markers.map(marker => (
-      <Marker
+      <MarkerWithLabel
         {...marker}
         key={marker.id}
         position={marker.position}
+        defaultIcon="marker.svg"
+        labelAnchor={new google.maps.Point(50, 0)}
+        labelStyle={{paddingTop: "10px"}}
         icon="marker.svg"
-      />
+        onClick={(ev) => {
+          const center = `${props.defaultCenter.lat},${props.defaultCenter.lng}`;
+          checkingApp(`geo:${center}`, `https://www.google.com/maps/search/?api=1&query=${center}`);
+        }}
+      >
+        <span
+           className={s.label}>Построить маршрут</span>
+      </MarkerWithLabel>
     ))}
   </GoogleMap>
 ));

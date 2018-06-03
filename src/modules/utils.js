@@ -12,3 +12,12 @@ export const taggedReducer = (reducer, rName) => (state, action) => {
   if (name !== rName && !isInitializationCall) return state;
   return reducer(state, action);
 };
+
+
+export const checkingApp = (href, fallback) => {
+  const appWindow = window.open(href, "_blank");
+  appWindow.onclose = () => {
+    return true;
+  }
+  appWindow.location = fallback;
+}

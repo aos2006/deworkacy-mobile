@@ -41,11 +41,11 @@ class Footer extends React.Component {
               <img src="moscow.svg" alt="" />
             </div>
             <div className={s.apps}>
-              <a href="https://play.google.com/store/apps/details?id=ru.mobsolutions.deworkacy" className={s.appLink} target="_blank">
+              <a href='https://itunes.apple.com/ru/app/deworkacy/id1261089175?mt=8' className={s.appLink} target="_blank">
                 <img src={Apple} />
               </a>
-              <a href="https://itunes.apple.com/ru/app/deworkacy/id1261089175?mt=8" className={s.appLink} target="_blank">
-                <img src={Google}  />
+              <a href="https://play.google.com/store/apps/details?id=ru.mobsolutions.deworkacy" className={s.appLink} target="_blank">
+                <img src={Google} />
               </a>
             </div>
           </div>
