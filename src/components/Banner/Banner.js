@@ -16,6 +16,7 @@ const Banner = props => (
       s.root,
       'section',
       'app-banner',
+      'normal-scroll',
   ])}>
     <Slider
       className={s.slider}

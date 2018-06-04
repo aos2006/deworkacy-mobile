@@ -41,6 +41,7 @@ class Html extends React.Component {
         <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+          <meta content="yes" name="apple-mobile-web-app-capable"/>
           <title>Deworkacy</title>
           <meta name="description" content={description} />
           <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png"/>
@@ -56,7 +57,7 @@ class Html extends React.Component {
           <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
           <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png"/>
           <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
-          <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+          <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
           {scripts.map(script => (
             <link key={script} rel="preload" href={script} as="script" />
           ))}
@@ -87,6 +88,7 @@ class Html extends React.Component {
             src="http://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"/>
+
           <script
             src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"
           />

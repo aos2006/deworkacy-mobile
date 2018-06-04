@@ -41,22 +41,36 @@ class Layout extends React.Component {
       bigSectionsDestination: 'bottom',
       loopHorizontal: true,
       scrollingSpeed: 400,
+      normalScrollElements: '.normal-scroll',
       responsiveHeight: 900,
       scrollOverflowOptions: {
         eventPassthrough: 'horizontal',
       },
-      onLeave: (index, nextIndex) => {
-        console.log(index, nextIndex);
-      },
       verticalCentered: false,
       recordHistory: true,
     });
+
+    let xStart, yStart = 0;
+
+    document.addEventListener('touchstart', function (e) {
+      xStart = e.touches[0].screenX;
+      yStart = e.touches[0].screenY;
+    }), {passive: false};
+
+    document.addEventListener('touchmove', function (e) {
+      var xMovement = Math.abs(e.touches[0].screenX - xStart);
+      var yMovement = Math.abs(e.touches[0].screenY - yStart);
+      if ((xMovement * 3) > yMovement) {
+        e.preventDefault();
+      }
+    }, {passive: false});
+
   }
   render() {
     return (
       <div>
         <Loader hide={this.state.isLoaded} />
-       <div id="page">
+       <div id="page" className={s.page}>
          {this.props.noHeader || <Header/>}
          {React.Children.map(this.props.children, child => (
            React.cloneElement(child, { moveTo: (...args) => $.fn.fullpage.moveTo(...args) })
