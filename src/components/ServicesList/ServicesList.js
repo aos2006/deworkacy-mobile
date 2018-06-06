@@ -19,9 +19,8 @@ const ServicesList = props => (
       <div>
         <div className={cx([s.itemRoot])} key={props.id}>
           <div className={cx([s.bg])}>
-            <img src={props.src} alt="" />
+            <img src={props.src} alt=""/>
           </div>
-
           <Container className={s.wrapper}>
             <div className={s.iconWrapper}>{props.icon}</div>
             <div className={s.row}>
@@ -58,18 +57,36 @@ const items = [
 ];
 
 const Component = withStyles(globalS, s)(ServicesList);
-const List = props => (
-  <div>
-    {props.list.map((item, index) => (
-      <Component
-        handleGoTo={props.handleGoTo}
-        icon={items[index].icon}
-        title={item.title}
-        descr={item.text}
-        src={item.image.photo320}
-      />
-    ))}
-    <SectionDevider />
-  </div>
-);
+
+class List extends React.PureComponent {
+
+  componentDidMount() {
+    // $(document).on('scroll', ev => {
+    //   const elem = $('.services-list .active');
+    //   if (elem.length > 0) {
+    //     const el = $('.services-list').offset();
+    //     const offset = $(window).scrollTop() - el.top;
+    //     $('.services-list-bg').css('top', offset > 0 ? offset : 0);
+    //   }
+    // });
+  }
+
+  render() {
+    return (
+      <div>
+        {this.props.list.map((item, index) => (
+          <Component
+            handleGoTo={this.props.handleGoTo}
+            icon={items[index].icon}
+            title={item.title}
+            descr={item.text}
+            src={item.image.photo320}
+          />
+        ))}
+        <SectionDevider />
+      </div>
+    );
+  }
+}
+
 export default List;

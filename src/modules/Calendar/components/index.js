@@ -56,6 +56,7 @@ class AppCalendar extends PureComponent {
 
     this.setState({
       currentMonth: nextMonth.date(1),
+      selectedValue: moment().format('D'),
     });
 
     this.props.fetchEvents({
@@ -72,6 +73,7 @@ class AppCalendar extends PureComponent {
 
     this.setState({
       currentMonth: nextMonth.date(1),
+      selectedValue: moment().format('D'),
     });
 
     this.props.fetchEvents({
@@ -156,7 +158,7 @@ class AppCalendar extends PureComponent {
                     key={item.id}
                     title={item.title}
                     range={`${moment(item.timestampStart).format('DD MMMM')} - ${moment(item.timestampFinish).format('DD MMMM')}`}
-                    time={moment(item.timestampStart).format('HH:MM')}
+                    time={moment(item.timestampStart).format('kk:mm')}
                   />
                 )
               })
@@ -169,7 +171,6 @@ class AppCalendar extends PureComponent {
   }
 }
 
-const converRightUnix = unix => unix * 1000;
 
 export default connect(
   state => {

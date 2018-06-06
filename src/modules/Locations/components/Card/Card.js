@@ -8,6 +8,7 @@ import Title from 'components/Title';
 import Para from 'components/Para';
 import Close from './icons/close.svg';
 import Button from 'components/Button';
+import Link from 'components/Link';
 
 const Card = props => (
   <article className={cx([
@@ -33,11 +34,13 @@ const Card = props => (
         Оставить заявку
       </Button>
     </div>
-    {/*<div className={s.link}>*/}
-      {/*<Link href={props.presentation}>*/}
-        {/*Скачать презентацию*/}
-      {/*</Link>*/}
-    {/*</div>*/}
+    {props.presents.map(item => (
+      <div className={s.link}>
+        <Link href={item.href} target="_blank">
+          {`${item.label}: Скачать презентацию`}
+        </Link>
+      </div>
+    ))}
   </article>
 );
 

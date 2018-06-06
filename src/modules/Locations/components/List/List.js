@@ -14,12 +14,15 @@ class List extends PureComponent {
     activeIndex: 0,
   }
 
+  handleToggle = (fn, i) => () => this.props.handleToggle(fn, i);
+
   render() {
     return (
       <div className={cx([
         s.root,
       ])}>
-        <Slider settings={{
+        <Slider
+          settings={{
           customDots: false,
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -30,20 +33,23 @@ class List extends PureComponent {
           afterChange: current => this.props.onLocationChange(current),
           className: cx([s.slider, 'locations-slider']),
         }}>
-          {this.props.list.map((item, index) => (
-            <div>
-              <Item
-                id={index}
-                onClick={this.props.handleToggle}
-                from={index + 1}
-                title={item.title}
-                addr={item.address}
-                to={this.props.list.length}
-                key={item.id}
-                isActive={index === this.props.activeLocation}
-              />
-            </div>
-          ))}
+          {({ goToSlide }) => {
+            return this.props.list.map((item, index) => (
+              <div>
+                <Item
+                  id={index}
+                  onClick={this.handleToggle(goToSlide, index)}
+                  from={index + 1}
+                  title={item.title}
+                  addr={item.address}
+                  to={this.props.list.length}
+                  key={item.id}
+                  isActive={index === this.props.activeLocation}
+                />
+              </div>
+            ))
+
+          }}
         </Slider>
       </div>
     )

@@ -9,6 +9,10 @@
   }
 }
 
+.listRoot {
+  position: relative;
+}
+
 
 
 .sectionHeader {
@@ -97,6 +101,8 @@
 }
 
 .iconWrapper {
+  position: relative;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -132,6 +138,8 @@
 .corporate {
   margin-top: 35px;
   margin-bottom: 20px;
+  height: auto;
+
   path {
     stroke-dasharray: 5806;
     stroke-dashoffset: 5806;
@@ -153,7 +161,7 @@
   top: 0;
   z-index: 1;
   width: 100%;
-  height: auto;
+  //height: auto;
   &:before {
     position: absolute;
     bottom: 0;

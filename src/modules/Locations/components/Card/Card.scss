@@ -3,7 +3,7 @@
 
 .root {
   @include fullWidth();
-  position: absolute;
+  position: fixed;
   z-index: 10;
   top: 0;
   bottom: 0;
@@ -47,4 +47,8 @@
 .arrow {
   margin-right: 34px;
   fill: white;
+}
+
+.link {
+  margin-bottom: 10px;
 }

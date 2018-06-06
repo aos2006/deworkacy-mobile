@@ -39,7 +39,9 @@ class Slider extends PureComponent {
        this.props.className,
      ])}>
        <Slick {...Object.assign({}, this.settings, this.props.settings)} ref={node => this.slider = node}>
-         {this.props.children}
+         {typeof(this.props.children) === 'function' ? this.props.children({
+           goToSlide: i => this.slider.slickGoTo(i),
+         }) : this.props.children}
        </Slick>
        {this.props.settings.customDots && <Dots
          onClick={i => this.slider.slickGoTo(i)}

@@ -55,6 +55,22 @@
     color: #151b21;
   }
 
+  .ant-fullcalendar-selected-day .ant-fullcalendar-value,
+  .ant-fullcalendar-month-panel-selected-cell .ant-fullcalendar-value {
+    background-color: transparent;
+    color: #fff;
+    &:before {
+      opacity: 0,
+    }
+  }
+
+  //.app-calendar .ant-fullcalendar-selected-day .ant-fullcalendar-value {
+  //  background-color: transparent;
+  //  &:before {
+  //    opacity: 0;
+  //  }
+  //}
+
   .ant-fullcalendar-value:hover,
   .ant-fullcalendar-value.app-calendar__selected {
     background-color: #65c8ce;
@@ -64,18 +80,7 @@
     }
   }
 
-  .ant-fullcalendar-selected-day .ant-fullcalendar-value, .ant-fullcalendar-month-panel-selected-cell .ant-fullcalendar-value {
-    background-color: #65c8ce;
-    color: #fff;
-    &:before { opacity: 1 }
-  }
 
-  .app-calendar .ant-fullcalendar-selected-day .ant-fullcalendar-value {
-    background-color: #65c8ce;
-    &:before {
-      opacity: 0;
-    }
-  }
 
 
   .ant-fullcalendar-today .ant-fullcalendar-value, .ant-fullcalendar-month-panel-current-cell .ant-fullcalendar-value {

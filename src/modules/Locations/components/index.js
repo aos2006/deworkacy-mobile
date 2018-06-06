@@ -22,15 +22,20 @@ class Locations extends PureComponent {
       clickedLocation: null,
     });
 
-  handleToggle = i =>
+  handleToggle = (fn, i) => {
+    if (this.props.activeLocation !== i) {
+      return fn(i);
+    }
+
     this.setState({
       clickedLocation: i,
     });
+  };
 
   handleGoTo = () => {
     this.handleClose();
     this.props.handleGoTo();
-  }
+  };
 
   render() {
     return (
@@ -40,31 +45,20 @@ class Locations extends PureComponent {
             <div className={s.header}>
               <SectionHeader title="Локации" />
             </div>
-            <Card
-              handleClose={this.handleClose}
-              handleGoTo={this.handleGoTo}
-              show={this.state.clickedLocation === 0}
-              title={this.props.locations[0].title}
-              address={this.props.locations[0].address}
-              txt={this.props.locations[0].information}
-            />
-            <Card
-              handleGoTo={this.handleGoTo}
-              handleClose={this.handleClose}
-              show={this.state.clickedLocation === 1}
-              title={this.props.locations[1].title}
-              address={this.props.locations[1].address}
-              txt={this.props.locations[1].information}
-            />
-            <Card
-              handleGoTo={this.handleGoTo}
-              handleClose={this.handleClose}
-              show={this.state.clickedLocation === 2}
-              title={this.props.locations[2].title}
-              address={this.props.locations[2].address}
-              txt={this.props.locations[2].information}
-            />
-            <Map defaultCenter={this.props.position}/>
+            {this.props.locations.map((item, index) => (
+              <Card
+                keyy={item.id}
+                handleClose={this.handleClose}
+                handleGoTo={this.handleGoTo}
+                presents={item.presentationLinks}
+                show={this.state.clickedLocation === index}
+                title={item.title}
+                address={item.address}
+                txt={item.information}
+              />
+            ))}
+
+            <Map defaultCenter={this.props.position} />
             <div className={cx([s.list, 'locations-list'])}>
               <List
                 handleToggle={this.handleToggle}
