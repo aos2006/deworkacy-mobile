@@ -1008,6 +1008,7 @@ function (_PureComponent) {
         arrows: false,
         slidesToShow: 1,
         touchThreshold: 5,
+        lazyLoad: true,
         slidesToScroll: 1,
         beforeChange: function beforeChange(current, next) {
           return _this.setState({
