@@ -1080,13 +1080,13 @@ var SHOW_REPORTER = "".concat(NAME, "_SHOW_REPORTER");
   !*** ./src/modules/utils.js ***!
   \******************************/
 /*! exports provided: createReducer, taggedReducer, checkingApp */
-/*! exports used: checkingApp, createReducer */
+/*! exports used: createReducer */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return createReducer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return createReducer; });
 /* unused harmony export taggedReducer */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return checkingApp; });
+/* unused harmony export checkingApp */
 var createReducer = function createReducer(initialState, handlers) {
   return function reducer() {
     var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
@@ -3244,7 +3244,7 @@ function (_React$Component) {
     key: "componentDidMount",
     value: function componentDidMount() {
       $('#page').fullpage({
-        touchSensitivity: 25,
+        touchSensitivity: 10,
         paddingTop: '0',
         paddingBottom: '0',
         autoScrolling: false,
@@ -4898,7 +4898,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".W-DZG{position:relative;overflow:hidden;max-width:100%;max-height:100vh;z-index:10;background-color:#141a1f;opacity:0}._3dfrm{padding-bottom:70px;z-index:2}._3dfrm,._3dfrm:before{position:absolute;bottom:0;left:0;right:0}._3dfrm:before{content:\"\";width:100%;height:399px;background-image:-webkit-gradient(linear,left top,left bottom,from(rgba(21,27,33,0)),color-stop(89%,#141a1f));background-image:-webkit-linear-gradient(top,rgba(21,27,33,0),#141a1f 89%);background-image:-o-linear-gradient(top,rgba(21,27,33,0) 0,#141a1f 89%);background-image:linear-gradient(180deg,rgba(21,27,33,0),#141a1f 89%)}._3whrQ{position:relative}._1VNiV{display:block;margin-left:auto;margin-right:auto;width:100%}._1Jmaa,._3odO6{position:relative}@media (min-width:320px){._1TttH{width:100%;text-align:center}}._2MKvz{position:absolute;left:0;right:0;bottom:30px;z-index:5}@media (min-width:320px){._3fKpX{margin-bottom:15px;text-transform:lowercase}._3fKpX:first-letter{text-transform:uppercase}}@media (min-width:320px){._2HDxN{margin-bottom:30px;width:74.57627%}}", ""]);
+exports.push([module.i, ".W-DZG{position:relative;overflow:hidden;max-width:100%;max-height:100vh;z-index:10;background-color:#141a1f;opacity:0}._3dfrm{padding-bottom:70px;z-index:2}._3dfrm,._3dfrm:before{position:absolute;bottom:0;left:0;right:0}._3dfrm:before{content:\"\";width:100%;height:399px;background-image:-webkit-gradient(linear,left top,left bottom,from(rgba(21,27,33,0)),color-stop(89%,#141a1f));background-image:-webkit-linear-gradient(top,rgba(21,27,33,0),#141a1f 89%);background-image:-o-linear-gradient(top,rgba(21,27,33,0) 0,#141a1f 89%);background-image:linear-gradient(180deg,rgba(21,27,33,0),#141a1f 89%)}._3whrQ{position:relative}._1VNiV{display:block;margin-left:auto;margin-right:auto;width:320px;height:auto}._1Jmaa,._3odO6{position:relative}@media (min-width:320px){._1TttH{width:100%;text-align:center}}._2MKvz{position:absolute;left:0;right:0;bottom:30px;z-index:5}@media (min-width:320px){._3fKpX{margin-bottom:15px;text-transform:lowercase}._3fKpX:first-letter{text-transform:uppercase}}@media (min-width:320px){._2HDxN{margin-bottom:30px;width:74.57627%}}", ""]);
 
 // exports
 exports.locals = {
@@ -6361,18 +6361,15 @@ var MyMapComponent = Object(__WEBPACK_IMPORTED_MODULE_10_recompose__["compose"])
       },
       icon: "marker.svg",
       onClick: function onClick(ev) {
-        var center = "".concat(marker.position.lat, ",").concat(marker.position.lng);
+        var center = "".concat(marker.position.lat, ", ").concat(marker.position.lng);
         var isIos = !!navigator.platform.match(/iPhone|iPod|iPad/);
-        var appWindow = window.open("comgooglemaps://?center=".concat(center), '_blank');
+        var appWindow;
 
-        appWindow.onclose = function () {};
-
-        if (isIos) {
-          appWindow.location = "maps://maps.google.com/maps?daddr=".concat(center, "&amp;ll=");
-          return true;
+        try {
+          appWindow = window.open(isIos ? "maps://maps.google.com/maps?daddr=".concat(center) : "comgooglemaps://?center=".concat(center), '_blank');
+        } catch (e) {
+          appWindow.location = "https://www.google.com/maps/search/?api=1&query=".concat(center);
         }
-
-        appWindow.location = "https://www.google.com/maps/search/?api=1&query=".concat(center);
       }
     }), __WEBPACK_IMPORTED_MODULE_7__babel_runtime_helpers_jsx___default()("span", {
       className: __WEBPACK_IMPORTED_MODULE_15__Map_scss___default.a.label
@@ -7791,7 +7788,7 @@ var locationChange = function locationChange(state, action) {
   return state.set('activeLocation', payload.id);
 };
 
-/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_1_modules_utils__["b" /* createReducer */])(defaultState, __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_defineProperty___default()({}, __WEBPACK_IMPORTED_MODULE_2__actionTypes__["LOCATION_CHANGE"], locationChange)));
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_1_modules_utils__["a" /* createReducer */])(defaultState, __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_defineProperty___default()({}, __WEBPACK_IMPORTED_MODULE_2__actionTypes__["LOCATION_CHANGE"], locationChange)));
 
 /***/ }),
 /* 181 */
@@ -12300,7 +12297,7 @@ exports.locals = {
 /*! all exports used */
 /***/ (function(module, exports) {
 
-module.exports = "@media (min-width: 320px) {\n  .sectionTitle {\n    font-family: 'PF Bague Sans Pro', sans-serif;\n    font-weight: 600;\n    color: #ffffff;\n    font-size: 24px;\n    font-weight: 700;\n    line-height: 31px; } }\n\n.app-calendar .ant-fullcalendar-header {\n  display: none; }\n\n.app-calendar .ant-fullcalendar {\n  border-top: none; }\n\n.app-calendar thead {\n  border-bottom: 1px solid rgba(142, 147, 151, 0.5); }\n\n.ant-fullcalendar-calendar-body {\n  padding: 0; }\n\n.app-calendar .ant-fullcalendar-value {\n  font-family: 'PF Bague Sans Pro', sans-serif;\n  font-weight: 600;\n  position: relative;\n  height: 36px;\n  width: 36px;\n  border-radius: 50%;\n  line-height: 36px;\n  color: #ffffff;\n  font-size: 12px;\n  font-weight: 500;\n  text-transform: uppercase; }\n\n.app-calendar .ant-fullcalendar-value:before {\n    -webkit-transition: opacity .2s ease-in;\n    -o-transition: opacity .2s ease-in;\n    transition: opacity .2s ease-in;\n    position: absolute;\n    bottom: -4px;\n    left: 50%;\n    margin-left: -4px;\n    z-index: 2;\n    border-radius: 50%;\n    opacity: 0;\n    width: 8px;\n    height: 8px;\n    border: 1px solid #151b21;\n    background-color: #65c8ce;\n    content: ''; }\n\n.app-calendar .ant-fullcalendar-value.app-calendar__has-event {\n  background-color: #fff;\n  color: #151b21; }\n\n.app-calendar .ant-fullcalendar-value:hover,\n.app-calendar .ant-fullcalendar-value.app-calendar__selected {\n  background-color: #65c8ce;\n  color: #fff; }\n\n.app-calendar .ant-fullcalendar-value:hover:before,\n  .app-calendar .ant-fullcalendar-value.app-calendar__selected:before {\n    opacity: 1; }\n\n.app-calendar .ant-fullcalendar-selected-day .ant-fullcalendar-value, .app-calendar .ant-fullcalendar-month-panel-selected-cell .ant-fullcalendar-value {\n  background-color: #65c8ce;\n  color: #fff; }\n\n.app-calendar .ant-fullcalendar-selected-day .ant-fullcalendar-value:before, .app-calendar .ant-fullcalendar-month-panel-selected-cell .ant-fullcalendar-value:before {\n    opacity: 1; }\n\n.app-calendar .app-calendar .ant-fullcalendar-selected-day .ant-fullcalendar-value {\n  background-color: transparent; }\n\n.app-calendar .app-calendar .ant-fullcalendar-selected-day .ant-fullcalendar-value:before {\n    opacity: 0; }\n\n.app-calendar .ant-fullcalendar-today .ant-fullcalendar-value, .app-calendar .ant-fullcalendar-month-panel-current-cell .ant-fullcalendar-value {\n  -webkit-box-shadow: none;\n          box-shadow: none; }\n\n.app-calendar .ant-fullcalendar-last-month-cell .ant-fullcalendar-value, .app-calendar .ant-fullcalendar-next-month-btn-day .ant-fullcalendar-value {\n  color: #8e9397; }\n\n.app-calendar .ant-fullcalendar-column-header .ant-fullcalendar-column-header-inner {\n  font-family: 'PF Bague Sans Pro', sans-serif;\n  font-weight: 400;\n  padding-bottom: 5px;\n  color: #8e9397;\n  font-size: 12px;\n  line-height: 16px; }\n\n.app-calendar .ant-fullcalendar-last-month-cell .ant-fullcalendar-value, .app-calendar .ant-fullcalendar-next-month-btn-day .ant-fullcalendar-value {\n  display: none; }\n"
+module.exports = "@media (min-width: 320px) {\n  .sectionTitle {\n    font-family: 'PF Bague Sans Pro', sans-serif;\n    font-weight: 600;\n    color: #ffffff;\n    font-size: 24px;\n    font-weight: 700;\n    line-height: 31px; } }\n\n.app-calendar .ant-fullcalendar-header {\n  display: none; }\n\n.app-calendar .ant-fullcalendar {\n  border-top: none; }\n\n.app-calendar thead {\n  border-bottom: 1px solid rgba(142, 147, 151, 0.5); }\n\n.ant-fullcalendar-calendar-body {\n  padding: 0; }\n\n.app-calendar .ant-fullcalendar-value {\n  font-family: 'PF Bague Sans Pro', sans-serif;\n  font-weight: 600;\n  position: relative;\n  height: 36px;\n  width: 36px;\n  border-radius: 50%;\n  line-height: 36px;\n  color: #ffffff;\n  font-size: 12px;\n  font-weight: 500;\n  text-transform: uppercase; }\n\n.app-calendar .ant-fullcalendar-value:before {\n    -webkit-transition: opacity .2s ease-in;\n    -o-transition: opacity .2s ease-in;\n    transition: opacity .2s ease-in;\n    position: absolute;\n    bottom: -4px;\n    left: 50%;\n    margin-left: -4px;\n    z-index: 2;\n    border-radius: 50%;\n    opacity: 0;\n    width: 8px;\n    height: 8px;\n    border: 1px solid #151b21;\n    background-color: #65c8ce;\n    content: ''; }\n\n.app-calendar .ant-fullcalendar-value.app-calendar__has-event {\n  background-color: #fff;\n  color: #151b21; }\n\n.app-calendar .ant-fullcalendar-value:hover,\n.app-calendar .ant-fullcalendar-value.app-calendar__selected {\n  background-color: #65c8ce;\n  color: #fff; }\n\n.app-calendar .ant-fullcalendar-value:hover:before,\n  .app-calendar .ant-fullcalendar-value.app-calendar__selected:before {\n    opacity: 1; }\n\n.app-calendar .ant-fullcalendar-selected-day .ant-fullcalendar-value, .app-calendar .ant-fullcalendar-month-panel-selected-cell .ant-fullcalendar-value {\n  background-color: #65c8ce;\n  color: #fff; }\n\n.app-calendar .ant-fullcalendar-selected-day .ant-fullcalendar-value:before, .app-calendar .ant-fullcalendar-month-panel-selected-cell .ant-fullcalendar-value:before {\n    opacity: 1; }\n\n.app-calendar .app-calendar .ant-fullcalendar-selected-day .ant-fullcalendar-value {\n  background-color: #65c8ce; }\n\n.app-calendar .app-calendar .ant-fullcalendar-selected-day .ant-fullcalendar-value:before {\n    opacity: 0; }\n\n.app-calendar .ant-fullcalendar-today .ant-fullcalendar-value, .app-calendar .ant-fullcalendar-month-panel-current-cell .ant-fullcalendar-value {\n  -webkit-box-shadow: none;\n          box-shadow: none; }\n\n.app-calendar .ant-fullcalendar-last-month-cell .ant-fullcalendar-value, .app-calendar .ant-fullcalendar-next-month-btn-day .ant-fullcalendar-value {\n  color: #8e9397; }\n\n.app-calendar .ant-fullcalendar-column-header .ant-fullcalendar-column-header-inner {\n  font-family: 'PF Bague Sans Pro', sans-serif;\n  font-weight: 400;\n  padding-bottom: 5px;\n  color: #8e9397;\n  font-size: 12px;\n  line-height: 16px; }\n\n.app-calendar .ant-fullcalendar-last-month-cell .ant-fullcalendar-value, .app-calendar .ant-fullcalendar-next-month-btn-day .ant-fullcalendar-value {\n  display: none; }\n"
 
 /***/ }),
 /* 275 */
@@ -12745,7 +12742,7 @@ var fetchSuccess = function fetchSuccess(state, action) {
   return state.set('isLoading', false).set('ids', normalized.result).set('events', normalized.events).set('days', normalized.days);
 };
 
-/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_3_modules_utils__["b" /* createReducer */])(defaultState, (_createReducer = {}, __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_defineProperty___default()(_createReducer, __WEBPACK_IMPORTED_MODULE_1__actionTypes__["fetch_events_success"], fetchSuccess), __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_defineProperty___default()(_createReducer, __WEBPACK_IMPORTED_MODULE_1__actionTypes__["fetch_events"], fetchStart), _createReducer)));
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_3_modules_utils__["a" /* createReducer */])(defaultState, (_createReducer = {}, __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_defineProperty___default()(_createReducer, __WEBPACK_IMPORTED_MODULE_1__actionTypes__["fetch_events_success"], fetchSuccess), __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_defineProperty___default()(_createReducer, __WEBPACK_IMPORTED_MODULE_1__actionTypes__["fetch_events"], fetchStart), _createReducer)));
 
 /***/ }),
 /* 285 */
@@ -13909,7 +13906,7 @@ var SocialList = function SocialList(props) {
   }, void 0, "\u0412 \u0441\u043E\u0446\u0438\u0430\u043B\u044C\u043D\u044B\u0445 \u0441\u0435\u0442\u044F\u0445"), [{
     id: 88,
     icon: 'fb.svg',
-    href: 'fb://profile/358984367957844',
+    href: 'https://facebook.com/Deworkacy',
     fallback: 'https://facebook.com/Deworkacy'
   }, {
     id: 77,
@@ -13927,8 +13924,7 @@ var SocialList = function SocialList(props) {
     }, item.id, __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("a", {
       href: item.href,
       className: __WEBPACK_IMPORTED_MODULE_5__SocialList_scss___default.a.social,
-      target: "_blank",
-      onClick: linkClick(__WEBPACK_IMPORTED_MODULE_6_modules_utils__["a" /* checkingApp */], item.href, item.fallback)
+      target: "_blank"
     }, void 0, __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("img", {
       src: item.icon,
       alt: ""

@@ -30,7 +30,7 @@ class Layout extends React.Component {
 
   componentDidMount() {
     $('#page').fullpage({
-      touchSensitivity: 25,
+      touchSensitivity: 10,
       paddingTop: '0',
       paddingBottom: '0',
       autoScrolling: false,

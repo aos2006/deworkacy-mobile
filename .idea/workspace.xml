@@ -2,64 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5539d989-f18b-4467-b502-5cfebb15b9e7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/modules/Form/components/Simple/globalStyles/index.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/modules/Locations/components/Map/globalStyles/index.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/modules/Reviews/components/globalStyles/index.scss" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/build/assets.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/chunks/not-found.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/chunks/not-found.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/chunks/ui.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/chunks/ui.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/044ba116.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/11e0bcca.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/7f81c77c.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/a1b9b3c0.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/b363c836.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/client.9084d921.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/client.9084d921.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/d41d8cd9.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/d41d8cd9.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/d41d8cd9.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/f25750b0.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/fe50b228.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/not-found.5b09d62b.chunk.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/not-found.5b09d62b.chunk.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/ui.9ee6188c.chunk.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/ui.9ee6188c.chunk.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/vendor.02e7dab2.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/public/assets/vendor.02e7dab2.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/server.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/server.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.scss" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.scss" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.css" afterPath="$PROJECT_DIR$/src/components/Layout/Layout.css" />
+      <change beforePath="$PROJECT_DIR$/build/assets.json" afterPath="$PROJECT_DIR$/build/assets.json" />
+      <change beforePath="$PROJECT_DIR$/build/public/assets/client.2d6d0ddd.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/public/assets/client.2d6d0ddd.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/public/assets/vendor.961c4cf8.js.map" afterPath="$PROJECT_DIR$/build/public/assets/vendor.961c4cf8.js.map" />
+      <change beforePath="$PROJECT_DIR$/build/server.js" afterPath="$PROJECT_DIR$/build/server.js" />
+      <change beforePath="$PROJECT_DIR$/build/server.js.map" afterPath="$PROJECT_DIR$/build/server.js.map" />
+      <change beforePath="$PROJECT_DIR$/src/components/App.js" afterPath="$PROJECT_DIR$/src/components/App.js" />
+      <change beforePath="$PROJECT_DIR$/src/components/Banner/Banner.scss" afterPath="$PROJECT_DIR$/src/components/Banner/Banner.scss" />
       <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.js" afterPath="$PROJECT_DIR$/src/components/Layout/Layout.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/fonts/PFBagueSansPro-Bold.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/fonts/PFBagueSansPro-Bold.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/fonts/PFBagueSansPro-Bold.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/fonts/PFBagueSansPro-Light.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/fonts/PFBagueSansPro-Light.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/fonts/PFBagueSansPro-Light.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/fonts/PFBagueSansPro-Medium.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/fonts/PFBagueSansPro-Medium.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/fonts/PFBagueSansPro-Medium.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/fonts/PFBagueSansPro.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/fonts/PFBagueSansPro.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/fonts/PFBagueSansPro.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/fonts/stylesheet.css" afterPath="$PROJECT_DIR$/src/components/Layout/fonts/stylesheet.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/globalStyles/global.scss" afterPath="$PROJECT_DIR$/src/components/Layout/globalStyles/global.scss" />
-      <change beforePath="$PROJECT_DIR$/src/components/Para/Para.js" afterPath="$PROJECT_DIR$/src/components/Para/Para.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/ServicesList/ServicesList.js" afterPath="$PROJECT_DIR$/src/components/ServicesList/ServicesList.js" />
       <change beforePath="$PROJECT_DIR$/src/components/SocialList/SocialList.js" afterPath="$PROJECT_DIR$/src/components/SocialList/SocialList.js" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Form/components/Simple/Simple.js" afterPath="$PROJECT_DIR$/src/modules/Form/components/Simple/Simple.js" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Form/components/Simple/Simple.scss" afterPath="$PROJECT_DIR$/src/modules/Form/components/Simple/Simple.scss" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Locations/components/Card/Card.js" afterPath="$PROJECT_DIR$/src/modules/Locations/components/Card/Card.js" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Locations/components/Card/Card.scss" afterPath="$PROJECT_DIR$/src/modules/Locations/components/Card/Card.scss" />
+      <change beforePath="$PROJECT_DIR$/src/modules/Calendar/components/antdTheme/index.scss" afterPath="$PROJECT_DIR$/src/modules/Calendar/components/antdTheme/index.scss" />
       <change beforePath="$PROJECT_DIR$/src/modules/Locations/components/Map/Map.js" afterPath="$PROJECT_DIR$/src/modules/Locations/components/Map/Map.js" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Locations/components/index.js" afterPath="$PROJECT_DIR$/src/modules/Locations/components/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Reviews/components/Reviews.scss" afterPath="$PROJECT_DIR$/src/modules/Reviews/components/Reviews.scss" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Reviews/components/index.js" afterPath="$PROJECT_DIR$/src/modules/Reviews/components/index.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -73,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SocialList.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/SocialList/SocialList.js">
+      <file leaf-file-name="Map.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/modules/Locations/components/Map/Map.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="29" column="7" lean-forward="false" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+            <state relative-caret-position="557">
+              <caret line="65" column="11" lean-forward="false" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -96,7 +51,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>too</find>
       <find>actions</find>
       <find>list</find>
       <find>listen</find>
@@ -126,6 +80,7 @@
       <find>on</find>
       <find>touchstart</find>
       <find>comment</find>
+      <find>SocialLi</find>
     </findStrings>
     <replaceStrings>
       <replace>title</replace>
@@ -139,8 +94,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/SocialList/SocialList.scss" />
-        <option value="$PROJECT_DIR$/src/modules/Form/components/Rules/Rules.js" />
         <option value="$PROJECT_DIR$/src/components/Contacts/Contacts.js" />
         <option value="$PROJECT_DIR$/src/components/ServicesList/icons/spaces.svg" />
         <option value="$PROJECT_DIR$/src/components/ServicesList/icons/corporate.svg" />
@@ -166,14 +119,12 @@
         <option value="$PROJECT_DIR$/src/modules/Locations/components/Locations.scss" />
         <option value="$PROJECT_DIR$/src/components/Html.js" />
         <option value="$PROJECT_DIR$/src/components/Slider/Slider.js" />
-        <option value="$PROJECT_DIR$/src/components/Banner/Banner.scss" />
         <option value="$PROJECT_DIR$/src/modules/Locations/components/Card/Card.js" />
         <option value="$PROJECT_DIR$/src/modules/Locations/components/Card/Card.scss" />
         <option value="$PROJECT_DIR$/src/modules/utils.js" />
         <option value="$PROJECT_DIR$/src/components/Layout/Layout.css" />
         <option value="$PROJECT_DIR$/src/components/Layout/fonts/stylesheet.css" />
         <option value="$PROJECT_DIR$/src/modules/Locations/components/Map/globalStyles/index.scss" />
-        <option value="$PROJECT_DIR$/src/modules/Locations/components/Map/Map.js" />
         <option value="$PROJECT_DIR$/src/components/Footer/icons/google-store.svg" />
         <option value="$PROJECT_DIR$/src/components/Footer/Footer.js" />
         <option value="$PROJECT_DIR$/src/components/Footer/Footer.scss" />
@@ -188,8 +139,12 @@
         <option value="$PROJECT_DIR$/src/modules/Locations/components/index.js" />
         <option value="$PROJECT_DIR$/src/components/Layout/globalStyles/global.scss" />
         <option value="$PROJECT_DIR$/src/modules/Form/components/Simple/globalStyles/index.scss" />
-        <option value="$PROJECT_DIR$/src/components/Layout/Layout.js" />
+        <option value="$PROJECT_DIR$/src/modules/Calendar/components/antdTheme/index.scss" />
         <option value="$PROJECT_DIR$/src/components/SocialList/SocialList.js" />
+        <option value="$PROJECT_DIR$/src/components/App.js" />
+        <option value="$PROJECT_DIR$/src/components/Layout/Layout.js" />
+        <option value="$PROJECT_DIR$/src/components/Banner/Banner.scss" />
+        <option value="$PROJECT_DIR$/src/modules/Locations/components/Map/Map.js" />
       </list>
     </option>
   </component>
@@ -487,6 +442,15 @@
               <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Calendar" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="deworkacy-mobile" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deworkacy-mobile" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Calendar" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="antdTheme" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="deworkacy-mobile" type="b2602c69:ProjectViewProjectNode" />
@@ -817,39 +781,39 @@
       <workItem from="1527841150065" duration="32857000" />
       <workItem from="1528138789676" duration="4576000" />
       <workItem from="1528227473516" duration="722000" />
-      <workItem from="1528274135593" duration="7841000" />
+      <workItem from="1528274135593" duration="14493000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="369789000" />
+    <option name="totallyTimeSpent" value="376441000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1796875" sideWeight="0.495" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.74375" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1796875" sideWeight="0.495" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18515626" sideWeight="0.505" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -882,20 +846,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/modules/Calendar/components/Calendar.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/Calendar/components/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="159" column="20" lean-forward="false" selection-start-line="159" selection-start-column="20" selection-end-line="159" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/Calendar/components/Event/Event.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -953,13 +903,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
           <caret line="25" column="18" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Banner/Banner.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1101,16 +1044,6 @@
         <state relative-caret-position="28">
           <caret line="1" column="26" lean-forward="true" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/Locations/components/Map/Map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="123" column="5" lean-forward="false" selection-start-line="123" selection-start-column="5" selection-end-line="123" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1260,14 +1193,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Layout/Layout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="39" column="26" lean-forward="false" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Footer/Footer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -1276,10 +1201,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/Calendar/components/antdTheme/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/SocialList/SocialList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="29" column="7" lean-forward="false" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+        <state relative-caret-position="309">
+          <caret line="30" column="15" lean-forward="true" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="60" column="2" lean-forward="false" selection-start-line="60" selection-start-column="2" selection-end-line="60" selection-end-column="2" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Layout/Layout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="43" column="23" lean-forward="true" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Banner/Banner.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="40" column="15" lean-forward="false" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/Locations/components/Map/Map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="65" column="11" lean-forward="false" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="11" />
           <folding />
         </state>
       </provider>

@@ -24,7 +24,7 @@ const SocialList = props => (
       {
         id: 88,
         icon: 'fb.svg',
-        href: 'fb://profile/358984367957844',
+        href: 'https://facebook.com/Deworkacy',
         fallback: 'https://facebook.com/Deworkacy',
       },
       {
@@ -41,7 +41,7 @@ const SocialList = props => (
       }
     ].map(item => (
       <li className={s.item} key={item.id}>
-        <a href={item.href} className={s.social} target="_blank" onClick={linkClick(checkingApp, item.href, item.fallback)}>
+        <a href={item.href} className={s.social} target="_blank" >
           <img src={item.icon} alt="" />
         </a>
       </li>

@@ -53,21 +53,17 @@ const MyMapComponent = compose(
         labelStyle={{ paddingTop: '10px' }}
         icon="marker.svg"
         onClick={ev => {
-          const center = `${marker.position.lat},${marker.position.lng}`;
+          const center = `${marker.position.lat}, ${marker.position.lng}`;
           const isIos = !!navigator.platform.match(/iPhone|iPod|iPad/);
-          const appWindow = window.open(
-            `comgooglemaps://?center=${center}`,
-            '_blank',
-          );
-
-          appWindow.onclose = () => {};
-
-          if (isIos) {
-            appWindow.location = `maps://maps.google.com/maps?daddr=${center}&amp;ll=`;
-            return true;
+          let appWindow;
+          try {
+            appWindow = window.open(
+              isIos ? `maps://maps.google.com/maps?daddr=${center}` : `comgooglemaps://?center=${center}`,
+              '_blank',
+            );
+          } catch(e) {
+            appWindow.location = `https://www.google.com/maps/search/?api=1&query=${center}`;
           }
-
-          appWindow.location = `https://www.google.com/maps/search/?api=1&query=${center}`;
         }}
       >
         <span className={s.label}>Построить маршрут</span>
