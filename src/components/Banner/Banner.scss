@@ -12,13 +12,13 @@
 .inner {
   height: auto;
   position: absolute;
-  bottom: 140px;
+  bottom: 70px;
   left: 0;
   right: 0;
   z-index: 2;
   &:before {
     position: absolute;
-    bottom: -140px;
+    bottom: -70px;
     left: 0;
     right: 0;
     content: '';
