@@ -24,7 +24,9 @@ const Banner = props => (
     >
       {props.list.map(item => (
         <div className={s.content} key={item.id}>
-          <img src={item.image.photo860} alt="" className={s.img} height="565"/>
+          <div className={s.img}>
+            <img src={item.image.photo860} alt="" />
+          </div>
           <div className={s.inner}>
             <Container className={cx([
               s.container,

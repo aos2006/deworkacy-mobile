@@ -3,10 +3,10 @@
 #page {
   overflow: hidden;
 }
-.section {
+.section:not(.app-banner) {
   //opacity: 0;
   transition: opacity .5s ease-out;
-  min-height: 500px!important;
+  //min-height: 500px!important;
   height: auto!important;
   block-size: fit-content!important;
 }
