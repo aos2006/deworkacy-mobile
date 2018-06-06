@@ -10,9 +10,6 @@ import Contacts from 'components/Contacts';
 import s from './Footer.scss';
 // import Apple from './icons/apple.svg';
 // import Google from './icons/google.svg';
-import Google from './icons/google-png.png';
-import Apple from './icons/appstore-icon-mobile-retina.png';
-import Moscow from './icons/moscow.svg';
 import Link from 'components/Link';
 
 class Footer extends React.Component {
@@ -42,10 +39,10 @@ class Footer extends React.Component {
             </div>
             <div className={s.apps}>
               <a href='https://itunes.apple.com/ru/app/deworkacy/id1261089175?mt=8' className={s.appLink} target="_blank">
-                <img src={Apple} />
+                <img src="apple-store.svg" className={s.appleImg} />
               </a>
               <a href="https://play.google.com/store/apps/details?id=ru.mobsolutions.deworkacy" className={s.appLink} target="_blank">
-                <img src={Google} />
+                <img src="google-store.svg" alt="" className={s.googleImg} />
               </a>
             </div>
           </div>

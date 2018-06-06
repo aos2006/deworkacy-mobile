@@ -8,6 +8,7 @@ import Slider from 'components/Slider';
 import Sectionheader from 'components/SectionHeader';
 import Button from 'components/Button';
 import SectionDevider from 'components/SectionDevider';
+import globalS from './globalStyles/index.scss';
 
 class Reviews extends PureComponent {
   sliderSettings = {
@@ -30,7 +31,10 @@ class Reviews extends PureComponent {
             />
             <Slider
               dotsClass={s.dots}
-              className={s.slider}
+              className={cx([
+                s.slider,
+                'reviews-slider',
+              ])}
               settings={this.sliderSettings}>
               {this.props.list.map((item, index) => (
                 <div className={s.comment} key={item.id}>
@@ -60,4 +64,4 @@ class Reviews extends PureComponent {
   }
 }
 
-export default withStyles(s)(Reviews);
+export default withStyles(s, globalS)(Reviews);

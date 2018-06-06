@@ -24,7 +24,7 @@ const SocialList = props => (
       {
         id: 88,
         icon: 'fb.svg',
-        href: 'fb://page/Deworkacy',
+        href: 'fb://profile/358984367957844',
         fallback: 'https://facebook.com/Deworkacy',
       },
       {

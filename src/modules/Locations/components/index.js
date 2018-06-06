@@ -38,7 +38,7 @@ class Locations extends PureComponent {
         <div className={cx([s.root, 'section'])}>
           <div className={s.map}>
             <div className={s.header}>
-              <SectionHeader title="Локации"/>
+              <SectionHeader title="Локации" />
             </div>
             <Card
               handleClose={this.handleClose}

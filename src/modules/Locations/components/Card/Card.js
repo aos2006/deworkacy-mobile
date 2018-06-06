@@ -17,15 +17,15 @@ const Card = props => (
     }
   ])}>
     <header className={s.header}>
-      <Title black classes={{ root: s.title }}>
+      <Title classes={{ root: s.title }}>
         {props.title}
       </Title>
       <Close className={s.arrow} onClick={props.handleClose} width={24} height={24}/>
     </header>
-    <Para className={s.address} medium black>
+    <Para className={s.address} medium>
       {props.address}
     </Para>
-    <Para large className={s.descr} black>
+    <Para large className={s.descr}>
       {props.txt}
     </Para>
     <div className={s.button}>

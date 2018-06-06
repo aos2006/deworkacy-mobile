@@ -8,12 +8,14 @@
   transition: opacity .5s ease-out;
   min-height: 500px!important;
   height: auto!important;
+  block-size: fit-content!important;
 }
 
 
 
 .section.active,
-.section.fp-completely {
+.section.fp-completely,
+.section.section-viewed {
   opacity: 1;
   transition-delay: .1s;
 }
@@ -28,22 +30,15 @@
   }
 }
 
-.section.active .services_icon {
+.section.active .services_icon,
+.section.section-viewed .services_icon {
   path {
     stroke-dashoffset: 0;
   }
 }
-//.section.active .services_button {
-//  animation: fromBottom .2s ease-out forwards;
-//  transform: translateY(100%);
-//  animation-delay: 1s;
-//}
 
-.section.active .locations-list {
-  //transform: translateX(100%);
-  //animation: leftRight .5s ease-out forwards;
-  //animation-delay: .6s;
-}
+
+
 
 .section .services-bg {
   transition: opacity .2s ease-out;
@@ -66,7 +61,8 @@
   transition: transform .5s ease-out, opacity .5s ease-out;
   transition-delay: .6s;
 }
-.section.active .banner-content {
+.section.active .banner-content,
+.section.section-viewed .banner-content {
   opacity: 1;
   transform: translateY(0);
 }

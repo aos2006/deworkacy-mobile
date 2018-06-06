@@ -35,19 +35,22 @@ class Layout extends React.Component {
       paddingBottom: '0',
       autoScrolling: false,
       fitToSection: false,
-      loopTop: false,
       easingcss3: 'ease-in-out',
       fitToSectionDelay: 200,
-      bigSectionsDestination: 'bottom',
-      loopHorizontal: true,
       scrollingSpeed: 400,
       normalScrollElements: '.normal-scroll',
       responsiveHeight: 900,
-      scrollOverflowOptions: {
-        eventPassthrough: 'horizontal',
+      onLeave: (i, nexI, direction) => {
+        console.log(i);
+      },
+      afterLoad: function (anchorLink, index) {
+        const section = $('.section').eq(index - 1);
+        const notViewed = !section.hasClass('section-viewed');
+        if (notViewed) {
+          section.addClass('section-viewed');
+        }
       },
       verticalCentered: false,
-      recordHistory: true,
     });
 
     let xStart, yStart = 0;
@@ -72,9 +75,7 @@ class Layout extends React.Component {
         <Loader hide={this.state.isLoaded} />
        <div id="page" className={s.page}>
          {this.props.noHeader || <Header/>}
-         {React.Children.map(this.props.children, child => (
-           React.cloneElement(child, { moveTo: (...args) => $.fn.fullpage.moveTo(...args) })
-         ))}
+         {this.props.children}
        </div>
         <Footer />
       </div>

@@ -19,6 +19,7 @@ import messageS from 'antd/lib/message/style/index.css';
 import Tooltip from 'components/Tooltip';
 import Rules from '../Rules';
 import SectionDevider from 'components/SectionDevider';
+import globalS from './globalStyles/index.scss';
 
 
 const schema = Validator.object().shape({
@@ -48,7 +49,10 @@ class Simple extends React.PureComponent {
   render () {
     const { activeBg } = this.state;
     return (
-      <div id="order">
+      <div id="order" className={cx([
+        'section',
+        'simple-order',
+      ])}>
         <Formik
           validateOnChange={false}
           validationSchema={schema}
@@ -100,6 +104,7 @@ class Simple extends React.PureComponent {
                 id="simpleOrder"
                 className={cx([
                   s.root,
+                  'simple-order-bg',
                   this.state.activeBg,
                 ])}>
                 <Container>
@@ -214,4 +219,4 @@ class Simple extends React.PureComponent {
   }
 }
 
-export default withStyles(messageS, s)(Simple);
+export default withStyles(messageS, globalS, s,)(Simple);

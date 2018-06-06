@@ -5,7 +5,7 @@
   background-image: url('../icons/mailBg.svg'), linear-gradient(to top, rgba(21, 27, 33, 0.00) 6%, #151B21 84%), url('./images/simple-bg-1.jpg');
   background-position: 16px 24px, 0 0, 0 0;
   background-repeat: no-repeat;
-  transition: background-image .5s ease-out;
+  transition: background-image .5s ease-out, background-position .5s ease-out;
   @include susy-phone() {
     padding-top: 95px;
     background-size: 332px 251px, cover, cover;
@@ -13,7 +13,8 @@
 }
 
 .eventsBg {
-  background-image: url('../icons/mailBg.svg'), linear-gradient(to top, rgba(21, 27, 33, 0.00) 6%, #151B21 84%), url('./images/simple-bg-1.jpg')
+  background-image: url('../icons/mailBg.svg'), linear-gradient(to top, rgba(21, 27, 33, 0.00) 6%, #151B21 84%), url('./images/simple-bg-1.jpg');
+  background-position: 1000% 24px, 0 0, 0 0;
 }
 
 .spacesBg {
