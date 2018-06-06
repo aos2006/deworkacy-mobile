@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5539d989-f18b-4467-b502-5cfebb15b9e7" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/build/assets.json" afterPath="$PROJECT_DIR$/build/assets.json" />
+      <change beforePath="$PROJECT_DIR$/build/chunks/not-found.js" afterPath="$PROJECT_DIR$/build/chunks/not-found.js" />
+      <change beforePath="$PROJECT_DIR$/build/chunks/ui.js" afterPath="$PROJECT_DIR$/build/chunks/ui.js" />
+      <change beforePath="$PROJECT_DIR$/build/server.js" afterPath="$PROJECT_DIR$/build/server.js" />
       <change beforePath="$PROJECT_DIR$/src/components/Banner/Banner.scss" afterPath="$PROJECT_DIR$/src/components/Banner/Banner.scss" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.css" afterPath="$PROJECT_DIR$/src/components/Layout/Layout.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,8 +24,8 @@
       <file leaf-file-name="Banner.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Banner/Banner.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+            <state relative-caret-position="566">
+              <caret line="52" column="13" lean-forward="false" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -99,7 +104,6 @@
         <option value="$PROJECT_DIR$/src/modules/Locations/components/Locations.scss" />
         <option value="$PROJECT_DIR$/src/components/Html.js" />
         <option value="$PROJECT_DIR$/src/modules/utils.js" />
-        <option value="$PROJECT_DIR$/src/components/Layout/Layout.css" />
         <option value="$PROJECT_DIR$/src/components/Layout/fonts/stylesheet.css" />
         <option value="$PROJECT_DIR$/src/modules/Locations/components/Map/globalStyles/index.scss" />
         <option value="$PROJECT_DIR$/src/components/Footer/icons/google-store.svg" />
@@ -132,6 +136,7 @@
         <option value="$PROJECT_DIR$/src/modules/Calendar/components/antdTheme/index.scss" />
         <option value="$PROJECT_DIR$/src/components/Layout/globalStyles/global.scss" />
         <option value="$PROJECT_DIR$/src/components/Banner/Banner.js" />
+        <option value="$PROJECT_DIR$/src/components/Layout/Layout.css" />
         <option value="$PROJECT_DIR$/src/components/Banner/Banner.scss" />
       </list>
     </option>
@@ -769,12 +774,12 @@
       <workItem from="1527841150065" duration="32857000" />
       <workItem from="1528138789676" duration="4576000" />
       <workItem from="1528227473516" duration="722000" />
-      <workItem from="1528274135593" duration="26999000" />
+      <workItem from="1528274135593" duration="27319000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="388947000" />
+    <option name="totallyTimeSpent" value="389267000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -903,14 +908,6 @@
           <folding>
             <element signature="e#0#26#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Layout/Layout.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="37" column="1" lean-forward="false" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1229,10 +1226,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Layout/Layout.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="31" column="28" lean-forward="true" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Banner/Banner.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        <state relative-caret-position="566">
+          <caret line="52" column="13" lean-forward="false" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
           <folding />
         </state>
       </provider>
