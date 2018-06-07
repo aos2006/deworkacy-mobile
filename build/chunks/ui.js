@@ -2,7 +2,7 @@ require("source-map-support").install();
 exports.ids = [0];
 exports.modules = {
 
-/***/ 342:
+/***/ 347:
 /*!********************************!*\
   !*** ./src/routes/ui/index.js ***!
   \********************************/
@@ -20,8 +20,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__babel_runtime_helpers_asyncToGenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__babel_runtime_helpers_asyncToGenerator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react__ = __webpack_require__(/*! react */ 0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Ui__ = __webpack_require__(/*! ./Ui */ 344);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_components_Layout__ = __webpack_require__(/*! components/Layout */ 86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Ui__ = __webpack_require__(/*! ./Ui */ 349);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_components_Layout__ = __webpack_require__(/*! components/Layout */ 88);
 
 
 
@@ -75,7 +75,7 @@ function _action() {
 
 /***/ }),
 
-/***/ 344:
+/***/ 349:
 /*!*****************************!*\
   !*** ./src/routes/ui/Ui.js ***!
   \*****************************/
@@ -102,7 +102,7 @@ function _action() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_isomorphic_style_loader_lib_withStyles__ = __webpack_require__(/*! isomorphic-style-loader/lib/withStyles */ 6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_isomorphic_style_loader_lib_withStyles__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__Ui_scss__ = __webpack_require__(/*! ./Ui.scss */ 345);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__Ui_scss__ = __webpack_require__(/*! ./Ui.scss */ 350);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__Ui_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__Ui_scss__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_components_Title__ = __webpack_require__(/*! components/Title */ 24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_components_Para__ = __webpack_require__(/*! components/Para */ 31);
@@ -199,7 +199,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 345:
+/***/ 350:
 /*!*******************************!*\
   !*** ./src/routes/ui/Ui.scss ***!
   \*******************************/
@@ -208,7 +208,7 @@ function (_React$Component) {
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--1-rules-2!../../../node_modules/postcss-loader/lib??ref--1-rules-3!../../../node_modules/sass-loader/lib/loader.js!./Ui.scss */ 346);
+    var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--1-rules-2!../../../node_modules/postcss-loader/lib??ref--1-rules-3!../../../node_modules/sass-loader/lib/loader.js!./Ui.scss */ 351);
     var insertCss = __webpack_require__(/*! ../../../node_modules/isomorphic-style-loader/lib/insertCss.js */ 1);
 
     if (typeof content === 'string') {
@@ -240,7 +240,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 346:
+/***/ 351:
 /*!********************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--1-rules-2!./node_modules/postcss-loader/lib??ref--1-rules-3!./node_modules/sass-loader/lib/loader.js!./src/routes/ui/Ui.scss ***!
   \********************************************************************************************************************************************************************/

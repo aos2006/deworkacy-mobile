@@ -84,9 +84,11 @@ h2.title {
 .man {
   display: block;
   margin-right: 15px;
+  overflow: hidden;
   border-radius: 50%;
   width: 66px;
   height: 66px;
+
 }
 
 .company {

@@ -26,7 +26,6 @@ class Slider extends PureComponent {
     arrows: false,
     slidesToShow: 1,
     touchThreshold: 5,
-    lazyLoad: true,
     slidesToScroll: 1,
     beforeChange: (current, next) => this.setState({
       activeIndex: next,

@@ -1,12 +1,9 @@
 @import "src/styles/grid";
 .root {
   position: relative;
-  //overflow: hidden;
   max-width: 100%;
   z-index: 10;
   background-color: #141a1f;
-  opacity: 0;
-  max-height: 100vh;
 }
 
 .inner {
@@ -34,6 +31,7 @@
 }
 
 .img {
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
   img {
@@ -50,7 +48,6 @@
 
 .slider {
   position: relative;
-  top: -70px;
   overflow: hidden;
 }
 
@@ -86,4 +83,8 @@
     margin-bottom: 30px;
     width: susy-span(9 last);
   }
+}
+
+.slide {
+  height: 100%;
 }

@@ -104,6 +104,7 @@ class AppCalendar extends PureComponent {
       <div
         className={cx([
           s.root,
+          'section-auto-height',
         ])}>
         {this.props.isLoading && <Spin indicator={antIcon} className={s.loader} />}
         <Container>

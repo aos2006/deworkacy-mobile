@@ -62,10 +62,6 @@ class Html extends React.Component {
             <link key={script} rel="preload" href={script} as="script" />
           ))}
           <link rel="manifest" href="/site.webmanifest" />
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-          <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600" rel="stylesheet" />
-          <link href="https://fonts.googleapis.com/css?family=Niconne:400" rel="stylesheet" />
-          <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700" rel="stylesheet" />
           <link rel="apple-touch-icon" href="/icon.png" />
           <link rel="stylesheet" type="text/css" charSet="UTF-8"
                 href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"/>
@@ -87,7 +83,7 @@ class Html extends React.Component {
           <script
             src="http://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous"/>
+            crossOrigin="anonymous"/>
 
           <script
             src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"

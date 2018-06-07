@@ -45,6 +45,7 @@
     "react-dom": "^16.2.0",
     "react-fontawesome": "^1.6.1",
     "react-google-maps": "^9.4.5",
+    "react-lazyload": "^2.3.0",
     "react-redux": "^5.0.6",
     "react-select": "^1.2.1",
     "react-slick": "^0.23.1",

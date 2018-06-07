@@ -1,0 +1,24 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.root {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.img {
+  opacity: 0;
+  transition: opacity .5s ease-out;
+}
+
+.loader {
+  z-index: 2;
+}
+
+.fadeOut {
+  opacity: 1;
+}

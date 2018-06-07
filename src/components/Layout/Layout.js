@@ -24,8 +24,7 @@ import Footer from 'components/Footer';
 
 class Layout extends React.Component {
   state = {
-    isLoaded: true,
-    moveTo: null,
+    isLoaded: false,
   };
 
   componentDidMount() {
@@ -35,15 +34,18 @@ class Layout extends React.Component {
       paddingBottom: '0',
       autoScrolling: false,
       fitToSection: false,
+      scrollBar: true,
       easingcss3: 'ease-in-out',
       fitToSectionDelay: 200,
       scrollingSpeed: 400,
       normalScrollElements: '.normal-scroll',
       responsiveHeight: 900,
-      onLeave: (i, nexI, direction) => {
-        console.log(i);
+      afterRender: () => {
+        this.setState({
+          isLoaded: true,
+        });
       },
-      afterLoad: function (anchorLink, index) {
+      afterLoad(anchorLink, index) {
         const section = $('.section').eq(index - 1);
         const notViewed = !section.hasClass('section-viewed');
         if (notViewed) {
@@ -53,31 +55,38 @@ class Layout extends React.Component {
       verticalCentered: false,
     });
 
-    let xStart, yStart = 0;
+    let xStart,
+      yStart = 0;
 
-    document.addEventListener('touchstart', function (e) {
+    document.addEventListener('touchstart', e => {
       xStart = e.touches[0].screenX;
       yStart = e.touches[0].screenY;
-    }), {passive: false};
+    }),
+      { passive: false };
 
-    document.addEventListener('touchmove', function (e) {
-      var xMovement = Math.abs(e.touches[0].screenX - xStart);
-      var yMovement = Math.abs(e.touches[0].screenY - yStart);
-      if ((xMovement * 3) > yMovement) {
-        e.preventDefault();
-      }
-    }, {passive: false});
-
+    document.addEventListener(
+      'touchmove',
+      e => {
+        const xMovement = Math.abs(e.touches[0].screenX - xStart);
+        const yMovement = Math.abs(e.touches[0].screenY - yStart);
+        if (xMovement * 3 > yMovement) {
+          e.preventDefault();
+        }
+      },
+      { passive: false },
+    );
   }
   render() {
     return (
-      <div>
+      <div className={s.page}>
         <Loader hide={this.state.isLoaded} />
-       <div id="page" className={s.page}>
-         {this.props.noHeader || <Header/>}
-         {this.props.children}
-       </div>
-        <Footer />
+        <div id="page">
+          {this.props.noHeader || <Header />}
+          {this.props.children}
+          <div className="section app-footer">
+            <Footer />
+          </div>
+        </div>
       </div>
     );
   }

@@ -52,6 +52,7 @@ class Simple extends React.PureComponent {
       <div id="order" className={cx([
         'section',
         'simple-order',
+        'section-auto-height',
       ])}>
         <Formik
           validateOnChange={false}

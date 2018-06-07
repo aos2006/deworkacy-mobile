@@ -4,10 +4,6 @@
   @include fontBold();
   color: #FFFFFF;
   letter-spacing: 0.66px;
-  text-transform: lowercase;
-  &::first-letter {
-    text-transform: uppercase;
-  }
 }
 
 h1.title {

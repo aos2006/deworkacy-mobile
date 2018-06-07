@@ -7,7 +7,6 @@ class Layout extends Component {
   render() {
     return (
       <div
-
         style={{
         padding: '30px',
         backgroundColor: 'gray',

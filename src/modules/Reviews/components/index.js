@@ -9,20 +9,29 @@ import Sectionheader from 'components/SectionHeader';
 import Button from 'components/Button';
 import SectionDevider from 'components/SectionDevider';
 import globalS from './globalStyles/index.scss';
+import LazyImg from 'components/LazyImg';
 
 class Reviews extends PureComponent {
+  state = {
+    currentSlide: 0,
+  }
+
   sliderSettings = {
     infinite: true,
     customDots: true,
     slidesToShow: 1,
+    swipeToSlide: true,
     slidesToScroll: 1,
     speed: 500,
     adaptiveHeight: true,
+    afterChange: i => this.setState({
+      currentSlide: i,
+    })
   }
   render() {
     return (
       <article
-        className={cx([s.root, 'section'])}>
+        className={cx([s.root, 'section', 'section-auto-height'])}>
         <Container>
           <div className={s.row}>
             <Sectionheader
@@ -40,7 +49,11 @@ class Reviews extends PureComponent {
                 <div className={s.comment} key={item.id}>
                  <p className={s.txt}>{item.reviewText}</p>
                   <footer className={s.footer}>
-                    <img src={item.image.photo75} alt="" className={s.man} />
+                    <LazyImg
+                      dataSrc={item.image.photo75}
+                      className={s.man}
+                      startLoad={this.state.currentSlide === index}
+                    />
                     <div className={s.commentInner}>
                       <Title type="h4">
                         {item.reviewerTitle}

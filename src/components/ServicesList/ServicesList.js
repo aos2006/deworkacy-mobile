@@ -14,7 +14,7 @@ import globalS from './globalStyles/global.scss';
 import SectionDevider from 'components/SectionDevider';
 
 const ServicesList = props => (
-  <div className={cx([s.root, 'section'])}>
+  <div className={cx([s.root, 'section', 'section-auto-height'])}>
     <article className={s.inner}>
       <div>
         <div className={cx([s.itemRoot])} key={props.id}>

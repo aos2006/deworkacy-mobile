@@ -40,7 +40,7 @@ class Locations extends PureComponent {
   render() {
     return (
       <div>
-        <div className={cx([s.root, 'section'])}>
+        <div className={cx([s.root, 'section', 'section-auto-height'])}>
           <div className={s.map}>
             <div className={s.header}>
               <SectionHeader title="Локации" />

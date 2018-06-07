@@ -12,7 +12,8 @@ const Loader = props => (
     s.root,
     {
       [s.hide]: props.hide,
-    }
+    },
+    props.className,
   ])}>
     <Spin indicator={antIcon} />
   </div>
