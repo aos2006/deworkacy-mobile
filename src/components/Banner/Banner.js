@@ -47,7 +47,7 @@ class Banner extends PureComponent {
                     'height': '100%'
                   }
                 }}
-                dataSrc={item.image.photo860}
+                dataSrc={item.image.photo320}
                 startLoad={i === this.state.currentSlide}
               />
               <div className={s.inner}>

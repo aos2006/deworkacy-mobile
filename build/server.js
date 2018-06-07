@@ -5078,7 +5078,7 @@ function (_PureComponent) {
               'height': '100%'
             }
           },
-          dataSrc: item.image.photo860,
+          dataSrc: item.image.photo320,
           startLoad: i === _this2.state.currentSlide
         }), __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default()("div", {
           className: __WEBPACK_IMPORTED_MODULE_11__Banner_scss___default.a.inner
