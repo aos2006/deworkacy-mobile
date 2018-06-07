@@ -1,5 +1,6 @@
 @font-face {
     font-family: 'PF Bague Sans Pro';
+    font-display: swap;
     src: url('./hinted-PFBagueSansPro.eot');
     src: local('PF Bague Sans Pro'), local('PFBagueSansPro'),
         url('./hinted-PFBagueSansPro.eot?#iefix') format('embedded-opentype'),
@@ -13,6 +14,7 @@
 
 @font-face {
     font-family: 'PF Bague Sans Pro';
+    font-display: swap;
     src: url('./hinted-PFBagueSansPro-Bold.eot');
     src: local('PF Bague Sans Pro Bold'), local('PFBagueSansPro-Bold'),
         url('./hinted-PFBagueSansPro-Bold.eot?#iefix') format('embedded-opentype'),
@@ -26,6 +28,7 @@
 
 @font-face {
     font-family: 'PF Bague Sans Pro';
+    font-display: swap;
     src: url('./hinted-PFBagueSansPro-Light.eot');
     src: local('PF Bague Sans Pro Light'), local('PFBagueSansPro-Light'),
         url('./hinted-PFBagueSansPro-Light.eot?#iefix') format('embedded-opentype'),

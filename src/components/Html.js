@@ -87,6 +87,17 @@ class Html extends React.Component {
           ))}
         </head>
         <body>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+          if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js')
+      .then(() => navigator.serviceWorker.ready.then((worker) => {
+        worker.sync.register('syncdata');
+      }))
+      .catch((err) => console.log(err));
+}
+          `
+        }}/>
           <div id="app" dangerouslySetInnerHTML={{ __html: children }} />
           <script
             defer
