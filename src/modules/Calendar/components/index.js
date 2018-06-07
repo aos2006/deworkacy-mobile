@@ -18,6 +18,7 @@ import Event from './Event';
 import Header from './Header';
 import {Spin, Icon } from 'antd';
 import Slider from 'components/Slider';
+import LazyLoad from 'react-lazyload';
 const antIcon = <Icon type="loading" style={{fontSize: 24}} spin/>;
 
 const keyFormat = 'ddddMMMMDoYYYY';
@@ -101,30 +102,31 @@ class AppCalendar extends PureComponent {
     const headerTitle = currentMonthStr.charAt(0).toUpperCase() + currentMonthStr.slice(1);
 
     return (
-      <div
-        className={cx([
-          s.root,
-          'section-auto-height',
-        ])}>
-        {this.props.isLoading && <Spin indicator={antIcon} className={s.loader} />}
-        <Container>
-          <SectionHeader
-            className={s.sectionHeader}
-            title="Мероприятия"
-          />
-          <Header
-            handleNext={this.handleNext}
-            handlePrev={this.handlePrev}
-            title={headerTitle}
-            className={s.calendarHeader}
-          />
-          <Calendar
-            onSelect={this.handleSelect}
-            value={this.state.currentMonth}
-            dateFullCellRender={(date) => {
-              const hashKey = date.format('D');
-              const hasEvent = Object.prototype.hasOwnProperty.call(this.props.days, hashKey);
-              return <span className="ant-fullcalendar-date">
+      <LazyLoad once offset={300}>
+        <div
+          className={cx([
+            s.root,
+            'section-auto-height',
+          ])}>
+          {this.props.isLoading && <Spin indicator={antIcon} className={s.loader}/>}
+          <Container>
+            <SectionHeader
+              className={s.sectionHeader}
+              title="Мероприятия"
+            />
+            <Header
+              handleNext={this.handleNext}
+              handlePrev={this.handlePrev}
+              title={headerTitle}
+              className={s.calendarHeader}
+            />
+            <Calendar
+              onSelect={this.handleSelect}
+              value={this.state.currentMonth}
+              dateFullCellRender={(date) => {
+                const hashKey = date.format('D');
+                const hasEvent = Object.prototype.hasOwnProperty.call(this.props.days, hashKey);
+                return <span className="ant-fullcalendar-date">
                 <span className={
                   cx([
                     'ant-fullcalendar-value',
@@ -135,39 +137,40 @@ class AppCalendar extends PureComponent {
                   {date.format('DD')}
                 </span>
               </span>
-            }}
-            className={cx([
-              s.calendar,
-              'app-calendar',
-            ])}
-            fullscreen={false}
-          />
-          {this.state.events.length > 0 ? (<Slider
-          dotsClass={s.dots}
-            settings={{
-            customDots: true,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          }}>
-            {
-              this.state.events.map(item => {
-                return (
-                  <Event
-                    place={item.location}
-                    className={s.event}
-                    img={item.photo ? item.photo.url : null}
-                    key={item.id}
-                    title={item.title}
-                    range={`${moment(item.timestampStart).format('DD MMMM')} - ${moment(item.timestampFinish).format('DD MMMM')}`}
-                    time={moment(item.timestampStart).format('kk:mm')}
-                  />
-                )
-              })
-            }
-          </Slider>) : <p className={s.nothing}>Нет мероприятий</p>}
-        </Container>
-        <SectionDevider className={s.devider} />
-      </div>
+              }}
+              className={cx([
+                s.calendar,
+                'app-calendar',
+              ])}
+              fullscreen={false}
+            />
+            {this.state.events.length > 0 ? (<Slider
+              dotsClass={s.dots}
+              settings={{
+                customDots: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              }}>
+              {
+                this.state.events.map(item => {
+                  return (
+                    <Event
+                      place={item.location}
+                      className={s.event}
+                      img={item.photo ? item.photo.url : null}
+                      key={item.id}
+                      title={item.title}
+                      range={`${moment(item.timestampStart).format('DD MMMM')} - ${moment(item.timestampFinish).format('DD MMMM')}`}
+                      time={moment(item.timestampStart).format('kk:mm')}
+                    />
+                  )
+                })
+              }
+            </Slider>) : <p className={s.nothing}>Нет мероприятий</p>}
+          </Container>
+          <SectionDevider className={s.devider}/>
+        </div>
+      </LazyLoad>
     )
   }
 }

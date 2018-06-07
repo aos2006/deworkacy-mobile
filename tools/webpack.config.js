@@ -7,6 +7,9 @@ import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import overrideRules from './lib/overrideRules';
 import pkg from '../package.json';
 
+const MomentLocalesPlugin = require('moment-locales-webpack-plugin');
+const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
+
 const isDebug = !process.argv.includes('--release');
 const isVerbose = process.argv.includes('--verbose');
 const isAnalyze =
@@ -67,7 +70,6 @@ const config = {
         options: {
           // https://github.com/babel/babel-loader#options
           cacheDirectory: isDebug,
-
           // https://babeljs.io/docs/usage/options/
           babelrc: false,
           presets: [
@@ -97,6 +99,7 @@ const config = {
           ],
           plugins: [
             '@babel/transform-runtime',
+            'lodash',
             ['import', {
               libraryName: 'antd',
               style: 'css',
@@ -314,6 +317,10 @@ const clientConfig = {
   },
 
   plugins: [
+    new LodashModuleReplacementPlugin,
+    new MomentLocalesPlugin({
+      localesToKeep: ['ru'],
+    }),
     // Define free variables
     // https://webpack.js.org/plugins/define-plugin/
     new webpack.DefinePlugin({

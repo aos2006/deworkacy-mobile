@@ -61,9 +61,6 @@ class Html extends React.Component {
           <link rel="preconnect" href="http://code.jquery.com" />
           <link rel="preconnect" href="http://api.deworkacy.ru" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preload" href="/apple-store.svg" as="image" />
-          <link rel="preload" href="/google-store.svg" as="image" />
-          <link rel="preload" href="/marker.svg" as="image"/>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://maps.googleapis.com" />
           <link rel="preconnect" href="https://maps.gstatic.com" />
@@ -92,18 +89,21 @@ class Html extends React.Component {
         <body>
           <div id="app" dangerouslySetInnerHTML={{ __html: children }} />
           <script
+            defer
             dangerouslySetInnerHTML={{ __html: `window.App=${serialize(app)}` }}
           />
           <script
+            defer
             src="http://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossOrigin="anonymous"
           />
 
           <script
+            defer
             src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"
           />
-            {scripts.map(script => <script key={script} src={script} />)}
+            {scripts.map(script => <script defer key={script} src={script} />)}
           </body>
       </html>
     );

@@ -16,7 +16,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_jsx__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__babel_runtime_regenerator__ = __webpack_require__(/*! @babel/runtime/regenerator */ 27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__babel_runtime_regenerator__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__babel_runtime_helpers_asyncToGenerator__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__babel_runtime_helpers_asyncToGenerator__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__babel_runtime_helpers_asyncToGenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__babel_runtime_helpers_asyncToGenerator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react__ = __webpack_require__(/*! react */ 0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react__);
@@ -105,8 +105,8 @@ function _action() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__Ui_scss__ = __webpack_require__(/*! ./Ui.scss */ 351);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__Ui_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__Ui_scss__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_components_Title__ = __webpack_require__(/*! components/Title */ 24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_components_Para__ = __webpack_require__(/*! components/Para */ 31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_components_Button__ = __webpack_require__(/*! components/Button */ 32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_components_Para__ = __webpack_require__(/*! components/Para */ 32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_components_Button__ = __webpack_require__(/*! components/Button */ 33);
 
 
 
