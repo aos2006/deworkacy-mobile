@@ -42,6 +42,7 @@ class Banner extends PureComponent {
           {this.props.list.map((item, i) => (
             <div className={s.content} key={item.id}>
               <LazyImg
+                className={s.img}
                 root={{
                   style: {
                     'height': '100%'

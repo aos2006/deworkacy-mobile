@@ -57,7 +57,21 @@ class Html extends React.Component {
           <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
           <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png"/>
           <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+          <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+          <link rel="preconnect" href="http://code.jquery.com" />
+          <link rel="preconnect" href="http://api.deworkacy.ru" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preload" href="/apple-store.svg" as="image" />
+          <link rel="preload" href="/google-store.svg" as="image" />
+          <link rel="preload" href="/marker.svg" as="image"/>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://maps.googleapis.com" />
+          <link rel="preconnect" href="https://maps.gstatic.com" />
+          <link rel="preconnect" href="http://api.deworkacy.ru" />
+          <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" type="text/css"/>
+          <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" type="text/css"/>
           <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
+          <link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js" />
           {scripts.map(script => (
             <link key={script} rel="preload" href={script} as="script" />
           ))}
@@ -83,7 +97,8 @@ class Html extends React.Component {
           <script
             src="http://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossOrigin="anonymous"/>
+            crossOrigin="anonymous"
+          />
 
           <script
             src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"

@@ -8,6 +8,7 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Map.scss';
 import globalS from './globalStyles/index.scss';
 import mapStyles from './styles';
+import LazyLoad from 'react-lazyload';
 
 const MyMapComponent = compose(
   withProps({
@@ -95,12 +96,14 @@ class MyFancyComponent extends React.PureComponent {
   render() {
     return (
       <div className={cx([s.root, 'app-map', this.props.classes.root])}>
-        <MyMapComponent
-          markers={this.props.markers}
-          isMarkerShown={this.state.isMarkerShown}
-          onMarkerClick={this.handleMarkerClick}
-          defaultCenter={this.props.defaultCenter}
-        />
+        <LazyLoad once offset={300}>
+          <MyMapComponent
+            markers={this.props.markers}
+            isMarkerShown={this.state.isMarkerShown}
+            onMarkerClick={this.handleMarkerClick}
+            defaultCenter={this.props.defaultCenter}
+          />
+        </LazyLoad>
       </div>
     );
   }

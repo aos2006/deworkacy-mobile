@@ -12,6 +12,7 @@ import Spaces from './icons/spaces.svg';
 import Corporate from './icons/corporate.svg';
 import globalS from './globalStyles/global.scss';
 import SectionDevider from 'components/SectionDevider';
+import LazyLoad from 'react-lazyload';
 
 const ServicesList = props => (
   <div className={cx([s.root, 'section', 'section-auto-height'])}>
@@ -19,7 +20,9 @@ const ServicesList = props => (
       <div>
         <div className={cx([s.itemRoot])} key={props.id}>
           <div className={cx([s.bg])}>
-            <img src={props.src} alt=""/>
+            <LazyLoad once offset={300}>
+              <img src={props.src} alt=""/>
+            </LazyLoad>
           </div>
           <Container className={s.wrapper}>
             <div className={s.iconWrapper}>{props.icon}</div>

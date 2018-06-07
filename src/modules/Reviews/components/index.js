@@ -10,6 +10,7 @@ import Button from 'components/Button';
 import SectionDevider from 'components/SectionDevider';
 import globalS from './globalStyles/index.scss';
 import LazyImg from 'components/LazyImg';
+import LazyLoad from 'react-lazyload';
 
 class Reviews extends PureComponent {
   state = {
@@ -38,34 +39,36 @@ class Reviews extends PureComponent {
               title="О нас говорят"
               className={s.header}
             />
-            <Slider
-              dotsClass={s.dots}
-              className={cx([
-                s.slider,
-                'reviews-slider',
-              ])}
-              settings={this.sliderSettings}>
-              {this.props.list.map((item, index) => (
-                <div className={s.comment} key={item.id}>
-                 <p className={s.txt}>{item.reviewText}</p>
-                  <footer className={s.footer}>
-                    <LazyImg
-                      dataSrc={item.image.photo75}
-                      className={s.man}
-                      startLoad={this.state.currentSlide === index}
-                    />
-                    <div className={s.commentInner}>
-                      <Title type="h4">
-                        {item.reviewerTitle}
-                      </Title>
-                      <span className={s.company}>
+            <LazyLoad once offset={300}>
+              <Slider
+                dotsClass={s.dots}
+                className={cx([
+                  s.slider,
+                  'reviews-slider',
+                ])}
+                settings={this.sliderSettings}>
+                {this.props.list.map((item, index) => (
+                  <div className={s.comment} key={item.id}>
+                    <p className={s.txt}>{item.reviewText}</p>
+                    <footer className={s.footer}>
+                      <LazyImg
+                        dataSrc={item.image.photo75}
+                        className={s.man}
+                        startLoad={this.state.currentSlide === index}
+                      />
+                      <div className={s.commentInner}>
+                        <Title type="h4">
+                          {item.reviewerTitle}
+                        </Title>
+                        <span className={s.company}>
                         {item.companyTitle}
                       </span>
-                    </div>
-                  </footer>
-                </div>
-              ))}
-            </Slider>
+                      </div>
+                    </footer>
+                  </div>
+                ))}
+              </Slider>
+            </LazyLoad>
           </div>
           <Button fullWidth classes={{ root: s.button }} onClick={this.props.handleGoTo}>
             Оставить заявку
