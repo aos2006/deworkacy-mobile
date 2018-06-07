@@ -33,13 +33,13 @@ class Reviews extends PureComponent {
     return (
       <article
         className={cx([s.root, 'section', 'section-auto-height'])}>
-        <Container>
-          <div className={s.row}>
-            <Sectionheader
-              title="О нас говорят"
-              className={s.header}
-            />
-            <LazyLoad once offset={300}>
+        <LazyLoad once offset={500} height="514px">
+          <Container>
+            <div className={s.row}>
+              <Sectionheader
+                title="О нас говорят"
+                className={s.header}
+              />
               <Slider
                 dotsClass={s.dots}
                 className={cx([
@@ -68,13 +68,13 @@ class Reviews extends PureComponent {
                   </div>
                 ))}
               </Slider>
-            </LazyLoad>
-          </div>
-          <Button fullWidth classes={{ root: s.button }} onClick={this.props.handleGoTo}>
-            Оставить заявку
-          </Button>
-          <SectionDevider />
-        </Container>
+            </div>
+            <Button fullWidth classes={{root: s.button}} onClick={this.props.handleGoTo}>
+              Оставить заявку
+            </Button>
+            <SectionDevider/>
+          </Container>
+        </LazyLoad>
       </article>
     )
   }

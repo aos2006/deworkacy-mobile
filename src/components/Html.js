@@ -69,15 +69,15 @@ class Html extends React.Component {
           <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" type="text/css"/>
           <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
           <link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js" />
-          {scripts.map(script => (
-            <link key={script} rel="preload" href={script} as="script" />
-          ))}
           <link rel="manifest" href="/site.webmanifest" />
           <link rel="apple-touch-icon" href="/icon.png" />
           <link rel="stylesheet" type="text/css" charSet="UTF-8"
                 href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"/>
           <link rel="stylesheet" type="text/css"
                 href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"/>
+          {scripts.map(script => (
+            <link key={script} rel="preload" href={script} as="script"/>
+          ))}
           {styles.map(style => (
             <style
               key={style.id}

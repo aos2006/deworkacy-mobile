@@ -9,6 +9,7 @@
 .inner {
   height: auto;
   position: absolute;
+  bottom: 0;
   bottom: 70px;
   left: 0;
   right: 0;
@@ -62,8 +63,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 5%;
-  //bottom: 35px;
+  bottom: 35px;
   z-index: 5;
   //padding-top: 35px;`
 }

@@ -10,6 +10,7 @@ import * as actions from '../actions';
 import SectionHeader from 'components/SectionHeader';
 import Card from './Card';
 import SectionDevider from 'components/SectionDevider';
+import LazyLoad from 'react-lazyload';
 
 class Locations extends PureComponent {
   handleChange = i => this.props.locationChange(i);
@@ -57,8 +58,9 @@ class Locations extends PureComponent {
                 txt={item.information}
               />
             ))}
-
-            <Map defaultCenter={this.props.position} />
+            <LazyLoad once offset={500} height="570px">
+              <Map defaultCenter={this.props.position}/>
+            </LazyLoad>
             <div className={cx([s.list, 'locations-list'])}>
               <List
                 handleToggle={this.handleToggle}

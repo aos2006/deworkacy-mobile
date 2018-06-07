@@ -12,8 +12,7 @@ import LazyLoad from 'react-lazyload';
 
 const MyMapComponent = compose(
   withProps({
-    googleMapURL:
-      'https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBmOrSKmMpi4m6L2ycqjWF8a6wRCcAYDdc&libraries=geometry,drawing,places',
+    googleMapURL: 'https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAXyNGX1Uh6UrhcskvMhLCMFz7o_h7AJIk&libraries=geometry,drawing,places',
     loadingElement: (
       <div
         style={{ height: '100%', backgroundColor: '#151B21', width: '100%' }}
@@ -96,14 +95,12 @@ class MyFancyComponent extends React.PureComponent {
   render() {
     return (
       <div className={cx([s.root, 'app-map', this.props.classes.root])}>
-        <LazyLoad once offset={300}>
           <MyMapComponent
             markers={this.props.markers}
             isMarkerShown={this.state.isMarkerShown}
             onMarkerClick={this.handleMarkerClick}
             defaultCenter={this.props.defaultCenter}
           />
-        </LazyLoad>
       </div>
     );
   }

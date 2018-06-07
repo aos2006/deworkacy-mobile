@@ -12,16 +12,14 @@
 
 
 .root {
-  position: absolute;
-  //top: 0;
-  //left: 0;
-  //right: 0;
-  //z-index: 333;
-  width: 100%;
    @include susy-phone() {
-     position: relative;
-     z-index: 20;
-     margin-bottom: -70px;
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     z-index: 333;
+     width: 100%;
+     //margin-bottom: -70px;
      & ~ .root.active {
        display: none;
      }

@@ -17,6 +17,13 @@ class Banner extends PureComponent {
     currentSlide: 0,
   }
 
+  settings = {
+    customDots: true,
+    afterChange: (i) => this.setState({
+      currentSlide: i,
+    })
+  }
+
   render() {
     return (
       <div
@@ -27,12 +34,7 @@ class Banner extends PureComponent {
           'normal-scroll',
         ])}>
         <Slider
-          settings={{
-            className: s.slide,
-            afterChange: (i) => this.setState({
-              currentSlide: i,
-            })
-          }}
+          settings={this.settings}
           className={cx([
             s.slider,
             'banner-slider',
@@ -43,11 +45,6 @@ class Banner extends PureComponent {
             <div className={s.content} key={item.id}>
               <LazyImg
                 className={s.img}
-                root={{
-                  style: {
-                    'height': '100%'
-                  }
-                }}
                 dataSrc={item.image.photo320}
                 startLoad={i === this.state.currentSlide}
               />

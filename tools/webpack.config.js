@@ -99,7 +99,6 @@ const config = {
           ],
           plugins: [
             '@babel/transform-runtime',
-            'lodash',
             ['import', {
               libraryName: 'antd',
               style: 'css',
@@ -317,9 +316,8 @@ const clientConfig = {
   },
 
   plugins: [
-    new LodashModuleReplacementPlugin,
     new MomentLocalesPlugin({
-      localesToKeep: ['ru'],
+      localesToKeep: ['es-us', 'ru'],
     }),
     // Define free variables
     // https://webpack.js.org/plugins/define-plugin/

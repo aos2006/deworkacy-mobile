@@ -102,7 +102,7 @@ class AppCalendar extends PureComponent {
     const headerTitle = currentMonthStr.charAt(0).toUpperCase() + currentMonthStr.slice(1);
 
     return (
-      <LazyLoad once offset={300}>
+      <LazyLoad once offset={300} height="503px">
         <div
           className={cx([
             s.root,

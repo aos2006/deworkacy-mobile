@@ -34,10 +34,10 @@ class Partners extends Component {
     console.log(this.state.currentSlide);
     return (
       <article className={cx([s.root, 'section', 'section-auto-height'])}>
-        <Container>
-          <div className={s.row}>
-            <SectionHeader title="Нам доверяют" className={s.header} />
-            <LazyLoad once offset={500}>
+        <LazyLoad once offset={500} height="606px">
+          <Container>
+            <div className={s.row}>
+              <SectionHeader title="Нам доверяют" className={s.header}/>
               <Slider
                 dotsClass={s.dots}
                 className={cx(s.slider, 'partners-slider')}
@@ -62,9 +62,9 @@ class Partners extends Component {
                   </div>
                 ))}
               </Slider>
-            </LazyLoad>
-          </div>
-        </Container>
+            </div>
+          </Container>
+        </LazyLoad>
         <SectionDevider className={s.devider} />
       </article>
     );

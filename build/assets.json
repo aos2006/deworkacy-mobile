@@ -1,14 +1,14 @@
 {
   "ui": {
-    "js": "/assets/ui.e1ab0dfa.chunk.js"
+    "js": "/assets/ui.4eda98ee.chunk.js"
   },
   "not-found": {
-    "js": "/assets/not-found.c15b6e74.chunk.js"
+    "js": "/assets/not-found.a7647c76.chunk.js"
   },
   "client": {
-    "js": "/assets/client.e1869b9d.js"
+    "js": "/assets/client.b4c9993a.js"
   },
   "vendor": {
-    "js": "/assets/vendor.d15b39dc.js"
+    "js": "/assets/vendor.16c0e145.js"
   }
 }
