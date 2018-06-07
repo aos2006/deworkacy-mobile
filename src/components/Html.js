@@ -78,6 +78,23 @@ class Html extends React.Component {
           {scripts.map(script => (
             <link key={script} rel="preload" href={script} as="script"/>
           ))}
+          <div id="app" dangerouslySetInnerHTML={{__html: children}}/>
+          <script
+            defer
+            dangerouslySetInnerHTML={{__html: `window.App=${serialize(app)}`}}
+          />
+          <script
+            defer
+            src="http://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossOrigin="anonymous"
+          />
+
+          <script
+            defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"
+          />
+          {scripts.map(script => <script defer key={script} src={script}/>)}
           {styles.map(style => (
             <style
               key={style.id}
@@ -92,29 +109,14 @@ class Html extends React.Component {
           if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('./sw.js')
       .then(() => navigator.serviceWorker.ready.then((worker) => {
+        console.log('ready');
         worker.sync.register('syncdata');
       }))
       .catch((err) => console.log(err));
 }
           `
         }}/>
-          <div id="app" dangerouslySetInnerHTML={{ __html: children }} />
-          <script
-            defer
-            dangerouslySetInnerHTML={{ __html: `window.App=${serialize(app)}` }}
-          />
-          <script
-            defer
-            src="http://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossOrigin="anonymous"
-          />
 
-          <script
-            defer
-            src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"
-          />
-            {scripts.map(script => <script defer key={script} src={script} />)}
           </body>
       </html>
     );
