@@ -8,6 +8,7 @@
  */
 
 import path from 'path';
+import fs from 'fs';
 import express from 'express';
 import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
@@ -53,6 +54,7 @@ app.use(express.static(path.resolve(__dirname, 'public')));
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(require('prerender-node').set('prerenderToken', '6z2KIXIEapL15lJqrVAt'));
 
 app.get('*', async (req, res, next) => {
   try {
@@ -113,6 +115,7 @@ app.get('*', async (req, res, next) => {
 
     const html = ReactDOM.renderToStaticMarkup(<Html {...data} />);
     res.status(route.status || 200);
+    res.append('Content-Type', 'text/html');
     res.send(`<!doctype html>${html}`);
   } catch (err) {
     next(err);

@@ -20,6 +20,11 @@ import history from './history';
 import { updateMeta } from './DOMUtils';
 import router from './router';
 
+require('offline-plugin/runtime').install({
+  onInstalled: () => console.log('installed offline'),
+  onUpdateFailed: err => console.log(err),
+});
+
 // Global (context) variables that can be easily accessed from any React component
 // https://facebook.github.io/react/docs/context.html
 const context = {

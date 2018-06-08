@@ -9,7 +9,11 @@ import pkg from '../package.json';
 
 const MomentLocalesPlugin = require('moment-locales-webpack-plugin');
 const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
-
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+var SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
+const OfflinePlugin = require('offline-plugin');
+const PrerenderSPAPlugin = require('prerender-spa-plugin');
+const Renderer = PrerenderSPAPlugin.PuppeteerRenderer
 const isDebug = !process.argv.includes('--release');
 const isVerbose = process.argv.includes('--verbose');
 const isAnalyze =
@@ -184,6 +188,11 @@ const config = {
           },
         ],
       },
+      {test: /\.ejs$/, loader: 'ejs-loader?variable=data'},
+      {
+        test: /\.(html)$/,
+        use: 'raw-loader'
+      },
       // Rules for images
       {
         test: reImage,
@@ -326,16 +335,6 @@ const clientConfig = {
       __DEV__: isDebug,
     }),
 
-    new webpack.ProvidePlugin({
-      skrollr: 'skrollr',
-      // '$': 'jquery',
-      // 'window.$': 'jquery',
-      // jquery: 'jquery',
-      // jQuery: 'jquery',
-      // 'window.jquery': 'jquery',
-      // 'window.jQuery': 'jquery',
-    }),
-
     // Emit a file with assets paths
     // https://github.com/sporto/assets-webpack-plugin#options
     new AssetsPlugin({
@@ -357,30 +356,105 @@ const clientConfig = {
           // Decrease script evaluation time
           // https://github.com/webpack/webpack/blob/master/examples/scope-hoisting/README.md
           new webpack.optimize.ModuleConcatenationPlugin(),
+        new HtmlWebpackPlugin({
+          inject: true,
+          template: path.join(__dirname, '..', 'public/templates/default.ejs'),
+          minify: {
+            removeComments: true,
+            collapseWhitespace: true,
+            removeRedundantAttributes: true,
+            useShortDoctype: true,
+            removeEmptyAttributes: true,
+            removeStyleLinkTypeAttributes: true,
+            keepClosingSlash: true,
+            minifyJS: true,
+            minifyCSS: true,
+            minifyURLs: true,
+          },
+        }),
+        // new SWPrecacheWebpackPlugin({
+        //   // By default, a cache-busting query parameter is appended to requests
+        //   // used to populate the caches, to ensure the responses are fresh.
+        //   // If a URL is already hashed by Webpack, then there is no concern
+        //   // about it being stale, and the cache-busting can be skipped.
+        //   dontCacheBustUrlsMatching: /\.\w{8}\./,
+        //   filepath: path.join(__dirname, '..', 'build/public/sw.js'),
+        //   logger(message) {
+        //     if (message.indexOf('Total precache size is') === 0) {
+        //       // This message occurs for every build and is a bit too noisy.
+        //       return;
+        //     }
+        //     console.log(message);
+        //   },
+        //   minify: true,
+        //   // For unknown URLs, fallback to the index page
+        //   // Ignores URLs starting from /__ (useful for Firebase):
+        //   // https://github.com/facebookincubator/create-react-app/issues/2237#issuecomment-302693219
+        //   navigateFallbackWhitelist: [/^(?!\/__).*/],
+        //   // Don't precache sourcemaps (they're large) and build asset manifest:
+        //   staticFileGlobsIgnorePatterns: [/\.map$/, /asset-manifest\.json$/],
+        //   // Work around Windows path issue in SWPrecacheWebpackPlugin:
+        //   // https://github.com/facebookincubator/create-react-app/issues/2235
+        //   stripPrefix: path.join(__dirname, '..', 'build').replace(/\\/g, '/') + '/',
+        // }),
 
           // Minimize all JavaScript output of chunks
           // https://github.com/mishoo/UglifyJS2#compressor-options
           new webpack.optimize.UglifyJsPlugin({
-            compress: {
-              warnings: isVerbose,
-              unused: true,
-              dead_code: true,
-              screw_ie8: true,
-            },
-            mangle: {
-              screw_ie8: true,
-            },
-            output: {
-              comments: false,
-              screw_ie8: true,
-            },
+            output: {comments: false},
+            mangle: true,
             sourceMap: true,
+            compress: {
+              properties: true,
+              keep_fargs: false,
+              pure_getters: true,
+              collapse_vars: true,
+              warnings: false,
+              sequences: true,
+              dead_code: true,
+              drop_debugger: true,
+              comparisons: true,
+              conditionals: true,
+              evaluate: true,
+              booleans: true,
+              loops: true,
+              unused: true,
+              hoist_funs: true,
+              if_return: true,
+              join_vars: true,
+              cascade: true,
+              drop_console: false,
+              pure_funcs: [
+                'classCallCheck',
+                '_classCallCheck',
+                '_possibleConstructorReturn',
+                'Object.freeze',
+                'invariant',
+                'warning'
+              ]
+            }
           }),
         ]),
 
     // Webpack Bundle Analyzer
     // https://github.com/th0r/webpack-bundle-analyzer
     ...(isAnalyze ? [new BundleAnalyzerPlugin()] : []),
+    new OfflinePlugin({
+      relativePaths: false,
+      AppCache: false,
+      excludes: ['_redirects'],
+      ServiceWorker: {
+        events: true
+      },
+      cacheMaps: [
+        {
+          match: /.*/,
+          to: '/',
+          requestTypes: ['navigate']
+        }
+      ],
+      publicPath: '/'
+    })
   ],
 
   // Some libraries import Node modules but don't use them in the browser.

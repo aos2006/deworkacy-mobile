@@ -21,15 +21,15 @@ const routes = {
       path: '',
       load: () => import(/* webpackMode: 'eager' */ './home'),
     },
-    {
-      path: '/ui',
-      load: () => import(/* webpackChunkName: 'ui' */ './ui'),
-    },
+    // {
+    //   path: '/ui',
+    //   load: () => import(/* webpackChunkName: 'ui' */ './ui'),
+    // },
     // Wildcard routes, e.g. { path: '(.*)', ... } (must go last)
-    {
-      path: '(.*)',
-      load: () => import(/* webpackChunkName: 'not-found' */ './not-found'),
-    },
+    // {
+    //   path: '(.*)',
+    //   load: () => import(/* webpackChunkName: 'not-found' */ './not-found'),
+    // },
   ],
 
   async action({ next }) {

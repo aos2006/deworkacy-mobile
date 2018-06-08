@@ -78,6 +78,28 @@ class Html extends React.Component {
           {scripts.map(script => (
             <link key={script} rel="preload" href={script} as="script"/>
           ))}
+          {styles.map(style => (
+            <style
+              key={style.id}
+              id={style.id}
+              dangerouslySetInnerHTML={{__html: style.cssText}}
+            />
+          ))}
+
+          <script
+            async
+            dangerouslySetInnerHTML={{
+            __html: `if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js').then(function(r) {
+        r.installing.postMessage({files: ${JSON.stringify(scripts.map(s => s))}});
+        return navigator.serviceWorker.ready;
+    }).then(function(reg) {
+        console.log('Service Worker is ready', reg);
+    }).catch(function(error) {
+        console.log('Error : ', error);
+    });
+}`
+          }}/>
           <div id="app" dangerouslySetInnerHTML={{__html: children}}/>
           <script
             defer
@@ -95,29 +117,10 @@ class Html extends React.Component {
             src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"
           />
           {scripts.map(script => <script defer key={script} src={script}/>)}
-          {styles.map(style => (
-            <style
-              key={style.id}
-              id={style.id}
-              dangerouslySetInnerHTML={{ __html: style.cssText }}
-            />
-          ))}
         </head>
         <body>
-        <script dangerouslySetInnerHTML={{
-          __html: `
-          if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('./sw.js')
-      .then(() => navigator.serviceWorker.ready.then((worker) => {
-        console.log('ready');
-        worker.sync.register('syncdata');
-      }))
-      .catch((err) => console.log(err));
-}
-          `
-        }}/>
 
-          </body>
+        </body>
       </html>
     );
   }
