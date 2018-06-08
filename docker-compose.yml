@@ -1,0 +1,26 @@
+version: '2'
+services:
+  web:
+    image: aos2006/dwy:$VERSION
+    build: .
+    expose:
+      - "3000"
+    volumes:
+      - /tmp:/tmp
+    environment:
+      - MODE=prod
+  lb:
+    image: dockercloud/haproxy
+    links:
+      - dwy1:dwy1
+      - dwy2:dwy2
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - 80:80
+  dwy1:
+    extends:
+      service: dwy
+  dwy2:
+    extends:
+      service: dwy

@@ -1,1 +1,1 @@
-export const BASE_API = 'https://api-ssl.deworkacy.ru/api/dwy/site/v1';
+export const BASE_API = 'http://api.deworkacy.ru/api/dwy/site/v2';

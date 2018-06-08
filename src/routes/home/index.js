@@ -10,11 +10,12 @@
 import React from 'react';
 import Home from './Home';
 import Layout from '../../components/Layout';
+import * as base from 'modules/constants';
 
 async function action({ fetch }) {
-  const resp = await fetch('http://api.deworkacy.ru/api/dwy/site/v2/mainpage/info');
+  const resp = await fetch(`${base.BASE_API}/mainpage/info`);
   const data = await resp.json();
-  
+
   return {
     title: 'Home Page',
     component: (

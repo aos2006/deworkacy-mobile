@@ -2,4 +2,7 @@ dist
 node_modules
 .DS_Store
 .idea
-./.idea
+.idea/
+build
+docs
+README.md

@@ -1,8 +1,8 @@
 {
   "client": {
-    "js": "/assets/client.a4661062.js"
+    "js": "/assets/client.js"
   },
   "vendor": {
-    "js": "/assets/vendor.0936581b.js"
+    "js": "/assets/vendor.js"
   }
 }
